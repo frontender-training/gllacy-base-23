@@ -4,6 +4,7 @@
 * Наставник: [Юлия Максимова]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 * Макет: [HTML Academy](https://htmlacademy.ru).
 
 ## Описание
@@ -30,6 +31,9 @@
     </td>
   </tr>
 </table>
+=======
+---
+>>>>>>> parent of ce9c5ce... Update Readme.md
 =======
 ---
 >>>>>>> parent of ce9c5ce... Update Readme.md
