@@ -4,90 +4,76 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
   </head>
-  <body style="background-color: #849d8f;">
-		<h1 class="visually-hidden">Магазин мороженного "Глэсси"</h1>
-<!-- ШАПКА-->
+  <body>
 		<header class="main-header">
-				<nav class="main-navigation container">
-					<img class="main-header-logo" src="img/logo.svg" alt="Логотип магазина мороженного 'Гласси'" width="154px" height="64px">
+				<img class="main-header-logo" src="img/logo.svg" alt="Логотип магазина мороженного 'Гласси'" width="154px" height="64px">
+				<nav class="main-navigation container">					
 					<ul class="site-navigation">
 						<li class="catalog-menu">
-							<a class="catalog-menu-in" href="#">Каталог</a>
-							<div class="menu-fall-out display-none">
-								<ul class="fall-menu">
-									<li class="new-ice-creams"><a href="#">Новинки</a><div></div></li>
-									<li><a href="#">Сливочное</a></li>
-									<li><a href="#">Щербеты</a></li>
-									<li><a href="#">Фруктовый лед</a></li>
-									<li><a href="#">Мелорин</a></li>
-								</ul>		
-							</div>
+							<a href="catalog.html">Каталог</a>
+							<ul class="dropdown-menu">
+								<li class="new-ice-creams"><a href="#">Новинки</a><div></div></li>
+								<li><a href="#">Сливочное</a></li>
+								<li><a href="#">Щербеты</a></li>
+								<li><a href="#">Фруктовый лед</a></li>
+								<li><a href="#">Мелорин</a></li>
+							</ul>
 						</li>
 						<li><a href="#">Доставка и оплата</a></li>
 						<li><a href="#">О компании</a></li>
 					</ul>
 					
 					<ul class="user-navigation">
-						<li class="search">
-							<button class="btn-search" type="button">
-								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
-									<path fill="#FFFFFF" d="M16.958,15.527L11.75,10.32C12.533,9.247,13,7.93,13,6.5C13,2.91,10.09,0,6.5,0S0,2.91,0,6.5
-										S2.91,13,6.5,13c1.438,0,2.763-0.473,3.839-1.263l5.205,5.204L16.958,15.527z M6.5,11C4.019,11,2,8.981,2,6.5S4.019,2,6.5,2
-										S11,4.019,11,6.5S8.981,11,6.5,11z"/>
-								</svg>
-							</button>
+						<li class="user-navigation-item">
+							<a class="btn-search">
+								<img src="http://placehold.it/" alt="" />
+							</a>
 						</li>
-						<li class="login-link">
+						<li class="user-navigation-item">
 							<a href="login.html">
-								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
-									<polygon fill="#FFFFFF" points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959 	"/>
-									<path fill="#FFFFFF" d="M18,0H5C3.9,0,3,0.9,3,2v2h2V2h13v15H5v-2H3v2c0,1.1,0.9,2,2,2h13c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z"/>
-								</svg>
+								<img src="http://placehold.it/" alt="" />
 								<span>Вход</span>
 							</a>
 						</li>
-						<li class="basket basket-empty">
+						<li class="user-navigation-item">
 							<a href="#">
-								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
-									<path fill="#FFFFFF" d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66 L17.372,13z"/>
-									<circle fill="#FFFFFF" cx="6.984" cy="18" r="2"/>
-									<circle fill="#FFFFFF" cx="15.984" cy="18" r="2"/>
-								</svg>
-							<span>Пусто</span></a>
-						</li>
-						<li class="schedule">
-							С 10 до 20, ежедневно
-							<span class="hdr-phone-numb">8 812 450-25-25</span>
+								<img src="http://placehold.it/" alt="" />
+								Пусто
+							</a>
 						</li>
 					</ul>
 				</nav>
+				<div class="schedule">
+					С 10 до 20, ежедневно
+					<span class="hdr-phone-numb">8 812 450-25-25</span>
+				</div>
 			</header>
-<!-- КОНЕЦ ШАПКИ-->
-
-<!-- ОСНОВНОЙ КОНТЕНТ-->
 			<main class="container">
 				<section class="slider-section">
-					<h3 class="visually-hidden">3 лучших предложения</h3>
+					<h2 class="visually-hidden">3 лучших предложения</h2>
 					<ul class="slider">
 						<li class="slider-item">		
 							<p>Крем-брюле и пломбир с малиновым джемом</p>
-							<a class="btn davai-oba" href="#">Давайте оба!</a>
-							<img class="two-ice-creams" src="img/slider1.png" alt="Изображение мороженого крем-брюле и пломбира с малиной" width='1045'	height='881'>
+							<a class="btn slider-red-btn" href="#">Давайте оба!</a>
+							<img src="http://placehold.it/" alt="" />
 						</li>
-						<li class="slider-item">
+						<li class="slider-item visually-hidden">
 							<p>Шоколадный пломбир и лимонный сорбет</p>
-							<a class="btn davai-oba" href="#">Давайте оба!</a>
-							<img class="two-ice-creams" src="img/slider2.png" alt="Изображение мороженого шоколадный пломбир и лимонный сорбет" width="1068" height="859">
+							<a class="btn slider-red-btn" href="#">Давайте оба!</a>
+							<img src="http://placehold.it/" alt="" />
 						</li>
-						<li class="slider-item">
+						<li class="slider-item visually-hidden">
 							<p>Пломбир с помадкой и клубничный щербет</p>
-							<a class="btn davai-oba" href="#">Давайте оба!</a>
-							<img class="two-ice-creams" src="img/slider3.png" alt="Изображение мороженого пломбир с помадкой и клубничный щербет" width="1079" height="854">
+							<a class="btn slider-red-btn" href="#">Давайте оба!</a>
+							<img src="http://placehold.it/" alt="" />
 						</li>
 					</ul>
-		</section>
+					<div class="slider-round-btns">
+						<button class="slider-item1"></button>
+						<button class="slider-item2"></button>
+						<button class="slider-item3"></button>
+					</div>
+				</section>
 			</main>
- <!-- ОСНОВНОЙ КОНТЕНТ-->
-
   </body>
 </html>
