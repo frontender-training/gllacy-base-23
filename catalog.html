@@ -5,16 +5,16 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-		<header class="main-header">
+		<header class="main-header container">
 			<a href="index.html">
 				<img class="main-header-logo" src="img/logo.svg" alt="Логотип магазина мороженного 'Глэсси'" width="154" height="64" />
 			</a>
-			<nav class="main-navigation">				
-				<ul class="site-navigation">
-					<li class="catalog-menu">
-						<a  class="site-navigation-current">Каталог</a>
-						<ul class="dropdown-menu">
-							<li class="new-ice-creams"><a href="#">Новинки</a><div></div></li>
+			<nav class="main-navigation container">				
+				<ul class="main-navigation-list">
+					<li>
+						<a class="active">Каталог</a>
+						<ul class="dropdown-menu visually-hidden">
+							<li class="new-items"><a href="#">Новинки</a></li>
 							<li><a href="#">Сливочное</a></li>
 							<li><a href="#">Щербеты</a></li>
 							<li><a href="#">Фруктовый лед</a></li>
@@ -29,6 +29,7 @@
 					<li class="user-navigation-item">
 						<a class="btn-search" href="#">
 							<img src="http://placehold.it/" alt="">
+							<span class="visually-hidden">Поиск</span>
 						</a>
 					</li>
 					<li class="user-navigation-item">
@@ -40,22 +41,16 @@
 					<li class="user-navigation-item">
 						<a href="#">
 							<img src="http://placehold.it/" alt="">
-						<span>Пусто</span></a>
+						<span>2 товара</span></a>
 					</li>
 				</ul>
 			</nav>
-			<div class="schedule">
-					С 10 до 20, ежедневно
-					<span class="hdr-phone-numb">8 812 450-25-25</span>
-				</div>
 		</header>
 		<main class="container">
-			<h1 class="page-title">Сливочное мороженое</h1>
-			<ul class="breadcrumbs">
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="catalog.html">Каталог</a></li>
-				<li class="breadcrumbs-current">Сливочное</li>
-			</ul>
+			<div class="schedule">
+				С 10 до 20, ежедневно
+				<span class="hdr-phone-numb">8 812 450-25-25</span>
+			</div>
 		</main>
   </body>
 </html>

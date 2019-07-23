@@ -5,14 +5,14 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-		<header class="main-header">
+		<header class="main-header container">
 				<img class="main-header-logo" src="img/logo.svg" alt="Логотип магазина мороженного 'Глейси'" width="154" height="64">
 				<nav class="main-navigation container">					
-					<ul class="site-navigation">
-						<li class="catalog-menu">
+					<ul class="main-navigation-list">
+						<li>
 							<a href="catalog.html">Каталог</a>
-							<ul class="dropdown-menu">
-								<li class="new-ice-creams"><a href="#">Новинки</a></li>
+							<ul class="dropdown-menu visually-hidden">
+								<li class="new-items"><a href="#">Новинки</a></li>
 								<li><a href="#">Сливочное</a></li>
 								<li><a href="#">Щербеты</a></li>
 								<li><a href="#">Фруктовый лед</a></li>
@@ -27,6 +27,7 @@
 						<li class="user-navigation-item">
 							<a class="btn-search">
 								<img src="http://placehold.it/" alt="" />
+								<span class="visually-hidden">Поиск</span>
 							</a>
 						</li>
 						<li class="user-navigation-item">
@@ -38,41 +39,38 @@
 						<li class="user-navigation-item">
 							<a href="#">
 								<img src="http://placehold.it/" alt="" />
-								Пусто
+								<span>Пусто</span>
 							</a>
 						</li>
 					</ul>
 				</nav>
+			</header>
+			<main class="container">
 				<div class="schedule">
 					С 10 до 20, ежедневно
 					<span class="hdr-phone-numb">8 812 450-25-25</span>
 				</div>
-			</header>
-			<main class="container">
 				<section class="slider-section">
 					<h2 class="visually-hidden">3 лучших предложения</h2>
 					<ul class="slider">
 						<li class="slider-item">		
 							<p>Крем-брюле и пломбир с малиновым джемом</p>
 							<a class="btn slider-red-btn" href="#">Давайте оба!</a>
-							<img src="http://placehold.it/" alt="" />
 						</li>
-						<li class="slider-item visually-hidden">
+						<li class="slider-item hidden">
 							<p>Шоколадный пломбир и лимонный сорбет</p>
 							<a class="btn slider-red-btn" href="#">Давайте оба!</a>
-							<img src="http://placehold.it/" alt="" />
 						</li>
-						<li class="slider-item visually-hidden">
+						<li class="slider-item hidden">
 							<p>Пломбир с помадкой и клубничный щербет</p>
-							<a class="btn slider-red-btn" href="#">Давайте оба!</a>
-							<img src="http://placehold.it/" alt="" />
+							<a class="btn slider-btn" href="#">Давайте оба!</a>
 						</li>
 					</ul>
-					<div class="slider-round-btns">
-						<button class="slider-item1"></button>
-						<button class="slider-item2"></button>
-						<button class="slider-item3"></button>
-					</div>
+					<ul class="toggles">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
 				</section>
 			</main>
   </body>
