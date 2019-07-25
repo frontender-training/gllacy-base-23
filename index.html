@@ -26,19 +26,19 @@
 					<ul class="user-navigation">
 						<li class="user-navigation-item">
 							<a class="btn-search">
-								<img src="http://placehold.it/" alt="" />
+								<img src="http://placehold.it/" alt="" width="" height="" />
 								<span class="visually-hidden">Поиск</span>
 							</a>
 						</li>
 						<li class="user-navigation-item">
 							<a href="login.html">
-								<img src="http://placehold.it/" alt="" />
+								<img src="http://placehold.it/" alt="" width="" height="" />
 								<span>Вход</span>
 							</a>
 						</li>
 						<li class="user-navigation-item">
 							<a href="#">
-								<img src="http://placehold.it/" alt="" />
+								<img src="http://placehold.it/" alt="" width="" height="" />
 								<span>Пусто</span>
 							</a>
 						</li>
@@ -67,22 +67,22 @@
 						</li>
 					</ul>
 					<ul class="slider-toggles">
-						<li><button class="btn-toggle" type="button"></button></li>
-						<li><button class="btn-toggle" type="button"></button></li>
-						<li><button class="btn-toggle" type="button"></button></li>
+						<li><button class="btn-toggle toggle1 checked-toogle" type="button"></button></li>
+						<li><button class="btn-toggle toggle2" type="button"></button></li>
+						<li><button class="btn-toggle toggle3" type="button"></button></li>
 					</ul>
 				</section>
 				<section class="offers">
 							<h2 class="visually-hidden">Промо-акции</h2>
-							<div class="offers-item">
-								<h3>Малинка даром!</h3>
-								<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-								<a href="" class="btn">Хочу варенье!</a>
+							<div class="offers-item offers-raspberry">
+								<p class="offers-title">Малинка даром!</p>
+								<p class="offers-desc">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+								<a href="#" class="btn btn-offers">Хочу варенье!</a>
 							</div>
-							<div class="offers-item">
-								<h3>Шоколадки даром!</h3>
-								<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-								<a href="" class="btn">Хочу шоколадки!</a>
+							<div class="offers-item offers-choco">
+								<p class="offers-title">Шоколадки даром!</p>
+								<p class="offers-desc">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+								<a href="#" class="btn btn-offers">Хочу шоколадки!</a>
 							</div>
 						</section>
 						<section class="features">
@@ -106,15 +106,17 @@
 							</ul>
 						</section>
 						<section class="blog-subscribe">
+							<h2 class="visually-hidden">Блог и форма подписки на рассылку</h2>
 							<article class="blog">
-								<h2>Новое в нашем блоге</h2>
-								<a href="">10 способов сервировки фруктовых щербетов к столу</a>
+								<h3>Новое в нашем блоге</h3>
+								<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
 							</article>
 							<div class="subscribe">
-								<form class="subscribe-form" action="#" method="get">
-									<label for="subscribe">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+								<p class="subscribe-txt">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+								<form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+									<label for="email" class="visually-hidden">Форма для электронной почты 
 									</label>
-									<input id="subscribe" type="email" placeholder="Электронная почта">
+									<input id="email" type="email" placeholder="Электронная почта" name="subscribe-email">
 									<button class="btn" type="submit">Отправить</button>
 								</form>
 							</div>
