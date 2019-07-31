@@ -30,9 +30,9 @@
 							<img src="http://placehold.it/17x17" alt="лупа для поиска по саиту" width="17" height="17" />
 							<span class="visually-hidden">Поиск</span>
 						</a>
-						<form action="https://echo.htmlacademy.ru" method="post">
-							<label for="site-search" class="visually-hidden">Поиск по сайту</label>
-							<input type="text" id="site-search" name="site-search" aria-label="Поиск по сайту" placeholder='Что ищем?'>
+						<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+							<label for="search-input" class="visually-hidden">Поиск по сайту</label>
+							<input type="text" id="search-input" name="site-search" placeholder='Что ищем?'>
 							<button type="submit" class="visually-hidden">Найти</button>
 						</form>
 					</li>
@@ -41,16 +41,20 @@
 							<img src="http://placehold.it/21x19" alt="изображение двери для входа на сайт" width="21" height="19" />
 							<span>Вход</span>
 						</a>
-						<form action="https://echo.htmlacademy.ru" method="post" class="login-form">
-							<label class="visually-hidden" for="email">Электронная почта</label>
-							<input class="user-email" id="email" type="email" placeholder="Электронная почта" name="email">
-							<label class="visually-hidden" for="user-password">Пароль</label>
-							<input class="user-password" id="user-password" type="password" name="password" placeholder="Пароль">
-							<div class="login-btn-help">
+						<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+							<div class="login-bind">
+								<label class="visually-hidden" for="email">Электронная почта</label>
+								<input class="user-email" id="email" type="email" placeholder="Электронная почта" name="email">
+							</div>
+							<div class="login-bind">
+								<label class="visually-hidden" for="user-password">Пароль</label>
+								<input class="user-password" id="user-password" type="password" name="password" placeholder="Пароль">
+							</div>
+							<div class="login-enter">
 								<button class="btn btn-login" type="submit">Войти</button>
 								<p class="login-help">				
-									<a href="#" class="restore">Забыли пароль?</a>
-									<a href="#" class="registration">Новая регистрация</a>
+									<a href="#" class="login-reg">Забыли пароль?</a>
+									<a href="#" class="login-reg">Новая регистрация</a>
 								</p>			
 							</div>
 						</form>
@@ -134,7 +138,7 @@
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
-					<fieldset class="fieldset-filter filter-sort">
+					<fieldset class="fieldset-filter filter-sort">						
 						<legend class="filter-title">Сортировка:</legend>
 						<select name="sort" id="sort" class="filter-assortment">
 							<option value="popular" class="filter-sort">по популярности</option>
@@ -144,33 +148,33 @@
 						</select>
 					</fieldset>
 					<fieldset class="fieldset-filter filter-price">
-						<legend class="filter-title">Цена: 100 руб. - 500 руб.</legend>
-						<label class="visually-hidden" for="price-range">Цена: 100 руб. - 500 руб.</label>
+						<legend class="visually-hidden">Цена</legend>
+						<label class="filter-title" for="price-range">Цена: 100 руб. - 500 руб.</label>
 					 	<input type="range" min="100" max="500" step="5" value="150" id="price-range" name="price-range" class="filter-cost">
 					</fieldset>
 					<fieldset class="fieldset-filter filter-fat">
 						<legend class="filter-title">Жирность</legend>
-					 	<input type="radio" name="fat-control" class="filter-fat" id="fat-control-0">
-					 	<label for="fat-control-0" class="filter-value">0%</label>
-					 	<input type="radio" name="fat-control" class="filter-fat" id="fat-control-up-to-10" checked>
-					 	<label for="fat-control-up-to-10" class="filter-value">до 10%</label>
-					 	<input type="radio" name="fat-control" class="filter-fat" id="fat-control-up-to-30">
-					 	<label for="fat-control-up-to-30" class="filter-value">до 30%</label>
-					 	<input type="radio" name="fat-control" class="filter-fat" id="fat-control-over-30">
-					 	<label for="fat-control-over-30" class="filter-value">выше 30%</label>
+					 	<input type="radio" name="fat-control" class="filter-fat" id="zero">
+					 	<label for="zero" class="filter-value">0%</label>
+					 	<input type="radio" name="fat-control" class="filter-fat" id="to-ten" checked>
+					 	<label for="to-ten" class="filter-value">до 10%</label>
+					 	<input type="radio" name="fat-control" class="filter-fat" id="to-thirty">
+					 	<label for="to-thirty" class="filter-value">до 30%</label>
+					 	<input type="radio" name="fat-control" class="filter-fat" id="over-thirty">
+					 	<label for="over-thirty" class="filter-value">выше 30%</label>
 					</fieldset>
-					<fieldset class="fieldset-filter">
-						<legend class="filter-title">Наполнители:</legend>						
-						<input type="checkbox" name="choco" class="filter-checkbox" id="choco-checkbox" checked>
-						<label for="choco-checkbox" class="filter-title">шоколадные</label>
-						<input type="checkbox" name="sugar" class="filter-checkbox" id="sugar-checkbox" checked>
-						<label for="sugar-checkbox" class="filter-title">сахарные присыпки</label>
-						<input type="checkbox" name="fruit" class="filter-checkbox" id="fruit-checkbox">
-						<label for="fruit-checkbox" class="filter-title">фрукты</label>
-						<input type="checkbox" name="sirup" class="filter-checkbox" id="sirup-checkbox">
-						<label for="sirup-checkbox" class="filter-title">сиропы</label>
-						<input type="checkbox" name="jam" class="filter-checkbox" id="jam-checkbox">
-						<label for="jam-checkbox" class="filter-title">джемы</label>
+					<fieldset class="fieldset-filter filter-filler">
+						<legend class="filter-title">Наполнители:</legend>					
+						<input type="checkbox" name="choco" class="filler" id="choco" checked>
+						<label for="choco" class="filler-title">шоколадные</label>
+						<input type="checkbox" name="sugar" class="filler" id="sugar" checked>
+						<label for="sugar" class="filler-title">сахарные присыпки</label>
+						<input type="checkbox" name="fruit" class="filler" id="fruit">
+						<label for="fruit" class="filler-title">фрукты</label>
+						<input type="checkbox" name="sirup" class="filler" id="sirup">
+						<label for="sirup" class="filler-title">сиропы</label>
+						<input type="checkbox" name="jam" class="filler" id="jam">
+						<label for="jam" class="filler-title">джемы</label>
 					</fieldset>
 					<button type="submit" class="btn btn-filter">Применить</button>
 				</form>
@@ -458,21 +462,6 @@
 					Сделано в <a href="http://placehold.it/110x40" class="copyright-link">HTML Academy</a> &#169; 2019
 				</p>				
 			</div>
-		</footer>
-		<section class="modal modal-callback display-none">
-			<h2 class="visually-hidden">Форма обратной связи</h2>
-			<p>Мы обязательно вам ответим!</p>
-			<form action="https://echo.htmlacademy.ru" class="callback-form" method="post">
-				<label for="callback-name" class="visually-hidden">Как вас зовут?</label>
-				<input type="text" placeholder="Как вас зовут?" aria-label="Напишите ваше имя" id="callback-name"  minlength="4" maxlength="20" size="25">					
-				<label for="callback-email" class="visually-hidden">Ваша почта для ответа?</label>
-				<input type="email" placeholder="Ваша почта для ответа?" aria-label="Почта для ответа" id="callback-email"  minlength="4" maxlength="20" size="25">
-				<label for="callback-msg" class="visually-hidden">Напишите что-нибудь</label>
-				<textarea placeholder="Напишите что-нибудь..." aria-label='Место для вашего сообщения' id="callback-msg" rows="5" cols="40"></textarea>					
-				<button class="btn btn-callback" type="submit">Отправить</button>
-			</form>
-			<button class="close-btn" type="button">Закрыть</button>
-		</section>
-		<div class="modal-overlay-none"></div>
+		</footer>		
   </body>
 </html>
