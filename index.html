@@ -28,9 +28,9 @@
 							<img src="http://placehold.it/17x17" alt="лупа для поиска по саиту" width="17" height="17" />
 							<span class="visually-hidden">Поиск</span>
 						</a>
-						<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-							<label for="search-input" class="visually-hidden">Поиск по сайту</label>
-							<input type="text" id="search-input" name="site-search" placeholder='Что ищем?'>
+						<form class="form search-form" action="https://echo.htmlacademy.ru" method="post">
+							<label class="label" for="search-input">Что ищем?</label>
+							<input class="input" type="text" id="search-input" name="site-search">
 							<button type="submit" class="visually-hidden">Найти</button>
 						</form>
 					</li>
@@ -39,14 +39,14 @@
 							<img src="http://placehold.it/21x19" alt="изображение двери для входа на сайт" width="21" height="19" />
 							<span>Вход</span>
 						</a>
-						<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+						<form class="form login-form" action="https://echo.htmlacademy.ru" method="post">
 							<div class="login-bind">
-								<label class="visually-hidden" for="email">Электронная почта</label>
-								<input class="user-email" id="email" type="email" placeholder="Электронная почта" name="email">
+								<label class="label" for="email">Электронная почта</label>
+								<input class="input" id="email" type="email" name="email">
 							</div>
 							<div class="login-bind">
-								<label class="visually-hidden" for="user-password">Пароль</label>
-								<input class="user-password" id="user-password" type="password" name="password" placeholder="Пароль">
+								<label class="label" for="password">Пароль</label>
+								<input class="input" id="password" type="password" name="password">
 							</div>
 							<div class="login-enter">
 								<button class="btn btn-login" type="submit">Войти</button>
@@ -203,10 +203,10 @@
 				</article>
 				<div class="subscribe">
 					<p class="subscribe-txt">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-					<form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-						<label for="email" class="visually-hidden">Форма для электронной почты 
+					<form class="form subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+						<label class="label bigger-font" for="feedback-email">Форма для электронной почты 
 						</label>
-						<input id="email" type="email" placeholder="Электронная почта" name="subscribe-email">
+						<input class="input" id="feedback-email" type="email" name="subscribe-email">
 						<button class="btn" type="submit">Отправить</button>
 					</form>
 				</div>
@@ -296,13 +296,13 @@
 		<section class="callback hidden">
 			<h2 class="visually-hidden">Форма обратной связи</h2>
 			<p>Мы обязательно вам ответим!</p>
-			<form class="callback-form" action="https://echo.htmlacademy.ru"method="post">
-				<label for="callback-name" class="visually-hidden">Как вас зовут?</label>
-				<input type="text" placeholder="Как вас зовут?" id="callback-name"  minlength="4" maxlength="20" size="25">					
-				<label for="callback-email" class="visually-hidden">Ваша почта для ответа?</label>
-				<input type="email" placeholder="Ваша почта для ответа?" id="callback-email"  minlength="4" maxlength="20" size="25">					
-				<label for="callback-msg" class="visually-hidden">Напишите что-нибудь</label>
-				<textarea placeholder="Напишите что-нибудь..." id="callback-msg" rows="5" cols="40"></textarea>					
+			<form class="form callback-form" action="https://echo.htmlacademy.ru"method="post">
+				<label class="label bigger-font" for="callback-name">Как вас зовут?</label>
+				<input class="input" type="text" id="callback-name"  minlength="4" maxlength="20" size="25">					
+				<label class="label cbigger-font" for="callback-email">Ваша почта для ответа?</label>
+				<input class="input" type="email" id="callback-email"  minlength="4" maxlength="20" size="25">					
+				<label class="label bigger-font" for="callback-msg">Напишите что-нибудь</label>
+				<textarea class="input" id="callback-msg" rows="5" cols="40"></textarea>					
 				<button class="btn btn-callback" type="submit">Отправить</button>
 			</form>
 			<button class="close-btn" type="button">Закрыть</button>
