@@ -30,9 +30,11 @@
 							<img src="http://placehold.it/17x17" alt="лупа для поиска по саиту" width="17" height="17" />
 							<span class="visually-hidden">Поиск</span>
 						</a>
-						<form class="form search-form" action="https://echo.htmlacademy.ru" method="post">
-							<label class="label" for="search-input">Что ищем?</label>
-							<input class="input" type="text" id="search-input" name="site-search">
+						<form class="form" action="https://echo.htmlacademy.ru" method="post">
+							<div class="search-form">
+								<label class="label" for="search-input">Что ищем?</label>
+								<input class="input" type="text" id="search-input" name="search">
+							</div>
 							<button type="submit" class="visually-hidden">Найти</button>
 						</form>
 					</li>
@@ -41,17 +43,17 @@
 							<img src="http://placehold.it/21x19" alt="изображение двери для входа на сайт" width="21" height="19" />
 							<span>Вход</span>
 						</a>
-						<form class="form login-form" action="https://echo.htmlacademy.ru" method="post">
-							<div class="login-bind">
+						<form class="form" action="https://echo.htmlacademy.ru" method="post">
+							<div class="login-form">
 								<label class="label" for="email">Электронная почта</label>
 								<input class="input" id="email" type="email" name="email">
 							</div>
-							<div class="login-bind">
+							<div class="login-form">
 								<label class="label" for="password">Пароль</label>
 								<input class="input" id="password" type="password" name="password">
 							</div>
 							<div class="login-enter">
-								<button class="btn btn-login" type="submit">Войти</button>
+								<button class="btn" type="submit">Войти</button>
 								<p class="login-help">				
 									<a href="#" class="login-reg">Забыли пароль?</a>
 									<a href="#" class="login-reg">Новая регистрация</a>
@@ -110,7 +112,7 @@
 							<tr>
 								<td colspan="5" class="cart-summ">
 									<p>Итого: 750 руб.</p>
-									<a class="btn btn-cart" href="#">Оформить заказ</a>
+									<a class="btn" href="#">Оформить заказ</a>
 								</td>
 							</tr>
 						</table>
@@ -138,46 +140,68 @@
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
-					<fieldset class="fieldset-filter filter-sort">						
+					<fieldset class="fieldset-filter">						
 						<legend class="visually-hidden">Сортировка</legend>
-						<label class="filter-title" for="sort">Сортировка:</label>
-						<select name="sort" id="sort" class="filter-assortment">
-							<option value="popular" class="filter-sort">по популярности</option>
-							<option value="low-cost" class="filter-sort">сначала недорогие</option>
-							<option value="high-cost" class="filter-sort">сначала дорогие</option>
-							<option value="fat" class="filter-sort">по жирности</option>
-						</select>
+						<div class="filter-sort">
+							<label class="filter-title" for="sort">Сортировка:</label>
+							<select name="sort" id="sort" class="filter-assortment">
+								<option value="popular" class="filter-sort">по популярности</option>
+								<option value="low-cost" class="filter-sort">сначала недорогие</option>
+								<option value="high-cost" class="filter-sort">сначала дорогие</option>
+								<option value="fat" class="filter-sort">по жирности</option>
+							</select>
+						</div>
 					</fieldset>
-					<fieldset class="fieldset-filter filter-price">
+					<fieldset class="fieldset-filter">
 						<legend class="visually-hidden">Цена</legend>
-						<label class="filter-title" for="price-range">Цена: 100 руб. - 500 руб.</label>
-					 	<input type="range" min="100" max="500" step="5" value="150" id="price-range" name="price-range" class="filter-cost">
+						<div class="filter-price">
+							<label class="filter-title" for="price-range">Цена: 100 руб. - 500 руб.</label>
+						 	<input type="range" min="100" max="500" step="5" value="150" id="price-range" name="price-range" class="filter-cost">
+						</div>
 					</fieldset>
-					<fieldset class="fieldset-filter filter-fat">
+					<fieldset class="fieldset-filter">
 						<legend class="filter-title">Жирность</legend>
-					 	<input type="radio" name="fat-control" class="filter-fat" id="zero">
-					 	<label for="zero" class="filter-value">0%</label>
-					 	<input type="radio" name="fat-control" class="filter-fat" id="to-ten" checked>
-					 	<label for="to-ten" class="filter-value">до 10%</label>
-					 	<input type="radio" name="fat-control" class="filter-fat" id="to-thirty">
-					 	<label for="to-thirty" class="filter-value">до 30%</label>
-					 	<input type="radio" name="fat-control" class="filter-fat" id="over-thirty">
-					 	<label for="over-thirty" class="filter-value">выше 30%</label>
+					 	<div class="filter-fat">
+						 	<input type="radio" name="fat-control" class="filter-fat" id="zero">
+						 	<label for="zero" class="filter-value">0%</label>
+					 	</div>
+					 	<div class="filter-fat">
+						 	<input type="radio" name="fat-control" class="filter-fat" id="to-ten" checked>
+						 	<label for="to-ten" class="filter-value">до 10%</label>
+						</div>
+					 	<div class="filter-fat">
+						 	<input type="radio" name="fat-control" class="filter-fat" id="to-thirty">
+						 	<label for="to-thirty" class="filter-value">до 30%</label>
+						</div>
+					 	<div class="filter-fat">
+						 	<input type="radio" name="fat-control" class="filter-fat" id="over-thirty">
+						 	<label for="over-thirty" class="filter-value">выше 30%</label>
+						</div>
 					</fieldset>
-					<fieldset class="fieldset-filter filter-filler">
-						<legend class="filter-title">Наполнители:</legend>					
-						<input type="checkbox" name="choco" class="filler" id="choco" checked>
-						<label for="choco" class="filler-title">шоколадные</label>
-						<input type="checkbox" name="sugar" class="filler" id="sugar" checked>
-						<label for="sugar" class="filler-title">сахарные присыпки</label>
-						<input type="checkbox" name="fruit" class="filler" id="fruit">
-						<label for="fruit" class="filler-title">фрукты</label>
-						<input type="checkbox" name="sirup" class="filler" id="sirup">
-						<label for="sirup" class="filler-title">сиропы</label>
-						<input type="checkbox" name="jam" class="filler" id="jam">
-						<label for="jam" class="filler-title">джемы</label>
+					<fieldset class="fieldset-filter">
+						<legend class="filter-title">Наполнители:</legend>	
+						<div class="filter-filler">
+							<input type="checkbox" name="choco" class="filler" id="choco" checked>
+							<label for="choco" class="filler-title">шоколадные</label>
+						</div>
+						<div class="filter-filler">
+							<input type="checkbox" name="sugar" class="filler" id="sugar" checked>
+							<label for="sugar" class="filler-title">сахарные присыпки</label>
+						</div>
+						<div class="filter-filler">
+							<input type="checkbox" name="fruit" class="filler" id="fruit">
+							<label for="fruit" class="filler-title">фрукты</label>
+						</div>
+						<div class="filter-filler">
+							<input type="checkbox" name="sirup" class="filler" id="sirup">
+							<label for="sirup" class="filler-title">сиропы</label>
+						</div>
+						<div class="filter-filler">
+							<input type="checkbox" name="jam" class="filler" id="jam">
+							<label for="jam" class="filler-title">джемы</label>
+						</div>
 					</fieldset>
-					<button type="submit" class="btn btn-filter">Применить</button>
+					<button type="submit" class="btn-filter">Применить</button>
 				</form>
 			</section>
 			<section class="goods">
@@ -196,7 +220,7 @@
 								<img src="http://placehold.it/26x31" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>								
-							<a href="#" class="btn btn-product">Быстрый просморт</a>
+							<a href="#" class="btn">Быстрый просморт</a>
 						</article>
 					</li>
 					<li class="product-item">
@@ -212,7 +236,7 @@
 								<img src="http://placehold.it/26x31" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>								
-							<a href="#" class="btn btn-product">Быстрый просморт</a>
+							<a href="#" class="btn">Быстрый просморт</a>
 						</article>
 					</li>
 					<li class="product-item">
@@ -228,7 +252,7 @@
 								<img src="http://placehold.it/26x31" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
-							<a href="#" class="btn btn-product">Быстрый просморт</a>
+							<a href="#" class="btn">Быстрый просморт</a>
 						</article>
 					</li>						
 					<li class="product-item">
@@ -244,7 +268,7 @@
 								<img src="http://placehold.it/26x31" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
-							<a href="#" class="btn btn-product">Быстрый просморт</a>
+							<a href="#" class="btn">Быстрый просморт</a>
 						</article>
 					</li>
 					<!-- конец первая строка товаров -->
@@ -262,7 +286,7 @@
 								<img src="http://placehold.it/26x31" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
-							<a href="#" class="btn btn-product">Быстрый просморт</a>
+							<a href="#" class="btn">Быстрый просморт</a>
 						</article>
 					</li>
 					<li class="product-item">
@@ -278,7 +302,7 @@
 								<img src="http://placehold.it/26x31" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
-							<a href="#" class="btn btn-product">Быстрый просморт</a>
+							<a href="#" class="btn">Быстрый просморт</a>
 						</article>
 					</li>
 					<li class="product-item">
@@ -294,7 +318,7 @@
 								<img src="http://placehold.it/26x31" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
-							<a href="#" class="btn btn-product">Быстрый просморт</a>
+							<a href="#" class="btn">Быстрый просморт</a>
 						</article>
 					</li>						
 					<li class="product-item">
@@ -310,7 +334,7 @@
 								<img src="http://placehold.it/26x31" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
-							<a href="#" class="btn btn-product">Быстрый просморт</a>
+							<a href="#" class="btn">Быстрый просморт</a>
 						</article>
 					</li>
 					<!-- конец вторая строка товаров -->
@@ -328,7 +352,7 @@
 								<img src="http://placehold.it/26x31" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
-							<a href="#" class="btn btn-product">Быстрый просморт</a>
+							<a href="#" class="btn">Быстрый просморт</a>
 						</article>
 					</li>
 					<li class="product-item">
@@ -344,7 +368,7 @@
 								<img src="http://placehold.it/26x31" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
-							<a href="#" class="btn btn-product">Быстрый просморт</a>
+							<a href="#" class="btn">Быстрый просморт</a>
 						</article>
 					</li>												
 					<li class="product-item">
@@ -360,7 +384,7 @@
 								<img src="http://placehold.it/26x31" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
-							<a href="#" class="btn btn-product">Быстрый просморт</a>
+							<a href="#" class="btn">Быстрый просморт</a>
 						</article>
 					</li>
 					<li class="product-item">
@@ -376,7 +400,7 @@
 								<img src="http://placehold.it/26x31" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
-							<a href="#" class="btn btn-product">Быстрый просморт</a>
+							<a href="#" class="btn">Быстрый просморт</a>
 						</article>
 					</li>
 					<!-- конец третья строка товаров -->

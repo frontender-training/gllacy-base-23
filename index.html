@@ -29,8 +29,10 @@
 							<span class="visually-hidden">Поиск</span>
 						</a>
 						<form class="form search-form" action="https://echo.htmlacademy.ru" method="post">
-							<label class="label" for="search-input">Что ищем?</label>
-							<input class="input" type="text" id="search-input" name="site-search">
+							<div class="search-form">
+								<label class="label" for="search-input">Что ищем?</label>
+								<input class="input" type="text" id="search-input" name="search">
+							</div>
 							<button type="submit" class="visually-hidden">Найти</button>
 						</form>
 					</li>
@@ -39,17 +41,17 @@
 							<img src="http://placehold.it/21x19" alt="изображение двери для входа на сайт" width="21" height="19" />
 							<span>Вход</span>
 						</a>
-						<form class="form login-form" action="https://echo.htmlacademy.ru" method="post">
-							<div class="login-bind">
+						<form class="form" action="https://echo.htmlacademy.ru" method="post">
+							<div class="login-form">
 								<label class="label" for="email">Электронная почта</label>
 								<input class="input" id="email" type="email" name="email">
 							</div>
-							<div class="login-bind">
+							<div class="login-form">
 								<label class="label" for="password">Пароль</label>
 								<input class="input" id="password" type="password" name="password">
 							</div>
 							<div class="login-enter">
-								<button class="btn btn-login" type="submit">Войти</button>
+								<button class="btn" type="submit">Войти</button>
 								<p class="login-help">				
 									<a href="#" class="login-reg">Забыли пароль?</a>
 									<a href="#" class="login-reg">Новая регистрация</a>
@@ -76,15 +78,15 @@
 				<ul class="slider-list">
 					<li class="slider-item">		
 						<p>Крем-брюле и пломбир с малиновым джемом</p>
-						<a class="btn slider-btn" href="#">Давайте оба!</a>
+						<a class="btn" href="#">Давайте оба!</a>
 					</li>
 					<li class="slider-item hidden">
 						<p>Шоколадный пломбир и лимонный сорбет</p>
-						<a class="btn slider-btn" href="#">Давайте оба!</a>
+						<a class="btn" href="#">Давайте оба!</a>
 					</li>
 					<li class="slider-item hidden">
 						<p>Пломбир с помадкой и клубничный щербет</p>
-						<a class="btn slider-btn" href="#">Давайте оба!</a>
+						<a class="btn" href="#">Давайте оба!</a>
 					</li>
 				</ul>
 				<ul class="slider-toggles">
@@ -98,12 +100,12 @@
 				<div class="offers-item offers-raspberry">
 					<p class="offers-title">Малинка даром!</p>
 					<p class="offers-desc">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-					<a href="#" class="btn btn-offers">Хочу варенье!</a>
+					<a href="#" class="btn">Хочу варенье!</a>
 				</div>
 				<div class="offers-item offers-choco">
 					<p class="offers-title">Шоколадки даром!</p>
 					<p class="offers-desc">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-					<a href="#" class="btn btn-offers">Хочу шоколадки!</a>
+					<a href="#" class="btn">Хочу шоколадки!</a>
 				</div>
 			</section>
 			<section class="goods">
@@ -122,7 +124,7 @@
 								<img src="http://placehold.it/26x31" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
-							<a href="#" class="btn btn-product">Быстрый просморт</a>
+							<a href="#" class="btn">Быстрый просморт</a>
 						</article>
 					</li>
 					<li class="product-item product-hit">
@@ -138,7 +140,7 @@
 								<img src="http://placehold.it/26x31" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
-							<a href="#" class="btn btn-product">Быстрый просморт</a>
+							<a href="#" class="btn">Быстрый просморт</a>
 						</article>
 					</li>
 					<li class="product-item product-hit">
@@ -154,7 +156,7 @@
 								<img src="http://placehold.it/26x31" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
-							<a href="#" class="btn btn-product">Быстрый просморт</a>
+							<a href="#" class="btn">Быстрый просморт</a>
 						</article>
 					</li>						
 					<li class="product-item product-hit">
@@ -170,7 +172,7 @@
 								<img src="http://placehold.it/26x31" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
-							<a href="#" class="btn btn-product">Быстрый просморт</a>
+							<a href="#" class="btn">Быстрый просморт</a>
 						</article>
 					</li>
 				</ul>
@@ -204,8 +206,7 @@
 				<div class="subscribe">
 					<p class="subscribe-txt">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 					<form class="form subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-						<label class="label bigger-font" for="feedback-email">Форма для электронной почты 
-						</label>
+						<label class="label bigger-font" for="feedback-email">Электронная почта</label>
 						<input class="input" id="feedback-email" type="email" name="subscribe-email">
 						<button class="btn" type="submit">Отправить</button>
 					</form>
@@ -225,7 +226,7 @@
 						<span class="contacts-map-address-bold">8 812 450-25-25</span>
 						(с 10 до 20 ежедневно)
 					</p>
-					<a class="btn btn-feedback" href="#">Форма обратной связи</a>
+					<a class="btn" href="#">Форма обратной связи</a>
 				</div>							
 			</section>
 		</main>
@@ -293,19 +294,26 @@
 			</div>
 		</footer>
 		<div class="overlay hidden"></div>
-		<section class="callback hidden">
+		<section class="feedback hidden">
 			<h2 class="visually-hidden">Форма обратной связи</h2>
 			<p>Мы обязательно вам ответим!</p>
-			<form class="form callback-form" action="https://echo.htmlacademy.ru"method="post">
-				<label class="label bigger-font" for="callback-name">Как вас зовут?</label>
-				<input class="input" type="text" id="callback-name"  minlength="4" maxlength="20" size="25">					
-				<label class="label cbigger-font" for="callback-email">Ваша почта для ответа?</label>
-				<input class="input" type="email" id="callback-email"  minlength="4" maxlength="20" size="25">					
-				<label class="label bigger-font" for="callback-msg">Напишите что-нибудь</label>
-				<textarea class="input" id="callback-msg" rows="5" cols="40"></textarea>					
-				<button class="btn btn-callback" type="submit">Отправить</button>
+			<form class="form" action="https://echo.htmlacademy.ru" method="post">
+				<div class="feedback-form">
+					<label class="label" for="feedback-name">Как вас зовут?</label>
+					<input class="input" type="text" id="feedback-name"  minlength="4" maxlength="20" size="25" name="feedback-name">
+				</div>
+				<div class="feedback-form">	
+					<label class="label bigger-font" for="feedback-email">Ваша почта для ответа?</label>
+					<input class="input" type="email" id="feedback-email"  minlength="4" maxlength="20" size="25" name="feedback-email">
+				</div>
+				<div class="feedback-form">			
+					<label class="label" for="feedback-msg">Напишите что-нибудь</label>
+					<textarea class="input" id="feedback-msg" rows="5" cols="40" name="feedback-txt"></textarea>
+				</div>				
+				<button class="btn" type="submit">Отправить</button>
 			</form>
 			<button class="close-btn" type="button">Закрыть</button>
 		</section>		
   </body>
 </html>
+
