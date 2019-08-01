@@ -29,9 +29,9 @@
 							<span class="visually-hidden">Поиск</span>
 						</a>
 						<form class="form search-form" action="https://echo.htmlacademy.ru" method="post">
-							<div class="search-form">
-								<label class="label" for="search-input">Что ищем?</label>
-								<input class="input" type="text" id="search-input" name="search">
+							<div class="field-layout">
+								<label class="field-label" for="search-input">Что ищем?</label>
+								<input class="field-input" type="text" id="search-input" name="search">
 							</div>
 							<button type="submit" class="visually-hidden">Найти</button>
 						</form>
@@ -42,13 +42,13 @@
 							<span>Вход</span>
 						</a>
 						<form class="form" action="https://echo.htmlacademy.ru" method="post">
-							<div class="login-form">
-								<label class="label" for="email">Электронная почта</label>
-								<input class="input" id="email" type="email" name="email">
+							<div class="field-layout">
+								<label class="field-label" for="email">Электронная почта</label>
+								<input class="field-input" id="email" type="email" name="email">
 							</div>
-							<div class="login-form">
-								<label class="label" for="password">Пароль</label>
-								<input class="input" id="password" type="password" name="password">
+							<div class="field-layout">
+								<label class="field-label" for="password">Пароль</label>
+								<input class="field-input" id="password" type="password" name="password">
 							</div>
 							<div class="login-enter">
 								<button class="btn" type="submit">Войти</button>
@@ -206,8 +206,10 @@
 				<div class="subscribe">
 					<p class="subscribe-txt">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 					<form class="form subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-						<label class="label bigger-font" for="feedback-email">Электронная почта</label>
-						<input class="input" id="feedback-email" type="email" name="subscribe-email">
+						<div class="field-layout">
+							<label class="field-label" for="feedback-email">Электронная почта</label>
+							<input class="field-input" id="feedback-email" type="email" name="subscribe-email">
+						</div>
 						<button class="btn" type="submit">Отправить</button>
 					</form>
 				</div>
@@ -299,16 +301,16 @@
 			<p>Мы обязательно вам ответим!</p>
 			<form class="form" action="https://echo.htmlacademy.ru" method="post">
 				<div class="feedback-form">
-					<label class="label" for="feedback-name">Как вас зовут?</label>
-					<input class="input" type="text" id="feedback-name"  minlength="4" maxlength="20" size="25" name="feedback-name">
+					<label class="field-label" for="feedback-name">Как вас зовут?</label>
+					<input class="field-input" type="text" id="feedback-name"  minlength="4" maxlength="20" size="25" name="feedback-name">
 				</div>
-				<div class="feedback-form">	
-					<label class="label bigger-font" for="feedback-email">Ваша почта для ответа?</label>
-					<input class="input" type="email" id="feedback-email"  minlength="4" maxlength="20" size="25" name="feedback-email">
+				<div class="field-layout">	
+					<label class="field-label" for="feedback-email">Ваша почта для ответа?</label>
+					<input class="field-input" type="email" id="feedback-email"  minlength="4" maxlength="20" size="25" name="feedback-email">
 				</div>
-				<div class="feedback-form">			
-					<label class="label" for="feedback-msg">Напишите что-нибудь</label>
-					<textarea class="input" id="feedback-msg" rows="5" cols="40" name="feedback-txt"></textarea>
+				<div class="field-layout">			
+					<label class="field-label" for="feedback-msg">Напишите что-нибудь</label>
+					<textarea class="field-input" id="feedback-msg" rows="5" cols="40" name="feedback-txt"></textarea>
 				</div>				
 				<button class="btn" type="submit">Отправить</button>
 			</form>
