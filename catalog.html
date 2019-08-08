@@ -144,7 +144,7 @@
 						<legend class="visually-hidden">Сортировка</legend>
 						<div class="filter-sort">
 							<label class="filter-title" for="sort">Сортировка:</label>
-							<select name="sort" id="sort" class="filter-assortment">
+							<select name="sort" id="sort" class="filter-assortment visually-hidden">
 								<option value="popular" class="filter-sort">по популярности</option>
 								<option value="low-cost" class="filter-sort">сначала недорогие</option>
 								<option value="high-cost" class="filter-sort">сначала дорогие</option>
@@ -162,42 +162,42 @@
 					<fieldset class="fieldset-filter">
 						<legend class="filter-title">Жирность</legend>
 					 	<div class="filter-layout">
-						 	<input type="radio" name="fat-control" class="filter-fat" id="zero">
+						 	<input type="radio" name="fat-control" class="filter-fat visually-hidden" id="zero">
 						 	<label for="zero" class="filter-value">0%</label>
 					 	</div>
 					 	<div class="filter-layout">
-						 	<input type="radio" name="fat-control" class="filter-fat" id="to-ten" checked>
+						 	<input type="radio" name="fat-control" class="filter-fat visually-hidden" id="to-ten" checked>
 						 	<label for="to-ten" class="filter-value">до 10%</label>
 						</div>
 					 	<div class="filter-layout">
-						 	<input type="radio" name="fat-control" class="filter-fat" id="to-thirty">
+						 	<input type="radio" name="fat-control" class="filter-fat visually-hidden" id="to-thirty">
 						 	<label for="to-thirty" class="filter-value">до 30%</label>
 						</div>
 					 	<div class="filter-layout">
-						 	<input type="radio" name="fat-control" class="filter-fat" id="over-thirty">
+						 	<input type="radio" name="fat-control" class="filter-fat visually-hidden" id="over-thirty">
 						 	<label for="over-thirty" class="filter-value">выше 30%</label>
 						</div>
 					</fieldset>
 					<fieldset class="fieldset-filter">
 						<legend class="filter-title">Наполнители:</legend>	
 						<div class="filter-layout">
-							<input type="checkbox" name="choco" class="filler" id="choco" checked>
+							<input type="checkbox" name="choco" class="filler visually-hidden" id="choco" checked>
 							<label for="choco" class="filler-title">шоколадные</label>
 						</div>
 						<div class="filter-layout">
-							<input type="checkbox" name="sugar" class="filler" id="sugar" checked>
+							<input type="checkbox" name="sugar" class="filler visually-hidden" id="sugar" checked>
 							<label for="sugar" class="filler-title">сахарные присыпки</label>
 						</div>
 						<div class="filter-layout">
-							<input type="checkbox" name="fruit" class="filler" id="fruit">
+							<input type="checkbox" name="fruit" class="filler visually-hidden" id="fruit">
 							<label for="fruit" class="filler-title">фрукты</label>
 						</div>
 						<div class="filter-layout">
-							<input type="checkbox" name="sirup" class="filler" id="sirup">
+							<input type="checkbox" name="sirup" class="filler visually-hidden" id="sirup">
 							<label for="sirup" class="filler-title">сиропы</label>
 						</div>
 						<div class="filter-layout">
-							<input type="checkbox" name="jam" class="filler" id="jam">
+							<input type="checkbox" name="jam" class="filler visually-hidden" id="jam">
 							<label for="jam" class="filler-title">джемы</label>
 						</div>
 					</fieldset>
@@ -218,7 +218,7 @@
 							<img src="img/product-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 							<p class="product-price">
 								310
-								<img src="img/ruble.svg" width="26" height="31" alt="рублей">
+								<img src="img/ruble.svg" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
 							<a href="#" class="btn">Быстрый просморт</a>
@@ -234,7 +234,7 @@
 							<img src="img/product-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
 							<p class="product-price">
 								380
-								<img src="img/ruble.svg" width="26" height="31" alt="рублей">
+								<img src="img/ruble.svg" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
 							<a href="#" class="btn">Быстрый просморт</a>
@@ -250,7 +250,7 @@
 							<img src="img/product-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 							<p class="product-price">
 								355
-								<img src="img/ruble.svg" width="26" height="31" alt="рублей">
+								<img src="img/ruble.svg" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
 							<a href="#" class="btn">Быстрый просморт</a>
@@ -266,7 +266,7 @@
 							<img src="img/product-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 							<p class="product-price">
 								415
-								<img src="img/ruble.svg" width="26" height="31" alt="рублей">
+								<img src="img/ruble.svg" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
 							<a href="#" class="btn">Быстрый просморт</a>
@@ -284,7 +284,7 @@
 							<img src="img/product-5.png" width="267" height="267" alt="Сливочное с брусничным джемом">
 							<p class="product-price">
 								325
-								<img src="img/ruble.svg" width="26" height="31" alt="рублей">
+								<img src="img/ruble.svg" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
 							<a href="#" class="btn">Быстрый просморт</a>
@@ -300,7 +300,7 @@
 							<img src="img/product-6.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
 							<p class="product-price">
 								410
-								<img src="img/ruble.svg" width="26" height="31" alt="рублей">
+								<img src="img/ruble.svg" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
 							<a href="#" class="btn">Быстрый просморт</a>
@@ -316,7 +316,7 @@
 							<img src="img/product-7.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
 							<p class="product-price">
 								375
-								<img src="img/ruble.svg" width="26" height="31" alt="рублей">
+								<img src="img/ruble.svg" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
 							<a href="#" class="btn">Быстрый просморт</a>
@@ -332,7 +332,7 @@
 							<img src="img/product-8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
 							<p class="product-price">
 								320
-								<img src="img/ruble.svg" width="26" height="31" alt="рублей">
+								<img src="img/ruble.svg" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
 							<a href="#" class="btn">Быстрый просморт</a>
@@ -350,7 +350,7 @@
 							<img src="img/product-9.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
 							<p class="product-price">
 								440
-								<img src="img/ruble.svg" width="26" height="31" alt="рублей">
+								<img src="img/ruble.svg" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
 							<a href="#" class="btn">Быстрый просморт</a>
@@ -366,7 +366,7 @@
 							<img src="img/product-10.png" width="267" height="267" alt="Сливочное с ментоловым сиропом">
 							<p class="product-price">
 								435
-								<img src="img/ruble.svg" width="26" height="31" alt="рублей">
+								<img src="img/ruble.svg" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
 							<a href="#" class="btn">Быстрый просморт</a>
@@ -382,7 +382,7 @@
 							<img src="img/product-11.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
 							<p class="product-price">
 								355
-								<img src="img/ruble.svg" width="26" height="31" alt="рублей">
+								<img src="img/ruble.svg" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
 							<a href="#" class="btn">Быстрый просморт</a>
@@ -398,7 +398,7 @@
 							<img src="img/product-12.png" width="267" height="267" alt="Сливочное с мятным сиропом">
 							<p class="goods-price">
 								420
-								<img src="img/ruble.svg" width="26" height="31" alt="рублей">
+								<img src="img/ruble.svg" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
 							<a href="#" class="btn">Быстрый просморт</a>
@@ -407,19 +407,17 @@
 					<!-- конец третья строка товаров -->
 				</ul>
 			<ul class="pagination-list">
-				<li class="pagination-item visually-hidden">
-					<a href="catalog.html">
-						<img src="img/icon-right-small.svg" alt="Назад на 1 страницу" width="8" height="12">
+				<li class="pagination-item pagination-item-back">
+					<a href="catalog.html">						
 						<span class="visually-hidden">Назад</span>
 					</a>
 				</li>
 				<li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-				<li class="pagination-item"><a href="catalog.html">2</a></li>
-				<li class="pagination-item"><a href="catalog.html">3</a></li>
-				<li class="pagination-item"><a href="catalog.html">4</a></li>
-				<li class="pagination-item">
+				<li class="pagination-item"><a href="#">2</a></li>
+				<li class="pagination-item"><a href="#">3</a></li>
+				<li class="pagination-item"><a href="#">4</a></li>
+				<li class="pagination-item pagination-item-fwd">
 					<a href="catalog.html">
-						<img src="img/icon-right-small.svg" alt="Вперед на 1 страницу" width="8" height="12">
 						<span class="visually-hidden">Вперед</span>
 					</a>
 				</li>
