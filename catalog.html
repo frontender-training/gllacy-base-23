@@ -62,7 +62,7 @@
 						</form>
 					</li>
 					<li class="user-navigation-item">
-						<a href="catalog-item.html">
+						<a href="cart.html">
 							<img src="img/basket-red.svg" alt="Корзина" width="21" height="20">
 							<span>2 товара</span>
 						</a>
@@ -77,7 +77,7 @@
 									</a>
 								</td>
 								<td class="cart-desc">
-									<a href="#">
+									<a href="catalog-item.html">
 										Пломбир с апельсиновым джемом
 									</a>
 								</td>
@@ -144,7 +144,7 @@
 						<legend class="visually-hidden">Сортировка</legend>
 						<div class="filter-sort">
 							<label class="filter-title" for="sort">Сортировка:</label>
-							<select name="sort" id="sort" class="filter-assortment visually-hidden">
+							<select name="sort" id="sort" class="filter-assortment">
 								<option value="popular" class="filter-sort">по популярности</option>
 								<option value="low-cost" class="filter-sort">сначала недорогие</option>
 								<option value="high-cost" class="filter-sort">сначала дорогие</option>
@@ -162,46 +162,46 @@
 					<fieldset class="fieldset-filter">
 						<legend class="filter-title">Жирность</legend>
 					 	<div class="filter-layout">
-						 	<input type="radio" name="fat-control" class="filter-fat visually-hidden" id="zero">
-						 	<label for="zero" class="filter-value">0%</label>
+						 	<input type="radio" name="fat-control" class="filter-fat display-none" id="zero">
+						 	<label for="zero" class="filter-value" tabindex="0">0%</label>
 					 	</div>
 					 	<div class="filter-layout">
-						 	<input type="radio" name="fat-control" class="filter-fat visually-hidden" id="to-ten" checked>
-						 	<label for="to-ten" class="filter-value">до 10%</label>
+						 	<input type="radio" name="fat-control" class="filter-fat display-none" id="to-ten" checked>
+						 	<label for="to-ten" class="filter-value" tabindex="0">до 10%</label>
 						</div>
 					 	<div class="filter-layout">
-						 	<input type="radio" name="fat-control" class="filter-fat visually-hidden" id="to-thirty">
-						 	<label for="to-thirty" class="filter-value">до 30%</label>
+						 	<input type="radio" name="fat-control" class="filter-fat display-none" id="to-thirty">
+						 	<label for="to-thirty" class="filter-value" tabindex="0">до 30%</label>
 						</div>
 					 	<div class="filter-layout">
-						 	<input type="radio" name="fat-control" class="filter-fat visually-hidden" id="over-thirty">
-						 	<label for="over-thirty" class="filter-value">выше 30%</label>
+						 	<input type="radio" name="fat-control" class="filter-fat display-none" id="over-thirty">
+						 	<label for="over-thirty" class="filter-value" tabindex="0">выше 30%</label>
 						</div>
 					</fieldset>
 					<fieldset class="fieldset-filter">
 						<legend class="filter-title">Наполнители:</legend>	
 						<div class="filter-layout">
-							<input type="checkbox" name="choco" class="filler visually-hidden" id="choco" checked>
-							<label for="choco" class="filler-title">шоколадные</label>
+							<input type="checkbox" name="choco" class="filler display-none" id="choco" checked>
+							<label for="choco" class="filler-title" tabindex="0">шоколадные</label>
 						</div>
 						<div class="filter-layout">
-							<input type="checkbox" name="sugar" class="filler visually-hidden" id="sugar" checked>
-							<label for="sugar" class="filler-title">сахарные присыпки</label>
+							<input type="checkbox" name="sugar" class="filler display-none" id="sugar" checked>
+							<label for="sugar" class="filler-title" tabindex="0">сахарные присыпки</label>
 						</div>
 						<div class="filter-layout">
-							<input type="checkbox" name="fruit" class="filler visually-hidden" id="fruit">
-							<label for="fruit" class="filler-title">фрукты</label>
+							<input type="checkbox" name="fruit" class="filler display-none" id="fruit">
+							<label for="fruit" class="filler-title" tabindex="0">фрукты</label>
 						</div>
 						<div class="filter-layout">
-							<input type="checkbox" name="sirup" class="filler visually-hidden" id="sirup">
-							<label for="sirup" class="filler-title">сиропы</label>
+							<input type="checkbox" name="sirup" class="filler display-none" id="sirup">
+							<label for="sirup" class="filler-title" tabindex="0">сиропы</label>
 						</div>
 						<div class="filter-layout">
-							<input type="checkbox" name="jam" class="filler visually-hidden" id="jam">
-							<label for="jam" class="filler-title">джемы</label>
+							<input type="checkbox" name="jam" class="filler display-none" id="jam">
+							<label for="jam" class="filler-title" tabindex="0">джемы</label>
 						</div>
 					</fieldset>
-					<button type="submit" class="btn-filter">Применить</button>
+					<button type="submit" class="btn-filter" tabindex="0">Применить</button>
 				</form>
 			</section>
 			<section class="goods">
@@ -408,7 +408,7 @@
 				</ul>
 			<ul class="pagination-list">
 				<li class="pagination-item pagination-item-back">
-					<a href="catalog.html">						
+					<a href="#">						
 						<span class="visually-hidden">Назад</span>
 					</a>
 				</li>
@@ -417,7 +417,7 @@
 				<li class="pagination-item"><a href="#">3</a></li>
 				<li class="pagination-item"><a href="#">4</a></li>
 				<li class="pagination-item pagination-item-fwd">
-					<a href="catalog.html">
+					<a href="#">
 						<span class="visually-hidden">Вперед</span>
 					</a>
 				</li>
