@@ -46,6 +46,10 @@ a {
 	margin: auto;
 	padding: 0 27px;
 }
+
+.bold-text {
+	font-weight: 700;
+}
 /*END of Styles for Overall Site*/
 
 /*General Header*/
@@ -86,7 +90,7 @@ a {
 	background-color: rgb(247, 246, 243);
 }
 
-.dropdown-menu-item a:hover ,
+.dropdown-menu-item a:hover,
 .dropdown-menu-item a:focus {
 	background-color: rgb(251, 222, 215);
 }
@@ -254,9 +258,4 @@ a.dropdown-link-current {
 .copyright-link:focus,
 .copyright-link:active {	
 	color: rgb(255, 188, 158);
-}
-
-/*Unusual Styles*/
-.bold-text {
-	font-weight: 700;
 }
