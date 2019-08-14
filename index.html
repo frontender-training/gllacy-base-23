@@ -12,23 +12,27 @@
 			<img class="main-header-logo" src="img/logo.svg" alt="Магазин мороженного 'Глейси'" width="154" height="64">
 			<nav class="main-navigation">
 				<ul class="main-navigation-list">
-					<li>
-						<a href="catalog.html">Каталог</a>
-						<ul class="dropdown-menu">
-							<li class="new-items"><a href="#">Новинки</a></li>
-							<li><a href="catalog.html">Сливочное</a></li>
-							<li><a href="#">Щербеты</a></li>
-							<li><a href="#">Фруктовый лед</a></li>
-							<li><a href="#">Мелорин</a></li>
+					<li class="main-navigation-item">
+						<a class="main-navigation-link" href="catalog.html">Каталог</a>
+						<ul class="dropdown-menu-list">
+							<li class="dropdown-menu-item"><a class="new-items" href="#">Новинки</a></li>
+							<li class="dropdown-menu-item"><a href="catalog.html">Сливочное</a></li>
+							<li class="dropdown-menu-item"><a href="#">Щербеты</a></li>
+							<li class="dropdown-menu-item"><a href="#">Фруктовый лед</a></li>
+							<li class="dropdown-menu-item"><a href="#">Мелорин</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Доставка и оплата</a></li>
-					<li><a href="#">О компании</a></li>
+					<li class="main-navigation-item">
+						<a class="main-navigation-link" href="#">Доставка и оплата</a>
+					</li>
+					<li class="main-navigation-item">
+						<a class="main-navigation-link" href="#">О компании</a>
+					</li>
 				</ul>
-				<ul class="user-navigation">
+				<ul class="user-navigation-list">
 					<li class="user-navigation-item">
-						<a class="btn-search">
-							<img src="img/loupe.svg" alt="Поиск по саиту" width="17" height="17" />
+						<a class="user-navigation-link btn-search">
+							<img src="img/loupe.svg" alt="Поиск по саиту" width="17" height="17">
 							<span class="visually-hidden">Поиск</span>
 						</a>
 						<form class="form search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -36,12 +40,12 @@
 								<label class="field-label" for="search-input">Что ищем?</label>
 								<input class="field-input" type="text" id="search-input" name="search">
 							</div>
-							<button type="submit" class="visually-hidden">Найти</button>
+							<button class="visually-hidden" type="submit">Найти</button>
 						</form>
 					</li>
 					<li class="user-navigation-item">
-						<a href="login.html">
-							<img src="img/entrance.svg" alt="Вход на сайт" width="21" height="19" />
+						<a class="user-navigation-link" href="login.html">
+							<img src="img/entrance.svg" alt="Вход на сайт" width="21" height="19">
 							<span>Вход</span>
 						</a>
 						<form class="form" action="https://echo.htmlacademy.ru" method="post">
@@ -63,8 +67,8 @@
 						</form>
 					</li>
 					<li class="user-navigation-item">
-						<a href="#">
-							<img src="img/basket.svg" alt="Корзина пуста" width="21" height="20" />
+						<a class="user-navigation-link" href="#">
+							<img src="img/basket.svg" alt="Корзина пуста" width="21" height="20">
 							<span>Пусто</span>
 						</a>
 					</li>
@@ -103,7 +107,7 @@
 				<div class="offers-item offers-raspberry">
 					<p class="offers-title">Малинка даром!</p>
 					<p class="offers-desc">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-					<a href="#" class="btn">Хочу варенье!</a>
+					<a class="btn" href="#">Хочу варенье!</a>
 				</div>
 				<div class="offers-item offers-choco">
 					<p class="offers-title">Шоколадки даром!</p>
@@ -117,7 +121,7 @@
 					<li class="product-item product-hit">
 						<article class="product">
 							<h3 class="product-title">
-								<a href="catalog-item.html">
+								<a class="product-link" href="catalog-item.html">
 									Сливочное с апельсиновым джемом и цитрусовой стружкой
 								</a>
 							</h3>
@@ -133,7 +137,7 @@
 					<li class="product-item product-hit">
 						<article class="product">
 							<h3 class="product-title">
-								<a href="catalog-item.html">
+								<a class="product-link" href="catalog-item.html">
 									Сливочно-кофейное с кусочками шоколада
 								</a>
 							</h3>
@@ -149,7 +153,7 @@
 					<li class="product-item product-hit">
 						<article class="product">
 							<h3 class="product-title">
-								<a href="catalog-item.html">
+								<a class="product-link" href="catalog-item.html">
 									Сливочно-клубничное с присыпкой из белого шоколада
 								</a>
 							</h3>
@@ -165,7 +169,7 @@
 					<li class="product-item product-hit">
 						<article class="product">
 							<h3 class="product-title">
-								<a href="catalog-item.html">
+								<a class="product-link" href="catalog-item.html">
 									Сливочное крем-брюле с карамельной подливкой
 								</a>
 							</h3>
@@ -182,20 +186,20 @@
 			</section>
 			<section class="features">
 				<h2 class="visually-hidden">Преимущества магазина мороженного Глэйси</h2>
-				<p>
+				<p class="features-desc">
 					Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
 				</p>
-				<ul class="features-items">
-					<li>
+				<ul class="features-list">
+					<li class="features-item">
 						Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
 					</li>
-					<li>
+					<li class="features-item">
 						Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
 					</li>
-					<li>
+					<li class="features-item">
 						Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
 					</li>
-					<li>
+					<li class="features-item">
 						Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
 					</li>
 				</ul>
@@ -203,8 +207,8 @@
 			<section class="blog-subscribe">
 				<h2 class="visually-hidden">Блог и форма подписки на рассылку</h2>
 				<article class="blog">
-					<h3>Новое в нашем блоге</h3>
-					<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+					<h3 class="blog-title">Новое в нашем блоге</h3>
+					<a class="blog-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
 				</article>
 				<div class="subscribe">
 					<p class="subscribe-txt">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
@@ -240,50 +244,50 @@
 				<li>
 					<a href="http://twitter.com">
 						<span class="visually-hidden">Твиттер</span>
-						<img class="social-icon" src="img/twitter.svg" alt="Twitter" width="37" height="37" />
+						<img class="social-icon" src="img/twitter.svg" alt="Twitter" width="37" height="37">
 					</a>
 				</li>
 				<li>
 					<a href="http://instagram.com">
 						<span class="visually-hidden">Инстаграм</span>
-						<img src="img/instagram.svg" alt="Instagram" class="social-icon" width="37" height="37" />
+						<img src="img/instagram.svg" alt="Instagram" class="social-icon" width="37" height="37">
 					</a>
 				</li>
 				<li>
 					<a href="http://facebook.com">
 						<span class="visually-hidden">Фейсбук</span>
-						<img class="social-icon" src="img/fb.svg" alt="Facebook" width="37" height="37" />
+						<img class="social-icon" src="img/fb.svg" alt="Facebook" width="37" height="37">
 					</a>
 				</li>
 				<li>
 					<a href="http://vk.com">
 						<span class="visually-hidden">Вконтакте</span>
-						<img class="social-icon" src="img/vk.svg" alt="vk" width="37" height="37" />
+						<img class="social-icon" src="img/vk.svg" alt="vk" width="37" height="37">
 					</a>
 				</li>
 			</ul>
 			<div class="footer-menu">
 				<ul class="footer-menu-list">
-					<li>
-						<a href="#">
+					<li class="footer-menu-item">
+						<a class="footer-menu-link footer-menu-supplier" href="#">
 							<img src="img/heart.svg" alt="Для поставщиков" width="15" height="13">
 							Для поставщиков
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a class="footer-menu-link" href="#">
 							О производстве
 						</a>
 					</li>
 				</ul>
 				<ul class="footer-menu-list">
 					<li>
-						<a href="#">
+						<a class="footer-menu-link" href="#">
 							Наши документы
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a class="footer-menu-link" href="#">
 							Экологические стандарты
 						</a>
 					</li>

@@ -22,6 +22,10 @@ body {
 	background-color: rgb(132, 157, 143);
 }
 
+a {
+	color: rgb(255, 255, 255);
+}
+/*Styles for Overall Site*/
 .visually-hidden {
 	position: absolute;
 
@@ -33,7 +37,6 @@ body {
 	
 	white-space: nowrap;
 
-	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
@@ -44,152 +47,186 @@ body {
 	padding:  0 27px;
 }
 
-a {
-	color: rgb(255, 255, 255);
-	text-decoration: underline rgba(255, 255, 255, 0.2);
+.form {
+	background-color: rgb(248, 247, 244);
+	color: rgb(153, 153, 153);
 }
+/*END of Styles for Overall Site*/
 
-a:hover,
-a:active {
-	color: rgb(255, 188, 158);
-	text-decoration: underline rgba(249, 205, 196, 0.3);
-}
-
-.main-navigation-list a {
+/*General Header*/
+.main-navigation-list {
 	font-size: 16px;
 	line-height: 18px;
+	list-style: none;
 }
 
-.user-navigation-item a {
-	font-weight: 500;
-	text-decoration: none;
+.main-navigation-link {
+	text-decoration: underline;
+	text-decoration-color: rgba(255, 255, 255, 0);
 }
 
-.main-navigation-list a:hover,
-.user-navigation-item a:hover {
+.main-navigation-link:hover,
+.main-navigation-link:focus {
 	color: rgb(50, 50, 50);
 	text-decoration: none;
 
 	background-color: rgb(247, 246, 243);
 }
 
-.main-navigation-list a:active,
-.user-navigation-item a:active {
-	color: rgb(50, 50, 50);
+.main-navigation-link:active {
+	/*box-shadow inner*/
 }
 
-a.active,
-a.active:hover {
-	color: rgb(255, 255, 255);
+.main-navigation-link-current {
 	text-decoration: none;
 
 	background-color: rgb(208, 112, 88);
 }
 
-a.active:active {
-	background-color: rgb(246, 181, 165);
-}
-
-.dropdown-menu,
-.user-navigation-item,
-.schedule {
+.dropdown-menu-list {
 	font-size: 14px;
 	line-height: 16px;
-}
+	font-weight: 400;
 
-.dropdown-menu a:hover {
-	display: block;
+	list-style: none;
 
-	background-color: rgb(251, 222, 215);
-}
-
-.form,
-.dropdown-menu,
-.subscribe,
-.contacts-map-addres,
-.feedback,
-.cart {
 	background-color: rgb(247, 246, 243);
 }
 
-.dropdown-menu a {
-	font-weight: 400;
+.dropdown-menu-item a {
 	color: rgb(50, 50, 50);
 	text-decoration: none;
 }
 
-.new-items a {
+.dropdown-menu-item:hover ,
+.dropdown-menu-item a:focus {
+	background-color: rgb(251, 222, 215);
+}
+
+.dropdown-menu-item:active,
+.dropdown-menu-item a:active {
+	background-color: rgb(246, 181, 165);
+}
+
+.new-items {
 	font-weight: 700;
 }
+
+.dropdown-menu-current {
+	background-color: rgb(208, 112, 88);	
+}
+
+.user-navigation-list {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+	list-style: none;
+}
+
+.user-navigation-link {
+	text-decoration: none;
+
+	background-color: rgba(255, 255, 255, .2);
+}
+
+.user-navigation-link:hover,
+.user-navigation-link:focus {
+	color: rgb(50, 50, 50);
+
+	background-color: rgb(247, 246, 243);
+}
+/*END of General Header*/
 
 .breadcrumbs-list {
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 400;
+	list-style: none;
 }
 
-.offers-title,
+.breadcrumbs-link {
+	text-decoration: underline rgba(255, 255, 255, .2);
+}
+
+.breadcrumbs-link:hover,
+.breadcrumbs-link:focus,
+.breadcrumbs-link:active {
+	color: rgba(255, 188, 158, 1);
+	text-decoration: underline rgba(255, 188, 158, .3);
+}
+
 .catalog-title {
 	font-size: 35px;
 	line-height: 41px;
 }
 
-.offers-desc {
-	font-size: 18px;
-	line-height: 22px;
+/*Goods*/
+.products-list {
+	list-style: none;
 }
 
-.product-title {
+.product-link {
 	font-size: 16px;
+	line-height: 22px;
 	font-weight: 500;
+
+	text-decoration: underline rgba(255, 255, 255, .2);
+}
+
+.product-link:hover,
+.product-link:focus,
+.product-link:active {
+	color: rgba(255, 188, 158, 1);
+	text-decoration: underline rgba(255, 188, 158, .3);
 }
 
 .product-price {
 	font-size: 45px;
 	line-height: 45px;
+	font-weight: 700;
 }
 
 .product-price span {
 	font-size: 30px;
 }
+/*END of Goods*/
 
 .features {
 	color: rgb(50, 50, 50);
 }
 
-.features p {
+.features-desc {
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 500;
 }
 
-.features-items {
+.features-list {
+	list-style: none;
+}
+
+.features-item {
+	font-size: 16px;
+	line-height: 22px;
 	font-weight: 400;
 }
 
 .blog {
 	background-color: rgb(255, 255, 255);
-	background-image: url(../img/bg-strawberry.png);
-	background-repeat: no-repeat;
 }
 
-.blog h3 {
-	font-weight: 400;
+.blog-title {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
 	color: rgb(50, 50, 50);
 }
 
-.blog a {
+.blog-link {
 	font-size: 24px;
 	line-height: 30px;
-	text-decoration: underline;
 	color: rgb(50, 50, 50);
-}
-
-.subscribe {
-	padding: 5px;
-	
-	background-image: url(../img/bg-post.svg);
-	background-repeat: no-repeat;
+	text-decoration: underline;
 }
 
 .subscribe-txt {
@@ -197,19 +234,45 @@ a.active:active {
 	color: rgb(90, 90, 90);
 	background-color: rgb(248, 247, 244);
 }
+.footer-social {
+	list-style: none;
+}
 
-.footer-menu {
+.footer-menu-list {
+	list-style: none;
+}
+
+.footer-menu-link {
 	font-size: 13px;
 	line-height: 18px;
 	font-weight: 400;
+	text-decoration: underline rgba(255, 255, 255, .2);
 }
 
-.footer-supplier {
+.footer-menu-link:hover,
+.footer-menu-link:focus,
+.footer-menu-link:active {
+	color: rgba(255, 188, 158, 1);
+	text-decoration: underline rgba(255, 188, 158, .3);
+}
+
+.footer-menu-supplier {
 	font-weight: 700;
 }
 
-.footer-copyright {
+.copyright-txt {
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: 400;
+}
+
+.copyright-link {
+	text-decoration: underline rgba(255, 255, 255, .2);
+}
+
+.copyright-link:hover,
+.copyright-link:focus,
+.copyright-link:active {	
+	color: rgba(255, 188, 158, 1);
+	text-decoration: underline rgba(255, 188, 158, .3);
 }
