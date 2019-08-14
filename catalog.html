@@ -34,7 +34,7 @@
 			</nav>
 			<ul class="user-navigation">
 				<li class="user-navigation-item">
-					<a class="user-navigation-link btn-search">
+					<a class="user-navigation-link btn-search" href="search.html">
 						<img src="img/loupe.svg" alt="Поиск по саиту" width="17" height="17">
 						<span class="visually-hidden">Поиск</span>
 					</a>
@@ -70,10 +70,61 @@
 					</form>
 				</li>
 				<li class="user-navigation-item">
-					<a class="user-navigation-link" href="#">
-						<img src="img/basket.svg" alt="Корзина пуста" width="21" height="20">
-						<span>Пусто</span>
+					<a class="user-navigation-link" href="basket.html">
+						<img src="img/basket-red.svg" alt="Корзина" width="21" height="20">
+						<span>2 товара</span>
 					</a>
+					<table class="cart">
+						<tr>
+							<td class="cart-del">
+								<button class="cart-del">Удалить товар из корзины</button>
+							</td>
+							<td class="cart-img">
+								<a href="catalog-item.html">
+									<img src="img/product-1-thumbnail.png" alt="Пломбир с апельсиновым джемом" width="33" height="33">
+								</a>
+							</td>
+							<td class="cart-desc">
+								<a href="catalog-item.html">
+									Пломбир с апельсиновым джемом
+								</a>
+							</td>
+							<td class="cart-cost">
+								<span class="cart-prod-quantity">1,5 кг</span>
+								<span>х</span>
+								<span class="cart-prod-price">200 руб.</span>
+							</td>
+							<td class="cart-cost">300 руб.</td>
+						</tr>
+						<tr>
+							<td class="cart-del">
+								<button class="cart-del">Удалить товар из корзины</button>
+							</td>
+							<td class="cart-img">
+								<a href="catalog-item.html">
+									<img src="img/product-3-thumbnail.png" alt="Клубничный пломбир с присыпкой  из белого шоколада" width="33" height="33">									
+								</a>
+							</td>
+							<td class="cart-desc">
+								<a href="catalog-item.html">
+									Клубничный пломбир с присыпкой  из белого шоколада
+								</a>
+							</td>
+							<td class="cart-cost">
+								<span class="cart-prod-quantity">1,5 кг</span>
+								<span>х</span>
+								<span class="cart-prod-price">300 руб.</span>
+							</td>
+							<td class="cart-cost">450 руб.</td>
+						</tr>
+						<tr>
+							<td colspan="5" class="cart-summ">
+							<td class="cart-summ" colspan="5">
+								<p>Итого: 750 руб.</p>
+								<a class="btn" href="#">Оформить заказ</a>
+							</td>
+						</tr>
+					</table>
 				</li>
 			</ul>
 		</header>
