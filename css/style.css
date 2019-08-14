@@ -16,7 +16,7 @@ body {
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 22px;
-	font-weight: 700;
+	font-weight: 400;
 	color: rgb(255, 255, 255);
 
 	background-color: rgb(132, 157, 143);
@@ -24,6 +24,7 @@ body {
 
 a {
 	color: rgb(255, 255, 255);
+	text-decoration: none;
 }
 /*Styles for Overall Site*/
 .visually-hidden {
@@ -44,31 +45,24 @@ a {
 .container {
 	width: 1146px;
 	margin: auto;
-	padding:  0 27px;
-}
-
-.form {
-	background-color: rgb(248, 247, 244);
-	color: rgb(153, 153, 153);
+	padding: 0 27px;
 }
 /*END of Styles for Overall Site*/
 
 /*General Header*/
 .main-navigation-list {
-	font-size: 16px;
-	line-height: 18px;
 	list-style: none;
 }
 
 .main-navigation-link {
-	text-decoration: underline;
-	text-decoration-color: rgba(255, 255, 255, 0);
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
 }
 
 .main-navigation-link:hover,
 .main-navigation-link:focus {
 	color: rgb(50, 50, 50);
-	text-decoration: none;
 
 	background-color: rgb(247, 246, 243);
 }
@@ -78,53 +72,47 @@ a {
 }
 
 .main-navigation-link-current {
-	text-decoration: none;
-
 	background-color: rgb(208, 112, 88);
 }
 
 .dropdown-menu-list {
-	font-size: 14px;
-	line-height: 16px;
-	font-weight: 400;
-
 	list-style: none;
 
 	background-color: rgb(247, 246, 243);
 }
 
 .dropdown-menu-item a {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
 	color: rgb(50, 50, 50);
-	text-decoration: none;
 }
 
-.dropdown-menu-item:hover ,
+.dropdown-menu-item a:hover ,
 .dropdown-menu-item a:focus {
 	background-color: rgb(251, 222, 215);
 }
 
-.dropdown-menu-item:active,
 .dropdown-menu-item a:active {
 	background-color: rgb(246, 181, 165);
 }
 
-.new-items {
+a.new-items {
 	font-weight: 700;
 }
 
-.dropdown-menu-current {
+.dropdown-link-current {
 	background-color: rgb(208, 112, 88);	
 }
 
-.user-navigation-list {
-	font-size: 14px;
-	line-height: 16px;
-	font-weight: 500;
+.user-navigation {	
 	list-style: none;
 }
 
 .user-navigation-link {
-	text-decoration: none;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
 
 	background-color: rgba(255, 255, 255, .2);
 }
@@ -138,21 +126,20 @@ a {
 /*END of General Header*/
 
 .breadcrumbs-list {
-	font-size: 14px;
-	line-height: 16px;
-	font-weight: 400;
 	list-style: none;
 }
 
-.breadcrumbs-link {
-	text-decoration: underline rgba(255, 255, 255, .2);
+.breadcrumbs-link,
+.breadcrumbs-current {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
 }
 
 .breadcrumbs-link:hover,
 .breadcrumbs-link:focus,
 .breadcrumbs-link:active {
-	color: rgba(255, 188, 158, 1);
-	text-decoration: underline rgba(255, 188, 158, .3);
+	color: rgb(255, 188, 158);
 }
 
 .catalog-title {
@@ -169,15 +156,12 @@ a {
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 500;
-
-	text-decoration: underline rgba(255, 255, 255, .2);
 }
 
 .product-link:hover,
 .product-link:focus,
 .product-link:active {
-	color: rgba(255, 188, 158, 1);
-	text-decoration: underline rgba(255, 188, 158, .3);
+	color: rgb(255, 188, 158);
 }
 
 .product-price {
@@ -195,7 +179,7 @@ a {
 	color: rgb(50, 50, 50);
 }
 
-.features-desc {
+.features-title {
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 500;
@@ -225,8 +209,15 @@ a {
 .blog-link {
 	font-size: 24px;
 	line-height: 30px;
+	font-weight: 700;
 	color: rgb(50, 50, 50);
 	text-decoration: underline;
+}
+
+.blog-link:hover,
+.blog-link:focus,
+.blog-link:active {
+	color: rgb(232, 77, 55);
 }
 
 .subscribe-txt {
@@ -246,18 +237,12 @@ a {
 	font-size: 13px;
 	line-height: 18px;
 	font-weight: 400;
-	text-decoration: underline rgba(255, 255, 255, .2);
 }
 
 .footer-menu-link:hover,
 .footer-menu-link:focus,
 .footer-menu-link:active {
-	color: rgba(255, 188, 158, 1);
-	text-decoration: underline rgba(255, 188, 158, .3);
-}
-
-.footer-menu-supplier {
-	font-weight: 700;
+	color: rgb(255, 188, 158);
 }
 
 .copyright-txt {
@@ -266,13 +251,12 @@ a {
 	font-weight: 400;
 }
 
-.copyright-link {
-	text-decoration: underline rgba(255, 255, 255, .2);
-}
-
 .copyright-link:hover,
 .copyright-link:focus,
 .copyright-link:active {	
-	color: rgba(255, 188, 158, 1);
-	text-decoration: underline rgba(255, 188, 158, .3);
+	color: rgb(255, 188, 158);
+}
+
+.bold {
+	font-weight: 700;
 }

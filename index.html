@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+	<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Глейси</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-  </head>
-  <body>
+	</head>
+	<body>
 		<header class="main-header container">
 			<img class="main-header-logo" src="img/logo.svg" alt="Магазин мороженного 'Глейси'" width="154" height="64">
 			<nav class="main-navigation">
@@ -29,51 +29,52 @@
 						<a class="main-navigation-link" href="#">О компании</a>
 					</li>
 				</ul>
-				<ul class="user-navigation-list">
-					<li class="user-navigation-item">
-						<a class="user-navigation-link btn-search">
-							<img src="img/loupe.svg" alt="Поиск по саиту" width="17" height="17">
-							<span class="visually-hidden">Поиск</span>
-						</a>
-						<form class="form search-form" action="https://echo.htmlacademy.ru" method="post">
-							<div class="field-layout">
-								<label class="field-label" for="search-input">Что ищем?</label>
-								<input class="field-input" type="text" id="search-input" name="search">
-							</div>
-							<button class="visually-hidden" type="submit">Найти</button>
-						</form>
-					</li>
-					<li class="user-navigation-item">
-						<a class="user-navigation-link" href="login.html">
-							<img src="img/entrance.svg" alt="Вход на сайт" width="21" height="19">
-							<span>Вход</span>
-						</a>
-						<form class="form" action="https://echo.htmlacademy.ru" method="post">
-							<div class="field-layout">
-								<label class="field-label" for="email">Электронная почта</label>
-								<input class="field-input" id="email" type="email" name="email">
-							</div>
-							<div class="field-layout">
-								<label class="field-label" for="password">Пароль</label>
-								<input class="field-input" id="password" type="password" name="password">
-							</div>
-							<div class="login-enter">
-								<button class="btn" type="submit">Войти</button>
-								<p class="login-help">
-									<a href="#" class="login-reg">Забыли пароль?</a>
-									<a href="#" class="login-reg">Новая регистрация</a>
-								</p>
-							</div>
-						</form>
-					</li>
-					<li class="user-navigation-item">
-						<a class="user-navigation-link" href="#">
-							<img src="img/basket.svg" alt="Корзина пуста" width="21" height="20">
-							<span>Пусто</span>
-						</a>
-					</li>
-				</ul>
 			</nav>
+			<ul class="user-navigation">
+				<li class="user-navigation-item">
+					<a class="user-navigation-link btn-search">
+						<img src="img/loupe.svg" alt="Поиск по саиту" width="17" height="17">
+						<span class="visually-hidden">Поиск</span>
+					</a>
+					<form class="form search-form" action="https://echo.htmlacademy.ru" method="post">
+						<div class="field-layout">
+							<label class="field-label" for="search-input">Что ищем?</label>
+							<input class="field-input" type="text" id="search-input" name="search">
+						</div>
+						<button class="visually-hidden" type="submit">Найти</button>
+					</form>
+				</li>
+				<li class="user-navigation-item">
+					<a class="user-navigation-link" href="login.html">
+						<img src="img/entrance.svg" alt="Вход на сайт" width="21" height="19">
+						<span>Вход</span>
+					</a>
+					<form class="form" action="https://echo.htmlacademy.ru" method="post">
+						<div class="field-layout">
+							<label class="field-label" for="email">Электронная почта</label>
+							<input class="field-input" id="email" type="email" name="email">
+						</div>
+						<div class="field-layout">
+							<label class="field-label" for="password">Пароль</label>
+							<input class="field-input" id="password" type="password" name="password">
+						</div>
+						<div class="login-enter">
+							<button class="btn" type="submit">Войти</button>
+							<p class="login-help">
+								<a href="#" class="login-reg">Забыли пароль?</a>
+								<a href="#" class="login-reg">Новая регистрация</a>
+							</p>
+						</div>
+					</form>
+				</li>
+				<li class="user-navigation-item">
+					<a class="user-navigation-link" href="#">
+						<img src="img/basket.svg" alt="Корзина пуста" width="21" height="20">
+						<span>Пусто</span>
+					</a>
+				</li>
+			</ul>
+			
 		</header>
 		<main class="container">
 			<div class="schedule">
@@ -131,7 +132,7 @@
 								<img src="img/ruble.svg" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
-							<a class="btn" href="#">Быстрый просморт</a>
+							<a class="btn" href="catalog-item.html">Быстрый просморт</a>
 						</article>
 					</li>
 					<li class="product-item product-hit">
@@ -147,7 +148,7 @@
 								<img src="img/ruble.svg" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
-							<a class="btn" href="#">Быстрый просморт</a>
+							<a class="btn" href="catalog-item.html">Быстрый просморт</a>
 						</article>
 					</li>
 					<li class="product-item product-hit">
@@ -163,7 +164,7 @@
 								<img src="img/ruble.svg" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
-							<a class="btn" href="#">Быстрый просморт</a>
+							<a class="btn" href="catalog-item.html">Быстрый просморт</a>
 						</article>
 					</li>
 					<li class="product-item product-hit">
@@ -179,14 +180,14 @@
 								<img src="img/ruble.svg" width="26" height="31" alt="рубль">
 								<span>/кг</span>
 							</p>
-							<a class="btn" href="#">Быстрый просморт</a>
+							<a class="btn" href="catalog-item.html">Быстрый просморт</a>
 						</article>
 					</li>
 				</ul>
 			</section>
 			<section class="features">
 				<h2 class="visually-hidden">Преимущества магазина мороженного Глэйси</h2>
-				<p class="features-desc">
+				<p class="features-title">
 					Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
 				</p>
 				<ul class="features-list">
@@ -269,7 +270,7 @@
 			<div class="footer-menu">
 				<ul class="footer-menu-list">
 					<li class="footer-menu-item">
-						<a class="footer-menu-link footer-menu-supplier" href="#">
+						<a class="footer-menu-link bold" href="#">
 							<img src="img/heart.svg" alt="Для поставщиков" width="15" height="13">
 							Для поставщиков
 						</a>
@@ -323,6 +324,6 @@
 			</form>
 			<button class="close-btn" type="button">Закрыть</button>
 		</section>
-  </body>
+	</body>
 </html>
 
