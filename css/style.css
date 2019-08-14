@@ -23,7 +23,6 @@ body {
 }
 
 a {
-	color: rgb(255, 255, 255);
 	text-decoration: none;
 }
 /*Styles for Overall Site*/
@@ -57,7 +56,8 @@ a {
 .main-navigation-link {
 	font-size: 16px;
 	line-height: 18px;
-	font-weight: 700;
+	font-weight: 700;	
+	color: rgb(255, 255, 255);
 }
 
 .main-navigation-link:hover,
@@ -76,9 +76,7 @@ a {
 }
 
 .dropdown-menu-list {
-	list-style: none;
-
-	background-color: rgb(247, 246, 243);
+	list-style: none;	
 }
 
 .dropdown-menu-item a {
@@ -86,6 +84,7 @@ a {
 	line-height: 16px;
 	font-weight: 400;
 	color: rgb(50, 50, 50);
+	background-color: rgb(247, 246, 243);
 }
 
 .dropdown-menu-item a:hover ,
@@ -97,11 +96,7 @@ a {
 	background-color: rgb(246, 181, 165);
 }
 
-a.new-items {
-	font-weight: 700;
-}
-
-.dropdown-link-current {
+a.dropdown-link-current {
 	background-color: rgb(208, 112, 88);	
 }
 
@@ -112,13 +107,15 @@ a.new-items {
 .user-navigation-link {
 	font-size: 14px;
 	line-height: 16px;
-	font-weight: 500;
+	font-weight: 500;	
+	color: rgb(255, 255, 255);
 
 	background-color: rgba(255, 255, 255, .2);
 }
 
 .user-navigation-link:hover,
-.user-navigation-link:focus {
+.user-navigation-link:focus,
+.user-navigation-link:active {
 	color: rgb(50, 50, 50);
 
 	background-color: rgb(247, 246, 243);
@@ -133,7 +130,8 @@ a.new-items {
 .breadcrumbs-current {
 	font-size: 14px;
 	line-height: 16px;
-	font-weight: 400;
+	font-weight: 400;	
+	color: rgb(255, 255, 255);
 }
 
 .breadcrumbs-link:hover,
@@ -155,7 +153,8 @@ a.new-items {
 .product-link {
 	font-size: 16px;
 	line-height: 22px;
-	font-weight: 500;
+	font-weight: 500;	
+	color: rgb(255, 255, 255);
 }
 
 .product-link:hover,
@@ -236,7 +235,8 @@ a.new-items {
 .footer-menu-link {
 	font-size: 13px;
 	line-height: 18px;
-	font-weight: 400;
+	font-weight: 400;	
+	color: rgb(255, 255, 255);
 }
 
 .footer-menu-link:hover,
@@ -244,11 +244,16 @@ a.new-items {
 .footer-menu-link:active {
 	color: rgb(255, 188, 158);
 }	
-
+	
 .copyright-txt {
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: 400;
+	color: rgb(255, 255, 255);
+}
+
+.copyright-link{
+	color: rgb(255, 255, 255);
 }
 
 .copyright-link:hover,
@@ -257,6 +262,7 @@ a.new-items {
 	color: rgb(255, 188, 158);
 }
 
-.bold {
+/*Unusual Styles*/
+.bold-text {
 	font-weight: 700;
 }
