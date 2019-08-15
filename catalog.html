@@ -102,12 +102,12 @@
 							</td>
 							<td class="cart-img">
 								<a href="catalog-item.html">
-									<img src="img/product-3-thumbnail.png" alt="Клубничный пломбир с присыпкой  из белого шоколада" width="33" height="33">									
+									<img src="img/product-3-thumbnail.png" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
 								</a>
 							</td>
 							<td class="cart-desc">
 								<a href="catalog-item.html">
-									Клубничный пломбир с присыпкой  из белого шоколада
+									Клубничный пломбир с присыпкой из белого шоколада
 								</a>
 							</td>
 							<td class="cart-cost">
@@ -151,9 +151,9 @@
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 					<fieldset class="fieldset-filter">
-						<legend class="visually-hidden">Сортировка</legend>
-						<div class="filter-sort">
-							<label class="filter-title" for="sort">Сортировка:</label>
+						<legend class="filter-title">Сортировка:</legend>
+						<div class="filter-assortment-wrap">
+							<label class="visually-hidden" for="sort">Сортировка:</label>
 							<select class="filter-assortment" name="sort" id="sort">
 								<option class="filter-sort" value="popular">по популярности</option>
 								<option class="filter-sort" value="low-cost">сначала недорогие</option>
@@ -166,49 +166,49 @@
 						<legend class="visually-hidden">Цена</legend>
 						<div class="filter-price">
 							<label class="filter-title" for="price-range">Цена: 100 руб. - 500 руб.</label>
-						 	<input class="filter-cost" type="range" min="100" max="500" step="5" value="150" id="price-range" name="price-range">
+							<input class="filter-cost" type="range" min="100" max="500" step="5" value="150" id="price-range" name="price-range">
 						</div>
 					</fieldset>
 					<fieldset class="fieldset-filter">
 						<legend class="filter-title">Жирность</legend>
-					 	<div class="filter-layout">
-						 	<input class="filter-fat" type="radio" name="fat-control" id="zero">
-						 	<label class="filter-value" for="zero" tabindex="0">0%</label>
-					 	</div>
-					 	<div class="filter-layout">
-						 	<input class="filter-fat" type="radio" name="fat-control" id="to-ten" checked>
-						 	<label class="filter-value" for="to-ten" tabindex="0">до 10%</label>
+						<div class="filter-layout">
+							<input class="filter-fat" type="radio" name="fat-control" id="zero">
+							<label class="filter-value" for="zero" tabindex="0">0%</label>
 						</div>
-					 	<div class="filter-layout">
-						 	<input class="filter-fat" type="radio" name="fat-control" id="to-thirty">
-						 	<label class="filter-value" for="to-thirty" tabindex="0">до 30%</label>
+						<div class="filter-layout">
+							<input class="filter-fat" type="radio" name="fat-control" id="to-ten" checked>
+							<label class="filter-value" for="to-ten" tabindex="0">до 10%</label>
 						</div>
-					 	<div class="filter-layout">
-						 	<input class="filter-fat" type="radio" name="fat-control" id="over-thirty">
-						 	<label class="filter-value" for="over-thirty" tabindex="0">выше 30%</label>
+						<div class="filter-layout">
+							<input class="filter-fat" type="radio" name="fat-control" id="to-thirty">
+							<label class="filter-value" for="to-thirty" tabindex="0">до 30%</label>
+						</div>
+						<div class="filter-layout">
+							<input class="filter-fat" type="radio" name="fat-control" id="over-thirty">
+							<label class="filter-value" for="over-thirty" tabindex="0">выше 30%</label>
 						</div>
 					</fieldset>
 					<fieldset class="fieldset-filter">
-						<legend class="filter-title">Наполнители:</legend>	
+						<legend class="filter-title">Наполнители:</legend>
 						<div class="filter-layout">
 							<input class="filler" type="checkbox" name="choco" id="choco" checked>
-							<label class="filler-title" for="choco" tabindex="0">шоколадные</label>
+							<label class="filler-value" for="choco" tabindex="0">шоколадные</label>
 						</div>
 						<div class="filter-layout">
 							<input class="filler" type="checkbox" name="sugar" id="sugar" checked>
-							<label class="filler-title" for="sugar" tabindex="0">сахарные присыпки</label>
+							<label class="filler-value" for="sugar" tabindex="0">сахарные присыпки</label>
 						</div>
 						<div class="filter-layout">
 							<input class="filler" type="checkbox" name="fruit" id="fruit">
-							<label class="filler-title" for="fruit" tabindex="0">фрукты</label>
+							<label class="filler-value" for="fruit" tabindex="0">фрукты</label>
 						</div>
 						<div class="filter-layout">
 							<input class="filler" type="checkbox" name="sirup" id="sirup">
-							<label class="filler-title" for="sirup" tabindex="0">сиропы</label>
+							<label class="filler-value" for="sirup" tabindex="0">сиропы</label>
 						</div>
 						<div class="filter-layout">
 							<input class="filler" type="checkbox" name="jam" id="jam">
-							<label class="filler-title" for="jam" tabindex="0">джемы</label>
+							<label class="filler-value" for="jam" tabindex="0">джемы</label>
 						</div>
 					</fieldset>
 					<button class="btn-filter" type="submit" tabindex="0">Применить</button>
@@ -417,12 +417,12 @@
 					<!-- конец третья строка товаров -->
 				</ul>
 			<ul class="pagination-list">
-				<li class="pagination-item pagination-item-back">
-					<a href="#">						
+				<li class="pagination-item pagination-item-prev">
+					<a href="#">
 						<span class="visually-hidden">Назад</span>
 					</a>
 				</li>
-				<li class="pagination-item pagination-item-prev"><a href="#">1</a></li>
+				<li class="pagination-item pagination-item-current"><a href="#">1</a></li>
 				<li class="pagination-item"><a href="#">2</a></li>
 				<li class="pagination-item"><a href="#">3</a></li>
 				<li class="pagination-item"><a href="#">4</a></li>
@@ -495,6 +495,6 @@
 					Сделано в <a class="copyright-link" href="https://htmlacademy.ru/">HTML Academy</a> &#169; 2019
 				</p>
 			</div>
-		</footer>		
+		</footer>
 	</body>
 </html>

@@ -1,13 +1,7 @@
 /*temporary*/
-.schedule,
-.slider,
-.offers,
-.contacts-map,
 .feedback,
 .cart,
-.form, 
-.filters,
-.pagination-list {
+.form {
 	display: none;
 }
 /*end of temporary*/
@@ -50,6 +44,13 @@ a {
 .text-bold {
 	font-weight: 700;
 }
+
+.btn {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	color: rgb(255, 255, 255);
+}
 /*END of Styles for Overall Site*/
 
 /*General Header*/
@@ -72,7 +73,7 @@ a {
 }
 
 .main-navigation-link:active {
-	/*box-shadow inner*/
+	background-color: rgb(237, 237, 237);
 }
 
 .main-navigation-link-current {
@@ -100,7 +101,7 @@ a {
 }
 
 a.dropdown-link-current {
-	background-color: rgb(208, 112, 88);	
+	background-color: rgb(208, 112, 88);
 }
 
 .user-navigation {	
@@ -145,6 +146,110 @@ a.dropdown-link-current {
 .catalog-title {
 	font-size: 35px;
 	line-height: 41px;
+}
+
+.schedule {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 700;
+}
+
+.phone-numb {
+	font-size: 22px;
+	lh24px
+	font-weight: 700;
+}
+
+.slider-list {
+	list-style: none;
+}
+
+.slider-item p {
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: 700;
+}
+
+.offers-title {
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 700;
+}
+
+.offers-desc {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 700;
+}
+
+.fieldset-filter {
+	border: none;
+}	
+
+.filter-title {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+}
+
+.filter-assortment {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, .2);
+	border: none;
+}
+
+.filter-assortment:hover,
+.filter-assortment:focus {
+	color: rgb(50, 50, 50);
+}
+
+.filter-sort {
+	font-size: 14px;
+	line-height: 16px;
+	color: rgb(50, 50, 50);
+	background-color: #fff;
+}
+
+.filter-cost:hover {
+	cursor: pointer;
+}
+
+.filter-layout {
+	background-color: rgba(255, 255, 255, .2);
+}
+
+.filter-value {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+}
+
+.filler-value {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;	
+}
+
+.btn-filter {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, .2);
+}
+
+.btn-filter:hover,
+.btn-filter:focus {
+	color: rgb(50, 50, 50);
+	background-color: rgb(255, 255, 255);
+}
+
+.btn-filter:active {
+	color: rgb(50, 50, 50);
+	background-color: rgb(234, 234, 234);
 }
 
 /*Goods*/
@@ -224,6 +329,48 @@ a.dropdown-link-current {
 	color: rgb(90, 90, 90);
 	background-color: rgb(248, 247, 244);
 }
+
+.contacts-map-address p {
+	font-size: 14px;
+	line-height: 20px;
+	color: rgb(50, 50, 50);
+}
+
+.contacts-bold {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;	
+}
+
+.pagination-list {
+	list-style: none;
+}
+
+.pagination-item a {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+	color: rgb(255, 255, 255);
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+	background-color: rgba(255, 255, 255, .2);
+}
+
+.pagination-item a:active {
+	color: rgb(50, 50, 50);
+	background-color: rgb(255, 255, 255);
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+	color: rgb(50, 50, 50);
+	background-color: rgb(255, 255, 255);
+}
+
 .footer-social {
 	list-style: none;
 }
