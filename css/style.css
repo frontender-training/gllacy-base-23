@@ -330,13 +330,13 @@ a.dropdown-link-current {
 	background-color: rgb(248, 247, 244);
 }
 
-.contacts-map-address p {
+.contacts-desc p {
 	font-size: 14px;
 	line-height: 20px;
 	color: rgb(50, 50, 50);
 }
 
-.contacts-bold {
+.contacts-info {
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;	
