@@ -156,7 +156,7 @@ a.dropdown-link-current {
 
 .phone-numb {
 	font-size: 22px;
-	lh24px
+	line-height: 24px;
 	font-weight: 700;
 }
 
@@ -225,12 +225,6 @@ a.dropdown-link-current {
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
-}
-
-.filler-value {
-	font-size: 16px;
-	line-height: 18px;
-	font-weight: 500;	
 }
 
 .btn-filter {
@@ -330,13 +324,17 @@ a.dropdown-link-current {
 	background-color: rgb(248, 247, 244);
 }
 
-.contacts-desc p {
+.contacts-info {
+	background-color: rgb(255, 255, 255);
+}
+
+.contacts-description {
 	font-size: 14px;
 	line-height: 20px;
 	color: rgb(50, 50, 50);
 }
 
-.contacts-info {
+.contacts-data {
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;	
