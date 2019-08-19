@@ -40,8 +40,8 @@
 					</a>
 					<form class="form search-form" action="https://echo.htmlacademy.ru" method="post">
 						<div class="field-layout">
+							<input class="field-input" type="text" id="search-input" name="search" placeholder="Что ищем?">
 							<label class="field-label" for="search-input">Что ищем?</label>
-							<input class="field-input" type="text" id="search-input" name="search">
 						</div>
 						<button class="visually-hidden" type="submit">Найти</button>
 					</form>
@@ -53,12 +53,12 @@
 					</a>
 					<form class="form" action="https://echo.htmlacademy.ru" method="post">
 						<div class="field-layout">
+							<input class="field-input" id="email" type="email" name="email" placeholder="Электронная почта">
 							<label class="field-label" for="email">Электронная почта</label>
-							<input class="field-input" id="email" type="email" name="email">
 						</div>
 						<div class="field-layout">
+							<input class="field-input" id="password" type="password" name="password" placeholder="Пароль">
 							<label class="field-label" for="password">Пароль</label>
-							<input class="field-input" id="password" type="password" name="password">
 						</div>
 						<div class="login-enter">
 							<button class="btn" type="submit">Войти</button>
@@ -85,7 +85,7 @@
 								</a>
 							</td>
 							<td class="cart-desc">
-								<a href="catalog-item.html">
+								<a class="cart-product" href="catalog-item.html">
 									Пломбир с апельсиновым джемом
 								</a>
 							</td>
@@ -106,7 +106,7 @@
 								</a>
 							</td>
 							<td class="cart-desc">
-								<a href="catalog-item.html">
+								<a class="cart-product" href="catalog-item.html">
 									Клубничный пломбир с присыпкой из белого шоколада
 								</a>
 							</td>
@@ -121,7 +121,7 @@
 							<td colspan="5" class="cart-summ">
 							<td class="cart-summ" colspan="5">
 								<p>Итого: 750 руб.</p>
-								<a class="btn" href="#">Оформить заказ</a>
+								<a class="btn" href="basket.html">Оформить заказ</a>
 							</td>
 						</tr>
 					</table>
