@@ -457,6 +457,9 @@ a.dropdown-link-current {
 .field-label {
 	display: none;
 }
+.field-textarea {
+	resize: none;
+}
 
 .field-input:focus + .field-label,
 .field-textarea:focus + .field-label {
@@ -483,10 +486,6 @@ a.dropdown-link-current {
 .login-reg:hover,
 .login-reg:focus {
 	color: rgb(232, 77, 55);
-}
-
-.feedback-textarea {
-	resize: none;
 }
 
 .feedback {
