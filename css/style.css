@@ -454,12 +454,12 @@ a.dropdown-link-current {
 	color: transparent;
 }
 
-.field-label {
-	display: none;
-	
+.field-label {	
 	font-size: 11px;
 	line-height: 13px;
 	color: rgb(91, 157, 223);
+
+	display: none;
 }
 
 .field-textarea {
@@ -473,9 +473,6 @@ a.dropdown-link-current {
 
 .field-input:hover,
 .field-textarea:hover {
-	background-color: rgb(255, 255, 255);
-
-	border: 2px solid rgb(199, 198, 197);
 }
 
 .login-reg {
