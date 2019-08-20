@@ -9,10 +9,10 @@
 	</head>
 	<body>
 		<header class="main-header container">
+			<a href="index.html">
+				<img class="main-logo" src="img/logo.svg" alt="Магазин мороженного 'Глэсси'" width="154" height="64">
+			</a>
 			<nav class="main-navigation">
-				<a href="index.html">
-					<img class="main-header-logo" src="img/logo.svg" alt="Магазин мороженного 'Глэсси'" width="154" height="64">
-				</a>
 				<ul class="main-navigation-list">
 					<li class="main-navigation-item">
 						<a class="main-navigation-link main-navigation-link-current" href="catalog.html">Каталог</a>
@@ -129,7 +129,7 @@
 			</ul>
 		</header>
 		<main class="container">
-			<div class="schedule-breadcrumbs-wrap">
+			<div class="row">
 				<div class="breadcrumbs">
 					<ul class="breadcrumbs-list">
 						<li class="breadcrumbs-item">
@@ -152,7 +152,7 @@
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
-					<div class="row">
+					<div class="filter-row">
 						<fieldset class="fieldset-filter">
 							<legend class="filter-title">Сортировка:</legend>
 								<label class="visually-hidden" for="sort">Сортировка:</label>
@@ -172,7 +172,7 @@
 						</fieldset>
 						<fieldset class="fieldset-filter">
 							<legend class="filter-title">Жирность</legend>
-							<div class="row">
+							<div class="filter-row">
 								<div class="filter-layout">
 									<input class="filter-fat" type="radio" name="fat-control" id="zero">
 									<label class="filter-value" for="zero" tabindex="0">0%</label>
@@ -192,7 +192,7 @@
 							</div>
 						</fieldset>
 					</div>
-					<div class="row">
+					<div class="filter-row">
 						<fieldset class="fieldset-filter">
 							<legend class="filter-title">Наполнители:</legend>
 							<div class="row">
@@ -424,45 +424,41 @@
 					</li>
 					<!-- конец третья строка товаров -->
 				</ul>
-				<ul class="pagination-list">
-					<li class="pagination-item pagination-item-prev">
-						<a href="#">
+				<div class="pagination-list">
+						<a class="pagination-item pagination-item-prev" href="#">
 							<span class="visually-hidden">Назад</span>
 						</a>
-					</li>
-					<li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-					<li class="pagination-item"><a href="#">2</a></li>
-					<li class="pagination-item"><a href="#">3</a></li>
-					<li class="pagination-item"><a href="#">4</a></li>
-					<li class="pagination-item pagination-item-next">
-						<a href="#">
+						<a class="pagination-item pagination-item-current" href="#">1</a>
+						<a class="pagination-item" href="#">2</a>
+						<a class="pagination-item" href="#">3</a>
+						<a class="pagination-item" href="#">4</a>
+						<a class="pagination-item pagination-item-next" href="#">
 							<span class="visually-hidden">Вперед</span>
 						</a>
-					</li>
-				</ul>
+					</div>
 			</section>
 		</main>
-		<footer class="main-footer container">
-			<ul class="footer-social">
-				<li class="footer-social-item">
+		<footer class="main-footer container row">
+			<ul class="social">
+				<li class="social-item">
 					<a href="http://twitter.com">
 						<span class="visually-hidden">Твиттер</span>
 						<img class="social-icon" src="img/twitter.svg" alt="Twitter" width="37" height="37">
 					</a>
 				</li>
-				<li class="footer-social-item">
+				<li class="social-item">
 					<a href="http://instagram.com">
 						<span class="visually-hidden">Инстаграм</span>
 						<img src="img/instagram.svg" alt="Instagram" class="social-icon" width="37" height="37">
 					</a>
 				</li>
-				<li class="footer-social-item">
+				<li class="social-item">
 					<a href="http://facebook.com">
 						<span class="visually-hidden">Фейсбук</span>
 						<img class="social-icon" src="img/fb.svg" alt="Facebook" width="37" height="37">
 					</a>
 				</li>
-				<li class="footer-social-item">
+				<li class="social-item">
 					<a href="http://vk.com">
 						<span class="visually-hidden">Вконтакте</span>
 						<img class="social-icon" src="img/vk.svg" alt="vk" width="37" height="37">
