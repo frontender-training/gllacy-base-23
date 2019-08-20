@@ -9,8 +9,8 @@
 	</head>
 	<body>
 		<header class="main-header container">
-			<img class="main-header-logo" src="img/logo.svg" alt="Магазин мороженного 'Глейси'" width="154" height="64">
 			<nav class="main-navigation">
+				<img class="main-logo" src="img/logo.svg" alt="Магазин мороженного 'Глейси'" width="154" height="64">
 				<ul class="main-navigation-list">
 					<li class="main-navigation-item">
 						<a class="main-navigation-link" href="catalog.html">Каталог</a>
@@ -189,42 +189,48 @@
 				<p class="features-title">
 					Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
 				</p>
-				<ul class="features-list">
-					<li class="features-item">
-						Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
-					</li>
-					<li class="features-item">
-						Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-					</li>
-					<li class="features-item">
-						Закупка ингредиентов	производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
-					</li>
-					<li class="features-item">
-						Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
-					</li>
-				</ul>
+				<div class="row">
+					<ul class="features-list">
+						<li class="features-item">
+							Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+						</li>
+						<li class="features-item">
+							Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+						</li>
+					</ul>
+					<ul class="features-list">
+						<li class="features-item">
+							Закупка ингредиентов	производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+						</li>
+						<li class="features-item">
+							Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+						</li>
+					</ul>
+				</div>
 			</section>
 			<section class="blog-subscribe">
 				<h2 class="visually-hidden">Блог и форма подписки на рассылку</h2>
-				<article class="blog">
-					<h3 class="blog-title">Новое в нашем блоге</h3>
-					<a class="blog-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
-				</article>
-				<div class="subscribe">
-					<p class="subscribe-txt">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-					<form class="form subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-						<div class="field-layout">
-							<input class="field-input" id="subscribe-email" type="email" name="subscribe-email" placeholder="Электронная почта">
-							<label class="field-label" for="subscribe-email">Электронная почта</label>
-						</div>
-						<button class="btn" type="submit">Отправить</button>
-					</form>
+				<div class="row">
+					<article class="blog">
+						<h3 class="blog-title">Новое в нашем блоге</h3>
+						<a class="blog-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+					</article>
+					<div class="subscribe">
+						<p class="subscribe-txt">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+						<form class="form subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+							<div class="field-layout">
+								<input class="field-input" id="subscribe-email" type="email" name="subscribe-email" placeholder="Электронная почта">
+								<label class="field-label" for="subscribe-email">Электронная почта</label>
+							</div>
+							<button class="btn" type="submit">Отправить</button>
+						</form>
+					</div>
 				</div>
 			</section>
 			<section class="contacts-map">
 				<h2 class="visually-hidden">Как до нас добраться</h2>
 				<div class="map">
-					<img class="map" src="img/map.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
+					<img class="map-img" src="img/map.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
 				</div>
 				<div class="contacts-info">
 					<p class="contacts-description">Адрес главного офиса и офлайн-магазина:
@@ -240,25 +246,25 @@
 		</main>
 		<footer class="main-footer container">
 			<ul class="footer-social">
-				<li>
+				<li class="footer-social-item">
 					<a href="http://twitter.com">
 						<span class="visually-hidden">Твиттер</span>
 						<img class="social-icon" src="img/twitter.svg" alt="Twitter" width="37" height="37">
 					</a>
 				</li>
-				<li>
+				<li class="footer-social-item">
 					<a href="http://instagram.com">
 						<span class="visually-hidden">Инстаграм</span>
 						<img src="img/instagram.svg" alt="Instagram" class="social-icon" width="37" height="37">
 					</a>
 				</li>
-				<li>
+				<li class="footer-social-item">
 					<a href="http://facebook.com">
 						<span class="visually-hidden">Фейсбук</span>
 						<img class="social-icon" src="img/fb.svg" alt="Facebook" width="37" height="37">
 					</a>
 				</li>
-				<li>
+				<li class="footer-social-item">
 					<a href="http://vk.com">
 						<span class="visually-hidden">Вконтакте</span>
 						<img class="social-icon" src="img/vk.svg" alt="vk" width="37" height="37">
