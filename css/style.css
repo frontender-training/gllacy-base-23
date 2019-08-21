@@ -425,7 +425,7 @@ a.dropdown-link-current {
 	line-height: 22px;
 }
 
-.blog-subscribe {
+.more-info {
 	margin-bottom: 40px;
 }
 
@@ -473,7 +473,7 @@ a.dropdown-link-current {
 	position: relative;
 
 	margin-bottom: 18px;
-
+	margin-right: -27px;
 	margin-left: -27px;
 }
 
@@ -500,7 +500,7 @@ a.dropdown-link-current {
 	font-weight: 700;	
 }
 
-.pagination-list {
+.pagination {
 	margin: 0;
 	margin-bottom: 30px;
 	padding: 0;
@@ -538,6 +538,8 @@ a.dropdown-link-current {
 }
 
 .main-footer {
+	display: flex;
+	justify-content: space-between;
 	margin-bottom: 30px;
 }
 
