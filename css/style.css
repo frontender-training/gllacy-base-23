@@ -37,6 +37,11 @@ a {
 	font-weight: 700;
 }
 
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
 .btn {
 	font-size: 18px;
 	line-height: 24px;
@@ -46,14 +51,40 @@ a {
 /*END of Styles for Overall Site*/
 
 /*General Header*/
+.main-header {
+	display: flex;
+}
+
+.main-logo {
+	width: 154px;
+	height: 64px;
+	margin-top: 10px;
+}
+
+.main-navigation {
+	display: flex;
+
+	margin-top: 23px;
+}
+
 .main-navigation-list {
+	display: flex;
+	min-width: 350px;
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
+}
+
+.main-navigation-item {
+	margin: 0;
+	padding: 0;
 }
 
 .main-navigation-link {
 	font-size: 16px;
 	line-height: 18px;
-	font-weight: 700;	
+	font-weight: 700;
 	color: rgb(255, 255, 255);
 }
 
@@ -73,6 +104,9 @@ a {
 }
 
 .dropdown-menu-list {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;	
 }
 
@@ -96,7 +130,12 @@ a.dropdown-link-current {
 	background-color: rgb(208, 112, 88);
 }
 
-.user-navigation {	
+.user-navigation {
+	display: flex;
+	margin: 0;
+	margin-top: 23px;
+	padding: 0;
+
 	list-style: none;
 }
 
@@ -144,8 +183,15 @@ a.dropdown-link-current {
 	color: rgb(50, 50, 50);
 }
 /*END of General Header*/
+.breadcrumbs {
+	margin-bottom: 30px;
+}
 
 .breadcrumbs-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 
@@ -171,6 +217,7 @@ a.dropdown-link-current {
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 700;
+	text-align: right;
 }
 
 .phone-numb {
@@ -180,6 +227,9 @@ a.dropdown-link-current {
 }
 
 .slider-list {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 
@@ -187,6 +237,10 @@ a.dropdown-link-current {
 	font-size: 60px;
 	line-height: 60px;
 	font-weight: 700;
+}
+
+.offers {
+	margin-bottom: 40px;
 }
 
 .offers-title {
@@ -200,10 +254,32 @@ a.dropdown-link-current {
 	line-height: 22px;
 	font-weight: 700;
 }
+/*Elements in Catalog*/
+.catalog-title {
+	margin: 0;
+	margin-bottom: 35px;
+	padding: 0;
+}
+
+.filters {
+	margin-bottom: 35px;
+}
+
+.filter {
+	width: 860px;
+	padding-right: 19px;
+}
+
+.filter-row {
+	display: flex;
+}
 
 .fieldset-filter {
+	margin: 0;
+	padding: 0;
+
 	border: none;
-}	
+}
 
 .filter-title {
 	font-size: 14px;
@@ -212,10 +288,14 @@ a.dropdown-link-current {
 }
 
 .filter-assortment {
+	margin: 0;
+	padding: 0 15px;
+
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
 	color: rgb(255, 255, 255);
+
 	background-color: rgba(255, 255, 255, .2);
 	border: none;
 }
@@ -229,6 +309,7 @@ a.dropdown-link-current {
 	font-size: 14px;
 	line-height: 16px;
 	color: rgb(50, 50, 50);
+
 	background-color: #fff;
 }
 
@@ -251,23 +332,52 @@ a.dropdown-link-current {
 	line-height: 18px;
 	font-weight: 500;
 	color: rgb(255, 255, 255);
+
 	background-color: rgba(255, 255, 255, .2);
 }
 
 .btn-filter:hover,
 .btn-filter:focus {
 	color: rgb(50, 50, 50);
+
 	background-color: rgb(255, 255, 255);
 }
 
 .btn-filter:active {
 	color: rgb(50, 50, 50);
+
 	background-color: rgb(234, 234, 234);
 }
 
 /*Goods*/
+.goods {
+}
+
 .products-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	margin-bottom: 70px;
+	padding: 0;
+
 	list-style: none;
+}
+
+.product-item {
+	width: 267px;
+	margin: 0;
+
+	margin-right: 26px;
+	padding: 0;
+}
+
+.product-item:nth-child(4n) {
+	margin-right: 0;
+}
+
+.product {
+	margin: 0;
+	padding: 0;
 }
 
 .product-link {
@@ -295,6 +405,8 @@ a.dropdown-link-current {
 /*END of Goods*/
 
 .features {
+	margin-bottom: 40px;
+
 	color: rgb(50, 50, 50);
 }
 
@@ -313,7 +425,15 @@ a.dropdown-link-current {
 	line-height: 22px;
 }
 
+.more-info {
+	margin-bottom: 40px;
+}
+
 .blog {
+	width: 520px;
+	margin: 0;	
+	padding: 25px 20px;
+
 	background-color: rgb(255, 255, 255);
 }
 
@@ -329,7 +449,6 @@ a.dropdown-link-current {
 	line-height: 30px;
 	font-weight: 700;
 	color: rgb(50, 50, 50);
-	text-decoration: underline;
 }
 
 .blog-link:hover,
@@ -338,12 +457,34 @@ a.dropdown-link-current {
 	color: rgb(232, 77, 55);
 }
 
-.subscribe-txt {
-	color: rgb(90, 90, 90);
+.subscribe {
+	width: 510px;
+	margin: 0;
+	padding: 35px 25px;
+
 	background-color: rgb(248, 247, 244);
 }
 
+.subscribe-txt {
+	color: rgb(90, 90, 90);
+}
+
+.contacts-map {
+	position: relative;
+
+	margin-bottom: 18px;
+	margin-right: -27px;
+	margin-left: -27px;
+}
+
 .contacts-info {
+	position: absolute;
+	top: 63px;
+	right: 27px;
+
+	width: 250px;
+	padding: 30px 25px;
+
 	background-color: rgb(255, 255, 255);
 }
 
@@ -359,40 +500,78 @@ a.dropdown-link-current {
 	font-weight: 700;	
 }
 
-.pagination-list {
+.pagination {
+	margin: 0;
+	margin-bottom: 30px;
+	padding: 0;
+
+	text-align: right;
+
 	list-style: none;
 }
 
-.pagination-item a {
+.pagination-item {
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 500;
 	color: rgb(255, 255, 255);
 }
 
-.pagination-item a:hover,
-.pagination-item a:focus {
+.pagination-item:hover,
+.pagination-item:focus {
 	background-color: rgba(255, 255, 255, .2);
 }
 
-.pagination-item a:active {
+.pagination-item:active {
 	color: rgb(50, 50, 50);
+
 	background-color: rgb(255, 255, 255);
 }
 
-.pagination-item-current a,
-.pagination-item-current a:hover,
-.pagination-item-current a:focus,
-.pagination-item-current a:active {
+.pagination-item-current,
+.pagination-item-current:hover,
+.pagination-item-current:focus,
+.pagination-item-current:active {
 	color: rgb(50, 50, 50);
+
 	background-color: rgb(255, 255, 255);
 }
 
-.footer-social {
+.main-footer {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.social {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 
+.social-item {
+	margin-right: 11px;
+}
+
+.social-item:last-child {
+	margin-right: 0;
+}
+
+.footer-menu {
+	display: flex;
+	align-items: flex-end;
+}
+
 .footer-menu-list {
+	margin: 0;
+	margin-right: 30px;
+	padding: 0;
+	
 	list-style: none;
 }
 
@@ -409,6 +588,9 @@ a.dropdown-link-current {
 }
 
 .copyright-txt {
+	margin: 0;
+	padding: 0;
+
 	font-size: 12px;
 	line-height: 18px;
 	color: rgb(255, 255, 255);
@@ -455,11 +637,11 @@ a.dropdown-link-current {
 }
 
 .field-label {
-	display: none;
-	
 	font-size: 11px;
 	line-height: 13px;
 	color: rgb(91, 157, 223);
+
+	display: none;
 }
 
 .field-textarea {
@@ -468,14 +650,11 @@ a.dropdown-link-current {
 
 .field-input:focus + .field-label,
 .field-textarea:focus + .field-label {
-	display: block;	
+	display: block;
 }
 
 .field-input:hover,
 .field-textarea:hover {
-	background-color: rgb(255, 255, 255);
-
-	border: 2px solid rgb(199, 198, 197);
 }
 
 .login-reg {
@@ -491,10 +670,15 @@ a.dropdown-link-current {
 }
 
 .feedback {
+	width: 420px;
+	padding: 20px 25px;
 	background-color: rgb(248, 247, 244);
 }
 
 .feedback-title {
+	padding: 0;
+	margin: 0;
+
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: 500;
