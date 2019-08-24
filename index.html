@@ -13,7 +13,7 @@
 			<nav class="main-navigation">
 				<ul class="main-navigation-list">
 					<li class="main-navigation-item">
-						<a class="main-navigation-link" href="catalog.html">Каталог</a>
+						<a class="main-navigation-link" href="catalog.html"><span class="underline-link">Каталог</span></a>
 						<ul class="dropdown-menu-list">
 							<li class="dropdown-menu-item"><a class="text-bold" href="#">Новинки</a></li>
 							<li class="dropdown-menu-item"><a href="catalog.html">Сливочное</a></li>
@@ -23,10 +23,10 @@
 						</ul>
 					</li>
 					<li class="main-navigation-item">
-						<a class="main-navigation-link" href="#">Доставка и оплата</a>
+						<a class="main-navigation-link" href="#"><span class="underline-link">Доставка и оплата</span></a>
 					</li>
 					<li class="main-navigation-item">
-						<a class="main-navigation-link" href="#">О компании</a>
+						<a class="main-navigation-link" href="#"><span class="underline-link">О компании</span></a>
 					</li>
 				</ul>
 			</nav>
@@ -37,7 +37,7 @@
 						<span class="visually-hidden">Поиск</span>
 					</a>
 					<form class="form search-form" action="https://echo.htmlacademy.ru" method="post">
-						<div class="field-layout">							
+						<div class="field-layout">
 							<input class="field-input" type="text" id="search-input" name="search" placeholder="Что ищем?">
 							<label class="field-label" for="search-input">Что ищем?</label>
 						</div>
@@ -45,11 +45,11 @@
 					</form>
 				</li>
 				<li class="user-navigation-item">
-					<a class="user-navigation-link" href="login.html">
+					<a class="user-navigation-link login-link" href="login.html">
 						<img src="img/entrance.svg" alt="Вход на сайт" width="21" height="19">
 						<span>Вход</span>
 					</a>
-					<form class="form" action="https://echo.htmlacademy.ru" method="post">
+					<form class="form login-form" action="https://echo.htmlacademy.ru" method="post">
 						<div class="field-layout">
 							<input class="field-input" id="email" type="email" name="email" placeholder="Электронная почта">
 							<label class="field-label" for="email">Электронная почта</label>
@@ -59,16 +59,16 @@
 							<label class="field-label" for="password">Пароль</label>
 						</div>
 						<div class="login-enter">
-							<button class="btn" type="submit">Войти</button>
+							<button class="btn btn-login" type="submit">Войти</button>
 							<p class="login-help">
-								<a class="login-reg" href="#">Забыли пароль?</a>
-								<a class="login-reg" href="#">Новая регистрация</a>
+								<a class="login-reg" href="#"><span class="underline-link">Забыли пароль?</span></a>
+								<a class="login-reg" href="#"><span class="underline-link">Новая регистрация</span></a>
 							</p>
 						</div>
 					</form>
 				</li>
 				<li class="user-navigation-item">
-					<a class="user-navigation-link" href="basket.html">
+					<a class="user-navigation-link cart-empty-link" href="basket.html">
 						<img src="img/basket.svg" alt="Корзина пуста" width="21" height="20">
 						<span>Пусто</span>
 					</a>
@@ -102,19 +102,21 @@
 					<li><button class="btn-toggle" type="button"><span class="visually-hidden">Третий слайд</span></button></li>
 				</ul>
 			</section>
+			<section class="temp1">111</section>
 			<section class="offers row">
 				<h2 class="visually-hidden">Промо-акции</h2>
 				<div class="offers-item offers-raspberry">
 					<p class="offers-title">Малинка даром!</p>
 					<p class="offers-desc">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-					<a class="btn" href="catalog-item.html">Хочу варенье!</a>
+					<a class="btn btn-offer" href="catalog-item.html">Хочу варенье!</a>
 				</div>
 				<div class="offers-item offers-choco">
 					<p class="offers-title">Шоколадки даром!</p>
 					<p class="offers-desc">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-					<a class="btn" href="catalog-item.html">Хочу шоколадки!</a>
+					<a class="btn btn-offer" href="catalog-item.html">Хочу шоколадки!</a>
 				</div>
 			</section>
+			<section class="temp2">222</section>
 			<section class="goods">
 				<h2 class="visually-hidden">Хиты продаж</h2>
 				<ul class="products-list">
@@ -212,17 +214,19 @@
 				<h2 class="visually-hidden">Блог и форма подписки на рассылку</h2>
 					<article class="blog">
 						<h3 class="blog-title">Новое в нашем блоге</h3>
-						<a class="blog-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+						<a class="blog-link" href="#"><span class="blog-underline">10 способов сервировки фруктовых щербетов к столу</span></a>
 					</article>
 					<div class="subscribe">
-						<p class="subscribe-txt">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-						<form class="form subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-							<div class="field-layout">
-								<input class="field-input" id="subscribe-email" type="email" name="subscribe-email" placeholder="Электронная почта">
-								<label class="field-label" for="subscribe-email">Электронная почта</label>
-							</div>
-							<button class="btn" type="submit">Отправить</button>
-						</form>
+						<div class="subscribe-wrap">
+							<p class="subscribe-txt">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+							<form class="form subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+								<div class="field-layout">
+									<input class="field-input" id="subscribe-email" type="email" name="subscribe-email" placeholder="Электронная почта">
+									<label class="field-label" for="subscribe-email">Электронная почта</label>
+								</div>
+								<button class="btn btn-subscribe" type="submit">Отправить</button>
+							</form>
+						</div>
 					</div>
 			</section>
 			<section class="contacts-map">
@@ -245,25 +249,25 @@
 		<footer class="main-footer container">
 			<ul class="social">
 				<li class="social-item">
-					<a href="http://twitter.com">
+					<a class="social-link" href="http://twitter.com">
 						<span class="visually-hidden">Твиттер</span>
 						<img class="social-icon" src="img/twitter.svg" alt="Twitter" width="37" height="37">
 					</a>
 				</li>
 				<li class="social-item">
-					<a href="http://instagram.com">
+					<a class="social-link" href="http://instagram.com">
 						<span class="visually-hidden">Инстаграм</span>
-						<img src="img/instagram.svg" alt="Instagram" class="social-icon" width="37" height="37">
+						<img class="social-icon" src="img/instagram.svg" alt="Instagram" width="37" height="37">
 					</a>
 				</li>
 				<li class="social-item">
-					<a href="http://facebook.com">
+					<a class="social-link" href="http://facebook.com">
 						<span class="visually-hidden">Фейсбук</span>
 						<img class="social-icon" src="img/fb.svg" alt="Facebook" width="37" height="37">
 					</a>
 				</li>
 				<li class="social-item">
-					<a href="http://vk.com">
+					<a class="social-link" href="http://vk.com">
 						<span class="visually-hidden">Вконтакте</span>
 						<img class="social-icon" src="img/vk.svg" alt="vk" width="37" height="37">
 					</a>
@@ -273,24 +277,24 @@
 				<ul class="footer-menu-list">
 					<li class="footer-menu-item">
 						<a class="footer-menu-link text-bold" href="#">
-							Для поставщиков
+							<span class="underline-link">Для поставщиков</span>
 						</a>
 					</li>
-					<li>
+					<li class="footer-menu-item">
 						<a class="footer-menu-link" href="#">
-							О производстве
+							<span class="underline-link">О производстве</span>
 						</a>
 					</li>
 				</ul>
 				<ul class="footer-menu-list">
 					<li>
 						<a class="footer-menu-link" href="#">
-							Наши документы
+							<span class="underline-link">Наши документы</span>
 						</a>
 					</li>
 					<li>
 						<a class="footer-menu-link" href="#">
-							Экологические стандарты
+							<span class="underline-link">Экологические стандарты</span>
 						</a>
 					</li>
 				</ul>
@@ -300,7 +304,7 @@
 					<img src="img/logo-htmlacademy.svg" alt="HTMLAcademy" width="108" height="39">
 				</a>
 				<p class="copyright-txt">
-					Сделано в <a class="copyright-link" href="https://htmlacademy.ru/">HTML Academy</a> &#169; 2019
+					Сделано в <a class="copyright-link" href="https://htmlacademy.ru/"><span class="underline-link">HTML Academy</span></a> &#169; 2019
 				</p>
 			</div>
 		</footer>
@@ -318,7 +322,7 @@
 					<label class="field-label" for="feedback-email">Ваша почта для ответа?</label>
 				</div>
 				<div class="field-layout">
-					<textarea class="field-textarea" id="feedback-msg"name="feedback-txt" placeholder="Напишите что-нибудь"></textarea>
+					<textarea class="field-textarea" id="feedback-msg"name="feedback-txt" placeholder="Напишите что-нибудь" rows="5" cols="33"></textarea>
 					<label class="field-label" for="feedback-msg">Напишите что-нибудь</label>
 				</div>
 				<button class="btn" type="submit">Отправить</button>
