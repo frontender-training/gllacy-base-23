@@ -9,9 +9,11 @@
 	</head>
 	<body>
 		<header class="main-header container">
-			<a class="main-logo" href="index.html">
-				<img src="img/logo.svg" alt="Магазин мороженного 'Глэсси'" width="154" height="64">
-			</a>
+			<div class="main-logo">
+				<a href="index.html">
+					<img src="img/logo.svg" alt="Магазин мороженного 'Глэсси'" width="154" height="64">
+				</a>
+			</div>
 			<nav class="main-navigation">
 				<ul class="main-navigation-list">
 					<li class="main-navigation-item">
@@ -25,10 +27,10 @@
 						</ul>
 					</li>
 					<li class="main-navigation-item">
-						<a class="main-navigation-link" href="#"><span class="underline-link">Доставка и оплата</span></a>
+						<a class="main-navigation-link" href="#"><span class="border-bottom">Доставка и оплата</span></a>
 					</li>
 					<li class="main-navigation-item">
-						<a class="main-navigation-link" href="#"><span class="underline-link">О компании</span></a>
+						<a class="main-navigation-link" href="#"><span class="border-bottom">О компании</span></a>
 					</li>
 				</ul>
 			</nav>
@@ -63,8 +65,8 @@
 						<div class="login-enter">
 							<button class="btn" type="submit">Войти</button>
 							<p class="login-help">
-								<a class="login-reg" href="#"><span class="underline-link">Забыли пароль?</span></a>
-								<a class="login-reg" href="#"><span class="underline-link">Новая регистрация</span></a>
+								<a class="login-reg" href="#"><span class="border-bottom">Забыли пароль?</span></a>
+								<a class="login-reg" href="#"><span class="border-bottom">Новая регистрация</span></a>
 							</p>
 						</div>
 					</form>
@@ -84,7 +86,7 @@
 									<img src="img/product-1-thumbnail.png" alt="Пломбир с апельсиновым джемом" width="33" height="33">
 								</a>
 							</td>
-							<td class="cart-desc">
+							<td class="cart-description">
 								<a class="cart-product" href="catalog-item.html">
 									Пломбир с апельсиновым джемом
 								</a>
@@ -97,15 +99,17 @@
 							<td class="cart-prod-summ">300 руб.</td>
 						</tr>
 						<tr>
-							<td class="cart-del-item">
-								<button class="cart-del">Удалить товар из корзины</button>
+							<td class="cart-delete-item">
+								<button class="cart-delete">
+									<img src="img/cross-small.svg" alt="Удалить товар из корзины" class="cart-delete-img">
+								</button>
 							</td>
 							<td class="cart-img">
 								<a href="catalog-item.html">
 									<img src="img/product-3-thumbnail.png" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
 								</a>
 							</td>
-							<td class="cart-desc">
+							<td class="cart-description">
 								<a class="cart-product" href="catalog-item.html">
 									Клубничный пломбир с присыпкой из белого шоколада
 								</a>
@@ -113,9 +117,9 @@
 							<td class="cart-cost">
 								<span class="cart-prod-quantity">1,5 кг</span>
 								<span>х</span>
-								<span class="cart-prod-price">300 руб.</span>
+								<span class="cart-product-price">300 руб.</span>
 							</td>
-							<td class="cart-prod-summ">450 руб.</td>
+							<td class="cart-product-summ">450 руб.</td>
 						</tr>
 						<tr>
 							<td class="cart-summ" colspan="5">
@@ -132,11 +136,11 @@
 				<div class="breadcrumbs">
 					<ul class="breadcrumbs-list">
 						<li class="breadcrumbs-item">
-							<a class="breadcrumbs-link" href="index.html"><span class="underline-link">Главная</span></a>
+							<a class="breadcrumbs-link" href="index.html"><span class="border-bottom">Главная</span></a>
 						</li>
 						<li class="breadcrumbs-item">&raquo;</li>
 						<li class="breadcrumbs-item">
-							<a class="breadcrumbs-link" href="catalog.html"><span class="underline-link">Каталог</span></a>
+							<a class="breadcrumbs-link" href="catalog.html"><span class="border-bottom">Каталог</span></a>
 						</li>
 						<li class="breadcrumbs-item">&raquo;</li>
 						<li class="breadcrumbs-current">Сливочное</li>
@@ -144,7 +148,7 @@
 				</div>
 				<div class="schedule">
 					<span class="work-time">С 10 до 20, ежедневно</span>
-					<span class="phone-numb">8 812 450-25-25</span>
+					<a class="phone-numb" href="tel:+78124502525">8 812 450-25-25</a>
 				</div>
 			</div>
 			<h1 class="catalog-title">Сливочное мороженое</h1>
@@ -469,24 +473,24 @@
 				<ul class="footer-menu-list">
 					<li class="footer-menu-item">
 						<a class="footer-menu-link text-bold" href="#">
-							<span class="underline-link">Для поставщиков</span>
+							<span class="border-bottom">Для поставщиков</span>
 						</a>
 					</li>
 					<li class="footer-menu-item">
 						<a class="footer-menu-link" href="#">
-							<span class="underline-link">О производстве</span>
+							<span class="border-bottom">О производстве</span>
 						</a>
 					</li>
 				</ul>
 				<ul class="footer-menu-list">
 					<li>
 						<a class="footer-menu-link" href="#">
-							<span class="underline-link">Наши документы</span>
+							<span class="border-bottom">Наши документы</span>
 						</a>
 					</li>
 					<li>
 						<a class="footer-menu-link" href="#">
-							<span class="underline-link">Экологические стандарты</span>
+							<span class="border-bottom">Экологические стандарты</span>
 						</a>
 					</li>
 				</ul>
@@ -496,7 +500,7 @@
 					<img src="img/logo-htmlacademy.svg" alt="HTMLAcademy" width="108" height="39">
 				</a>
 				<p class="copyright-txt">
-					Сделано в <a class="copyright-link" href="https://htmlacademy.ru/"><span class="underline-link">HTML Academy</span></a> &#169; 2019
+					Сделано в <a class="copyright-link" href="https://htmlacademy.ru/"><span class="border-bottom">HTML Academy</span></a> &#169; 2019
 				</p>
 			</div>
 		</footer>

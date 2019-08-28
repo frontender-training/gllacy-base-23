@@ -9,11 +9,13 @@
 	</head>
 	<body>
 		<header class="main-header container">
-			<img class="main-logo" src="img/logo.svg" alt="Магазин мороженного 'Глейси'" width="154" height="64">
+			<div class="main-logo">
+				<img src="img/logo.svg" alt="Магазин мороженного 'Глейси'" width="154" height="64">
+			</div>
 			<nav class="main-navigation">
 				<ul class="main-navigation-list">
 					<li class="main-navigation-item">
-						<a class="main-navigation-link" href="catalog.html"><span class="underline-link">Каталог</span></a>
+						<a class="main-navigation-link" href="catalog.html"><span class="border-bottom">Каталог</span></a>
 						<ul class="dropdown-menu-list">
 							<li class="dropdown-menu-item"><a class="text-bold" href="#">Новинки</a></li>
 							<li class="dropdown-menu-item"><a href="catalog.html">Сливочное</a></li>
@@ -23,10 +25,10 @@
 						</ul>
 					</li>
 					<li class="main-navigation-item">
-						<a class="main-navigation-link" href="#"><span class="underline-link">Доставка и оплата</span></a>
+						<a class="main-navigation-link" href="#"><span class="border-bottom">Доставка и оплата</span></a>
 					</li>
 					<li class="main-navigation-item">
-						<a class="main-navigation-link" href="#"><span class="underline-link">О компании</span></a>
+						<a class="main-navigation-link" href="#"><span class="border-bottom">О компании</span></a>
 					</li>
 				</ul>
 			</nav>
@@ -61,8 +63,8 @@
 						<div class="login-enter">
 							<button class="btn btn-login" type="submit">Войти</button>
 							<p class="login-help">
-								<a class="login-reg" href="#"><span class="underline-link">Забыли пароль?</span></a>
-								<a class="login-reg" href="#"><span class="underline-link">Новая регистрация</span></a>
+								<a class="login-reg" href="#"><span class="border-bottom">Забыли пароль?</span></a>
+								<a class="login-reg" href="#"><span class="border-bottom">Новая регистрация</span></a>
 							</p>
 						</div>
 					</form>
@@ -78,7 +80,7 @@
 		<main class="container">
 			<div class="schedule">
 				С 10 до 20, ежедневно
-				<span class="phone-numb">8 812 450-25-25</span>
+				<a class="phone-numb" href="tel:+78124502525">8 812 450-25-25</a>
 			</div>
 			<section class="slider">
 				<h2 class="visually-hidden">3 лучших предложения</h2>
@@ -108,12 +110,16 @@
 				<div class="offers-item offers-raspberry">
 					<p class="offers-title">Малинка даром!</p>
 					<p class="offers-desc">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-					<a class="btn btn-offer" href="catalog-item.html">Хочу варенье!</a>
+					<div class="btn-offer">
+						<a class="btn" href="catalog-item.html">Хочу варенье!</a>
+					</div>
 				</div>
 				<div class="offers-item offers-choco">
 					<p class="offers-title">Шоколадки даром!</p>
 					<p class="offers-desc">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-					<a class="btn btn-offer" href="catalog-item.html">Хочу шоколадки!</a>
+					<div class="btn-offer">
+						<a class="btn" href="catalog-item.html">Хочу шоколадки!</a>
+					</div>
 				</div>
 			</section>
 			<section class="temp2">222</section>
@@ -193,18 +199,18 @@
 				</p>
 				<div class="row">
 					<ul class="features-list">
-						<li class="features-item">
+						<li class="features-item feature-product">
 							Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
 						</li>
-						<li class="features-item">
+						<li class="features-item feature-eco">
 							Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
 						</li>
 					</ul>
 					<ul class="features-list">
-						<li class="features-item">
+						<li class="features-item feature-farm">
 							Закупка ингредиентов	производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
 						</li>
-						<li class="features-item">
+						<li class="features-item feature-thermo">
 							Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
 						</li>
 					</ul>
@@ -216,8 +222,8 @@
 						<h3 class="blog-title">Новое в нашем блоге</h3>
 						<a class="blog-link" href="#"><span class="blog-underline">10 способов сервировки фруктовых щербетов к столу</span></a>
 					</article>
-					<div class="subscribe">
-						<div class="subscribe-wrap">
+					<div class="subscribe-wrap">
+						<div class="subscribe">
 							<p class="subscribe-txt">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 							<form class="form subscribe-form" action="https://echo.htmlacademy.ru" method="post">
 								<div class="field-layout">
@@ -236,13 +242,12 @@
 				</div>
 				<div class="contacts-info">
 					<p class="contacts-description">Адрес главного офиса и офлайн-магазина:
-						<span class="contacts-data">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
 					</p>
-					<p class="contacts-description">Для заказов по телефону:
-						<span class="contacts-data">8 812 450-25-25</span>
-						(с 10 до 20 ежедневно)
-					</p>
-					<a class="btn" href="#">Форма обратной связи</a>
+					<p class="contacts-data">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+					<p class="contacts-description">Для заказов по телефону:</p>
+					<a class="contacts-phone" href="tel:+78124502525">8 812 450-25-25</a>
+					<p class="contacts-description">(с 10 до 20 ежедневно)</p>
+					<a class="btn btn-contact" href="#">Форма обратной связи</a>
 				</div>
 			</section>
 		</main>
@@ -277,24 +282,24 @@
 				<ul class="footer-menu-list">
 					<li class="footer-menu-item">
 						<a class="footer-menu-link text-bold" href="#">
-							<span class="underline-link">Для поставщиков</span>
+							<span class="border-bottom">Для поставщиков</span>
 						</a>
 					</li>
 					<li class="footer-menu-item">
 						<a class="footer-menu-link" href="#">
-							<span class="underline-link">О производстве</span>
+							<span class="border-bottom">О производстве</span>
 						</a>
 					</li>
 				</ul>
 				<ul class="footer-menu-list">
 					<li>
 						<a class="footer-menu-link" href="#">
-							<span class="underline-link">Наши документы</span>
+							<span class="border-bottom">Наши документы</span>
 						</a>
 					</li>
 					<li>
 						<a class="footer-menu-link" href="#">
-							<span class="underline-link">Экологические стандарты</span>
+							<span class="border-bottom">Экологические стандарты</span>
 						</a>
 					</li>
 				</ul>
@@ -304,7 +309,7 @@
 					<img src="img/logo-htmlacademy.svg" alt="HTMLAcademy" width="108" height="39">
 				</a>
 				<p class="copyright-txt">
-					Сделано в <a class="copyright-link" href="https://htmlacademy.ru/"><span class="underline-link">HTML Academy</span></a> &#169; 2019
+					Сделано в <a class="copyright-link" href="https://htmlacademy.ru/"><span class="border-bottom">HTML Academy</span></a> &#169; 2019
 				</p>
 			</div>
 		</footer>
@@ -327,7 +332,9 @@
 				</div>
 				<button class="btn" type="submit">Отправить</button>
 			</form>
-			<button class="close-btn" type="button">Закрыть</button>
+			<button class="close-btn" type="button">
+				<img src="img/cross-big.svg" alt="закрыть" class="feedback-close-btn">
+			</button>
 		</section>
 	</body>
 </html>
