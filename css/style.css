@@ -9,7 +9,7 @@
 .temp-catalog	{
 	width: 100%;
 	height: 503px;
-	margin-bottom: 30px;
+	margin-bottom: 37px;
 	background-color: rgba(255, 0, 0, .2);
 }
 
@@ -24,6 +24,11 @@
 /*********************/
 
 body {
+	width: 1200px;
+
+	margin: 0 auto;
+	padding: 0;
+
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 22px;
@@ -59,10 +64,6 @@ a {
 	padding-right: 27px;
 }
 
-.text-bold {
-	font-weight: 700;
-}
-
 .border-bottom {
 	border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
@@ -94,8 +95,8 @@ a {
 
 .btn:hover,
 .btn:focus {
-	background: linear-gradient(180deg, rgb(242, 104, 67), rgb(231, 74, 53)), rgba(255, 255, 255, .2);
-	background-blend-mode: screen;
+	background-color: rgb(255, 255, 255);
+	background: linear-gradient(0deg, rgb(236, 111, 94), rgb(245, 134, 105));
 	cursor: pointer;
 	outline: none;
 }
@@ -117,19 +118,19 @@ a {
 .main-logo {
 	width: 154px;
 	height: 64px;
-	margin-top: -13px;
+	margin-right: 10px;
 }
 
 .main-navigation {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 23px;
+	margin-top: 10px;
 }
 
 .main-navigation-list {
 	display: flex;
-	margin: 0;
-	padding-left: 10px;
+	margin-top: 13px;
+	padding: 0;
 
 	list-style: none;
 }
@@ -218,8 +219,9 @@ a {
 	padding-bottom: 12px;
 }
 
-.dropdown-menu-item a {
+.dropdown-link {
 	display: inline-block;
+	vertical-align: middle;
 	margin: 0;
 	padding-top: 8px;
 	padding-bottom: 8px;
@@ -229,6 +231,7 @@ a {
 
 	font-size: 14px;
 	line-height: 16px;
+	font-weight: 400;
 	color: rgb(50, 50, 50);
 }
 
@@ -313,7 +316,7 @@ a {
 }
 
 .user-navigation-item:hover .cart-wrap {
-	display: table;
+	display: block;
 }
 /*END of General Header*/
 
@@ -398,6 +401,9 @@ a {
 }
 
 .slider-item p {
+	padding: 0;
+	margin: 0;
+
 	font-size: 60px;
 	line-height: 60px;
 	font-weight: 700;
@@ -422,14 +428,14 @@ a {
 .offers-raspberry {
 	background-color: rgba(161, 67, 94, .5);
 	background-image: url(../img/bg-raspberry.jpg);
-	background-position: top 0 right 0;
+	background-position: top right;
 	background-repeat: no-repeat;
 }
 
 .offers-choco {
 	background-image: url(../img/bg-choco.jpg);
 	background-color: rgba(118, 70, 47, .5);
-	background-position: top 0 right 0;
+	background-position: top right;
 	background-repeat: no-repeat;
 }
 
@@ -443,13 +449,16 @@ a {
 }
 
 .offers-desc {
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 43px;
+
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: 700;
 }
 
-.btn-offer {
-	margin-top: 43px;
+.btn-offer {	
 	text-align: right;
 }
 /*END of Promo Section*/
@@ -466,7 +475,7 @@ a {
 
 	background-color: rgb(236, 222, 195);
 	background-image: url(../img/bg-wafer.jpg);
-	background-position: top 0 right 0;
+	background-position: top right;
 	background-repeat: repeat;
 	border-radius: 15px;
 }
@@ -495,7 +504,7 @@ a {
 	padding-top: 22px;
 	padding-left: 57px;
 
-	max-width: 485px;
+	width: 485px;
 
 	font-size: 16px;
 	line-height: 22px;
@@ -504,25 +513,25 @@ a {
 .feature-product {
 	background-image: url(../img/ice-cream.svg);
 	background-repeat: no-repeat;
-	background-position: top 9px left 0;
+	background-position: top 9px left;
 }
 
 .feature-eco {
 	background-image:	url(../img/eco.svg);
 	background-repeat: no-repeat;
-	background-position: top 9px left 0;	
+	background-position: top 9px left;	
 }
 
 .feature-farm {	
 	background-image: url(../img/cow.svg);
 	background-repeat: no-repeat;
-	background-position: top 9px left 0;
+	background-position: top 9px left;
 }
 
 .feature-thermo {
 	background-image: url(../img/thermometer.svg);
 	background-repeat: no-repeat;
-	background-position: top 9px left 0;	
+	background-position: top 9px left;	
 }
 /*END of Features in index.html*/
 /*Widjets*/
@@ -541,13 +550,14 @@ a {
 
 	background-color: rgb(255, 255, 255);
 	background-image: url(../img/bg-strawberry.png);
-	background-position: top 0 right 0;
+	background-position: top right;
 	background-repeat: no-repeat;
 	border-radius: 15px;
 }
 
 .blog-title {
 	margin: 0;
+	padding-top: 0;
 	padding-bottom: 3px;
 
 	font-size: 16px;
@@ -558,6 +568,7 @@ a {
 
 .blog-link {
 	display: inline-block;
+	vertical-align: middle;
 	width: 300px;
 	margin: 0;
 	padding: 0;
@@ -585,7 +596,7 @@ a {
 
 	background-color: rgb(248, 247, 244);
 	background: url(../img/bg-post.svg);
-	background-position: 0 0;
+	background-position: top right;
 	background-repeat: no-repeat;
 	border-radius: 15px;
 }
@@ -598,7 +609,8 @@ a {
 }
 
 .subscribe-txt {
-	margin: 0;
+	margin-top: 0;
+	margin-bottom: 15px;
 	padding: 0;
 
 	color: rgb(90, 90, 90);
@@ -607,7 +619,7 @@ a {
 .subscribe-form {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 15px;
+	margin-top: 0;
 	margin-bottom: 5px;
 }
 
@@ -616,7 +628,7 @@ a {
 }
 
 .btn-subscribe {
-	align-self: flex-end;
+	margin-top: 18px;
 	padding-right: 18px;
 	padding-left: 18px;
 }
@@ -839,14 +851,13 @@ a {
 	content:'';
 
 	position: absolute;
-	top: 140px;
+	top: 135px;
 	left: 265px;
-	width: 250px;
-	height: 150px;
-	background-image: url(../img/pin.svg), url(../img/pin-shadow.png);
-	background-position: top 0 left 0, top 32px left 35px;
+	width: 218px;
+	height: 142px;
+	background-image: url(../img/pin_with_shadow.png);
+	background-position: top left;
 	background-repeat: no-repeat, no-repeat;
-	box-shadow: 
 }
 
 .map-img {
@@ -857,9 +868,6 @@ a {
 	position: absolute;
 	top: 63px;
 	right: 27px;
-
-	display: flex;
-	flex-direction: column;
 	
 	color: rgb(50, 50, 50);
 	width: 250px;
@@ -874,13 +882,9 @@ a {
 
 .contacts-description {
 	margin: 0;
-
+	margin-bottom: 5px;	
 	font-size: 14px;
 	line-height: 20px;
-}
-
-.contacts-description:first-child {
-	padding-right: 100px;
 }
 
 .contacts-data {
@@ -895,7 +899,6 @@ a {
 }
 
 .contacts-phone {
-	margin-top: 5px;
 	margin-bottom: 3px;
 
 	font-size: 18px;
@@ -998,7 +1001,7 @@ a {
 
 .footer-menu-item:first-child {
 	background-image: url(../img/heart.svg);
-	background-position: 8px 5px;
+	background-position: top 8px left 5px;
 	background-repeat: no-repeat;
 }
 
@@ -1225,7 +1228,7 @@ a {
 	right: 0px;
 	
 	padding-top: 20px;
-	padding-bottom: 5px;
+	padding-bottom: 0;
 	padding-right: 15px;
 	padding-left: 15px;
 
@@ -1245,16 +1248,24 @@ a {
 }
 
 .cart td {
+	padding-bottom: 0;
 	vertical-align: top;
+
+}
+
+.cart-description,
+.cart-cost,
+.cart-product-summ {
+	padding-top: 10px;
 
 	font-size: 13px;
 	line-height: 16px;
-	padding-bottom: 15px;
-	color: rgb(50, 50, 50);	
+	color: rgb(50, 50, 50);
 }
 
+
 .cart-delete-item {
-	padding-top: 10px;
+	padding-top: 5px;
 	padding-right: 8px;
 }
 
@@ -1269,7 +1280,6 @@ a {
 
 .cart-description {
 	max-width: 160px;
-	padding-top: 10px;
 	padding-right: 30px;	
 }
 
@@ -1283,15 +1293,17 @@ a {
 }
 
 .cart-cost {
-	padding-top: 10px;
 }
 
 .cart-product-price {
 	color: rgb(153, 153, 153);
 }
 
-.cart-product-summ {	
-	padding-top: 10px;
+.cart-product-summ {
+}
+
+.cart-empty-block {
+	height: 12px;
 }
 
 .cart-summ {
@@ -1314,6 +1326,7 @@ a {
 }
 
 .btn-cart {
+	margin-bottom: 25px;
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -1361,3 +1374,8 @@ a {
 	cursor: pointer;
 }
 /*END of Feedback Form in Contact Section*/
+
+
+.text-bold {
+	font-weight: 700;
+}
