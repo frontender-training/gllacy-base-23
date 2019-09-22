@@ -10,16 +10,14 @@
 	<body>
 		<header class="main-header container">
 			<nav class="main-navigation">
-				<div class="main-logo">
-					<a href="index.html">
+					<a class="main-logo" href="index.html">
 						<img src="img/logo.svg" alt="Магазин мороженного 'Глэсси'" width="154" height="64">
 					</a>
-				</div>			
 				<ul class="main-navigation-list">
 					<li class="main-navigation-item">
 						<a class="main-navigation-link main-navigation-link-current" href="catalog.html">Каталог</a>
 						<ul class="dropdown-menu-list">
-							<li class="dropdown-menu-item"><a class="dropdown-link text-bold" href="#">Новинки</a></li>
+							<li class="dropdown-menu-item"><span class="dropdown-link text-bold" href="#">Новинки</span></li>
 							<li class="dropdown-menu-item"><a class="dropdown-link dropdown-link-current" href="catalog.html">Сливочное</a></li>
 							<li class="dropdown-menu-item"><a class="dropdown-link" href="#">Щербеты</a></li>
 							<li class="dropdown-menu-item"><a class="dropdown-link" href="#">Фруктовый лед</a></li>
@@ -37,7 +35,7 @@
 			<ul class="user-navigation">
 				<li class="user-navigation-item">
 					<a class="user-navigation-link btn-search" href="search.html">
-						<img src="img/loupe.svg" alt="Поиск по саиту" width="17" height="17">
+            <img src="./img/loupe.svg" alt="" width="17" height="17">
 						<span class="visually-hidden">Поиск</span>
 					</a>
 					<form class="form search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -50,7 +48,7 @@
 				</li>
 				<li class="user-navigation-item">
 					<a class="user-navigation-link login-link" href="login.html">
-						<img src="img/entrance.svg" alt="Вход на сайт" width="21" height="19">
+            <img src="./img/loupe.svg" alt="" width="17" height="17">
 						<span>Вход</span>
 					</a>
 					<form class="form login-form" action="https://echo.htmlacademy.ru" method="post">
@@ -73,7 +71,7 @@
 				</li>
 				<li class="user-navigation-item">
 					<a class="user-navigation-link cart-full-link" href="basket.html">
-						<img src="img/basket-red.svg" alt="Корзина" width="21" height="20">
+            <img src="./img/basket-red.svg" alt="" width="21" height="20">
 						<span>2 товара</span>
 					</a>
 					<div class="cart-wrap">
@@ -81,43 +79,47 @@
 							<tr>
 								<td class="cart-delete-item">
 									<button class="cart-delete">
-										<img src="img/cross-small.svg" alt="Удалить товар из корзины" width="11" height="11">
-									</button>
+                    <span class="visually-hidden">Удалить товар из корзины</span>
+                  </button>
 								</td>
 								<td>
-									<img src="img/product-1-thumbnail.png" alt="Пломбир с апельсиновым джемом" width="33" height="33">
+                  <a href="catalog-item.html">
+                    <img src="img/product-1-thumbnail.png" alt="Пломбир с апельсиновым джемом" width="33" height="33">
+                  </a>
 								</td>
 								<td class="cart-description">
 									<a href="catalog-item.html">Пломбир с апельсиновым джемом</a>
 								</td>
 								<td class="cart-cost">
-									<span class="cart-product-quantity">1,5 кг</span>
+									<span class="cart-prod-quantity">1,5 кг</span>
 									<span>х</span>
-									<span class="cart-product-price">200 руб.</span>
+									<span class="cart-prod-price">200 руб.</span>
 								</td>
-								<td class="cart-product-summ">300 руб.</td>
+								<td class="cart-prod-summ">300 руб.</td>
 							</tr>
 							<tr>
 								<td class="cart-empty-block" colspan="5"></td>
 							</tr>
 							<tr>
 								<td class="cart-delete-item">
-									<button class="cart-delete">
-										<img src="img/cross-small.svg" alt="Удалить товар из корзины" width="11" height="11">
-									</button>
+                    <button class="cart-delete">
+                        <span class="visually-hidden">Удалить товар из корзины</span>
+                      </button>
 								</td>
 								<td>
-									<img src="img/product-3-thumbnail.png" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
-								</td>
+                  <a href="catalog-item.html">
+                    <img src="img/product-3-thumbnail.png" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
+                  </a>
+                </td>
 								<td class="cart-description">
 									<a href="catalog-item.html">Клубничный пломбир с присыпкой из белого шоколада</a>
 								</td>
 								<td class="cart-cost">
-									<span class="cart-product-quantity">1,5 кг</span>
+									<span class="cart-prod-quantity">1,5 кг</span>
 									<span>х</span>
-									<span class="cart-product-price">300 руб.</span>
+									<span class="cart-prod-price">300 руб.</span>
 								</td>
-								<td class="cart-product-summ">450 руб.</td>
+								<td class="cart-prod-summ">450 руб.</td>
 							</tr>
 							<tr>
 								<td class="cart-empty-block" colspan="5"></td>
@@ -131,7 +133,7 @@
 						</table>
 					</div>
 				</li>
-			</ul>			
+			</ul>
 		</header>
 		<main class="container">
 			<div class="row">
@@ -150,7 +152,7 @@
 				</div>
 				<div class="schedule">
 					<span class="work-time">С 10 до 20, ежедневно</span>
-					<a class="phone-numb" href="tel:+78124502525">8 812 450-25-25</a>
+					<a class="work-phone" href="tel:+78124502525">8 812 450-25-25</a>
 				</div>
 			</div>
 			<h1 class="catalog-title">Сливочное мороженое</h1>
