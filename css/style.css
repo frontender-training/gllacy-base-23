@@ -360,17 +360,14 @@ a {
 .breadcrumbs-item {
 	margin-right: 7px;
 	padding: 0;
+
+	font-size: 14px;
+	line-height: 16px;
 }
 
 .breadcrumbs-link,
 .breadcrumbs-current {
-	font-size: 14px;
-	line-height: 16px;
 	color: rgb(255, 255, 255);
-}
-
-.breadcrumbs-current {
-	margin-top: 4px;
 }
 
 .breadcrumbs-link:hover,
@@ -545,7 +542,7 @@ a {
 }
 
 .feature-eco {
-	background-image:	url(../img/eco.svg);
+	background-image: url(../img/eco.svg);
 }
 
 .feature-cow {
@@ -1096,7 +1093,7 @@ a {
 .field-input:active,
 .field-textarea:active,
 .field-input:focus,
-.field-textarea:focus	{
+.field-textarea:focus {
 	border: transparent;
 	box-shadow: inset 0 0 0 2px rgb(143, 189, 236);
 	outline: none;
