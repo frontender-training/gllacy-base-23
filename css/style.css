@@ -196,8 +196,19 @@ a {
 	display: none;
 }
 
+.dropdown-menu-item {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	color: rgb(50, 50, 50);
+}
+
 .dropdown-menu-item:first-child {
 	margin-top: 5px;
+	padding-top: 9px;
+	padding-bottom: 6px;
+	padding-right: 15px;
+	padding-left: 20px;
 }
 
 .dropdown-menu-item:first-child::after {
@@ -231,11 +242,9 @@ a {
 	padding-left: 20px;
 	min-width: 110px;
 
-	font-size: 14px;
-	line-height: 16px;
-	font-weight: 400;
 	color: rgb(50, 50, 50);
 }
+
 
 .dropdown-link:hover,
 .dropdown-link:focus {
@@ -332,14 +341,7 @@ a {
 	margin-left: 7px;
 }
 
-
-.cart-empty-link:hover .basket-line,
-.cart-empty-link:focus .basket-line,
-.cart-empty-link:active .basket-line {
-	fill: rgb(50, 50, 50);
-}
-
-.user-navigation-item:hover .cart-wrap {
+.user-navigation-item:hover .cart {
 	display: block;
 }
 /*END of General Header*/
@@ -447,6 +449,7 @@ a {
 	padding-right: 20px;
 	padding-left: 20px;
 
+	text-align: right;
 
 	background-position: 0 0;
 	background-repeat: no-repeat;
@@ -470,6 +473,7 @@ a {
 	font-size: 35px;
 	line-height: 41px;
 	font-weight: 700;
+	text-align: left;
 }
 
 .offers-desc {
@@ -480,11 +484,9 @@ a {
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: 700;
+	text-align: left;
 }
 
-.btn-offer {
-	text-align: right;
-}
 /*END of Promo Section*/
 
 /*Features in index.html*/
@@ -523,7 +525,7 @@ a {
 	list-style: none;
 }
 
-.features-item {
+.feature {
 	margin: 0;
 	padding-top: 22px;
 	padding-left: 57px;
@@ -622,7 +624,7 @@ a {
 }
 
 .subscribe {
-	padding: 30px 20px;
+	padding: 30px 20px 33px;
 
 	background-color: rgb(248, 247, 243);
 	border-radius: 15px;
@@ -639,8 +641,6 @@ a {
 .subscribe-form {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 0;
-	margin-bottom: 5px;
 }
 
 .subscribe-form .field-input {
@@ -960,11 +960,6 @@ a {
 	opacity: 1;
 }
 
-.social-link:active .social-icon {
-	fill: rgb(233, 233, 233);
-	opacity: 1;
-}
-
 .social-item:last-child {
 	margin-right: 0;
 }
@@ -1067,25 +1062,25 @@ a {
 .field-input,
 .field-textarea {
 	margin-top: 20px;
-	padding-top: 9px;
-	padding-bottom: 9px;
-	padding-right: 16px;
-	padding-left: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
 
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 24px;
 	font-weight: 700;
 	color: rgb(50, 50, 50);
 
 	background-color: rgb(255, 255, 255);
-	border-color: transparent;
+	border: none;
 	border-radius: 5px;
 	box-shadow: inset 0 0 0 1px rgb(178, 178, 178);
 }
 
 .field-input:hover,
 .field-textarea:hover {
-	border: transparent;
+	border: none;
 	box-shadow: inset 0 0 0 2px rgb(198, 197, 196);
 	outline: none;
 }
@@ -1094,7 +1089,7 @@ a {
 .field-textarea:active,
 .field-input:focus,
 .field-textarea:focus {
-	border: transparent;
+	border: none;
 	box-shadow: inset 0 0 0 2px rgb(143, 189, 236);
 	outline: none;
 }
@@ -1196,14 +1191,9 @@ a {
 	margin-bottom: 20px;
 }
 
-.login-help {
-	display: flex;
-	flex-direction: column;
-	padding: 0;
-	margin: 0;
-}
-
 .login-reg {
+	display: block;
+
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: 400;
@@ -1235,31 +1225,29 @@ a {
 /*END of Login Form in User Navigation*/
 
 /*Cart in User Navigation*/
-.cart-wrap {
+.cart {
 	position: absolute;
 	top: 35px;
 	right: 0px;
 
+	width: 511px;
 	padding-top: 20px;
-	padding-bottom: 0;
+	padding-bottom: 25px;
 	padding-right: 15px;
 	padding-left: 15px;
-
 
 	background-color: rgb(248, 247, 244);
 	border-radius: 5px;
 
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+	border-collapse: collapse;
 
 	display: none;
 }
 
-.cart {
-	width: 510px;
-
-	border-collapse: collapse;
+.cart tr {
+	display: flex;
 }
-
 .cart td {
 	padding-bottom: 0;
 	vertical-align: top;
@@ -1268,6 +1256,7 @@ a {
 .cart-description,
 .cart-cost,
 .cart-prod-summ {
+	display: block;
 	padding-top: 10px;
 
 	font-size: 13px;
@@ -1281,7 +1270,7 @@ a {
 
 .cart-delete-item {
 	padding-top: 5px;
-	padding-right: 8px;
+	padding-right: 15px;
 }
 
 .cart-delete {
@@ -1296,23 +1285,32 @@ a {
 
 	border: none;
 	cursor: pointer;
-	outline: none;
 }
 
 .cart-description {
-	max-width: 160px;
-	padding-right: 30px;
+	width: 230px;
+	padding-right: 15px;
+	padding-left: 10px;
+}
+
+.cart-cost {
+	padding-right: 28px;
 }
 
 .cart-prod-price {
 	color: rgb(153, 153, 153);
 }
 
+.cart-prod-summ {
+	padding-right: 20px;
+}
+
 .cart-empty-block {
-	height: 12px;
+	height: 13px;
 }
 
 .cart-summ {
+	flex-grow: 1;
 	padding-top: 15px;
 
 	text-align: right;
@@ -1332,7 +1330,6 @@ a {
 }
 
 .btn-cart {
-	margin-bottom: 25px;
 	padding-left: 15px;
 	padding-right: 15px;
 }
