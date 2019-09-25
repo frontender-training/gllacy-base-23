@@ -183,10 +183,10 @@ a {
 	top: 35px;
 	left: -8px;
 
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 
-  background-color: rgb(247, 246, 243);
+	background-color: rgb(247, 246, 243);
 
 	border-radius: 5px;
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -197,7 +197,7 @@ a {
 }
 
 .dropdown-menu-item:first-child {
-  margin-top: 5px;
+	margin-top: 5px;
 }
 
 .dropdown-menu-item:first-child::after {
@@ -247,7 +247,7 @@ a {
 }
 
 .dropdown-menu-item:first-child .dropdown-link {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 .dropdown-link-current {
@@ -286,8 +286,7 @@ a {
 
 .user-navigation-link:hover,
 .user-navigation-link:focus,
-.user-navigation-link:active,
-.cart-full-link {
+.user-navigation-link:active {
 	color: rgb(50, 50, 50);
 
 	background-color: rgb(247, 246, 243);
@@ -295,11 +294,11 @@ a {
 }
 
 .btn-search {
-  display: block;
-  width: 25px;
-  height: 25px;
-  padding-top: 7px;
-  padding-left: 7px;
+	display: block;
+	width: 25px;
+	height: 25px;
+	padding-top: 7px;
+	padding-left: 7px;
 }
 
 .login-link,
@@ -314,7 +313,17 @@ a {
 }
 
 .cart-empty-link {
-  min-width: 85px;
+	min-width: 85px;
+	max-width: 100px;
+}
+
+.cart-full-link {
+	max-width: 100px;
+
+	color: rgb(50, 50, 50);
+
+	background-color: rgb(247, 246, 243);
+	outline: none;
 }
 
 .cart-empty-link span,
@@ -327,7 +336,7 @@ a {
 .cart-empty-link:hover .basket-line,
 .cart-empty-link:focus .basket-line,
 .cart-empty-link:active .basket-line {
-  fill: rgb(50, 50, 50);
+	fill: rgb(50, 50, 50);
 }
 
 .user-navigation-item:hover .cart-wrap {
@@ -383,7 +392,7 @@ a {
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 700;
-  text-align: right;
+	text-align: right;
 }
 
 .work-time {
@@ -406,8 +415,8 @@ a {
 .work-phone:hover,
 .work-phone:focus,
 .work-phone:active {
-    color: rgb(255, 188, 158);
-    outline: none;
+	color: rgb(255, 188, 158);
+	outline: none;
 }
 /*END of Work Time and Schedule*/
 
@@ -442,7 +451,7 @@ a {
 	padding-left: 20px;
 
 
-  background-position: 0 0;
+	background-position: 0 0;
 	background-repeat: no-repeat;
 	border-radius: 15px;
 }
@@ -525,13 +534,13 @@ a {
 	width: 485px;
 
 	font-size: 16px;
-  line-height: 22px;
+	line-height: 22px;
 
-  background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	background-position: 0 9px;
 }
 
-.feature-product {
+.feature-ice-cream {
 	background-image: url(../img/ice-cream.svg);
 }
 
@@ -539,7 +548,7 @@ a {
 	background-image:	url(../img/eco.svg);
 }
 
-.feature-farm {
+.feature-cow {
 	background-image: url(../img/cow.svg);
 }
 
@@ -890,7 +899,7 @@ a {
 }
 
 .contacts-description {
-  margin-top: 0;
+	margin-top: 0;
 	margin-bottom: 5px;
 	font-size: 14px;
 	line-height: 20px;
@@ -931,7 +940,7 @@ a {
 .social {
 	display: flex;
 
-  margin-right: 205px;
+	margin-right: 205px;
 	padding: 0;
 
 	list-style: none;
@@ -964,14 +973,14 @@ a {
 }
 
 .footer-menu {
-  display: flex;
-  margin-top: 12px;
-  margin-right: 220px;
+	display: flex;
+	margin-top: 12px;
+	margin-right: 220px;
 	padding-bottom: 5px;
 }
 
 .footer-menu-list {
-  min-width: 172px;
+	min-width: 172px;
 	margin: 0;
 	padding: 0;
 
@@ -1008,6 +1017,9 @@ a {
 	background-repeat: no-repeat;
 }
 
+.footer-copyright {
+	min-width: 190px;
+}
 .copyright-txt {
 	margin: 0;
 	padding: 0;
@@ -1026,6 +1038,7 @@ a {
 .copyright-link:active {
 	color: rgb(255, 188, 158);
 }
+
 .copyright-link:hover .border-bottom,
 .copyright-link:focus .border-bottom,
 .copyright-link:active .border-bottom {
@@ -1068,7 +1081,7 @@ a {
 	color: rgb(50, 50, 50);
 
 	background-color: rgb(255, 255, 255);
-	border: transparent;
+	border-color: transparent;
 	border-radius: 5px;
 	box-shadow: inset 0 0 0 1px rgb(178, 178, 178);
 }
@@ -1266,7 +1279,7 @@ a {
 }
 
 .cart-description a {
-  color: rgb(50, 50,50);
+	color: rgb(50, 50,50);
 }
 
 .cart-delete-item {
@@ -1275,14 +1288,14 @@ a {
 }
 
 .cart-delete {
-  padding: 0;
-  width: 11px;
-  height: 11px;
+	padding: 0;
+	width: 11px;
+	height: 11px;
 
-  background-color: transparent;
-  background-image: url(../img/cross-small.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
+	background-color: transparent;
+	background-image: url(../img/cross-small.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
 
 	border: none;
 	cursor: pointer;
@@ -1366,7 +1379,7 @@ a {
 	top: 20px;
 	right: 20px;
 
-  background-color: transparent;
+	background-color: transparent;
 	border: none;
 	cursor: pointer;
 }
