@@ -69,8 +69,10 @@ a {
 	border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 
-.text-bold {
-	font-weight: 700;
+.border-bottom:hover,
+.border-bottom:focus,
+.border-bottom:active  {
+	border-color: rgba(255, 188, 158, .3);
 }
 
 .row {
@@ -278,6 +280,11 @@ a {
 	outline: none;
 }
 
+.main-navigation-link:hover .border-bottom,
+.main-navigation-link:focus .border-bottom {
+	border: none;
+}
+
 .main-navigation-link:active {
 	background-color: rgb(237, 237, 237);
 
@@ -286,7 +293,7 @@ a {
 
 .dropdown-menu-list {
 	position: absolute;
-	top: 35px;
+	top: 37px;
 	left: -8px;
 
 	margin: 0;
@@ -309,10 +316,9 @@ a {
 }
 
 .dropdown-menu-item:first-child {
-	margin-top: 5px;
-	padding-top: 9px;
+	padding-top: 11px;
 	padding-right: 15px;
-	padding-bottom: 6px;
+	padding-bottom: 7px;
 	padding-left: 20px;
 }
 
@@ -343,8 +349,8 @@ a {
 	margin: 0;
 	padding-top: 9px;
 	padding-bottom: 6px;
-	padding-right: 15px;
-	padding-left: 20px;
+	padding-right: 14px;
+	padding-left: 21px;
 	min-width: 110px;
 
 	color: rgb(50, 50, 50);
@@ -430,16 +436,21 @@ a {
 .cart-empty-link {
 	min-width: 85px;
 	max-width: 100px;
+	height: 20px;
+
+	text-overflow: clip;
 }
 
 .cart-full-link {
 	max-width: 100px;
+	height: 20px;
 
 	color: rgb(50, 50, 50);
 
 	background-color: rgb(247, 246, 243);
 
 	outline: none;
+	text-overflow: clip;
 }
 
 .user-navigation-item:hover .cart {
@@ -479,12 +490,6 @@ a {
 	color: rgb(255, 188, 158);
 
 	outline: none;
-}
-
-.breadcrumbs-link:hover .border-bottom,
-.breadcrumbs-link:focus .border-bottom,
-.breadcrumbs-link:active .border-bottom {
-	border-color: rgba(255, 188, 158, .3);
 }
 /*END of Breadcrumbs*/
 
@@ -1086,7 +1091,6 @@ a {
 
 .footer-menu-item {
 	margin: 0;
-	padding-left: 30px;
 }
 
 .footer-menu-link {
@@ -1102,16 +1106,16 @@ a {
 	outline: none;
 }
 
-.footer-menu-link:hover .border-bottom,
-.footer-menu-link:focus .border-bottom,
-.footer-menu-link:active .border-bottom {
-	border-color: rgba(255, 188, 158, .3);
-}
+.supplier {
+	padding-left: 30px;
 
-.footer-menu-item:first-child {
 	background-image: url(../img/heart.svg);
 	background-position: 8px 5px;
 	background-repeat: no-repeat;
+}
+
+.supplier + .footer-menu-item {
+	padding-left: 30px;	
 }
 
 .footer-copyright {
@@ -1134,12 +1138,6 @@ a {
 .copyright-link:focus,
 .copyright-link:active {
 	color: rgb(255, 188, 158);
-}
-
-.copyright-link:hover .border-bottom,
-.copyright-link:focus .border-bottom,
-.copyright-link:active .border-bottom {
-	border-color: rgba(255, 188, 158, .3);
 }
 /*END of Footer*/
 
@@ -1243,9 +1241,12 @@ a {
 	border-radius: 5px;
 
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
-	border-collapse: collapse;
 
 	display: none;
+}
+
+.cart table {
+	border-collapse: collapse;	
 }
 
 .cart tr {
@@ -1417,3 +1418,8 @@ a {
 }
 /*END of Feedback Close Button*/
 /*END of Feedback Form in Contact Section*/
+
+
+.text-bold {
+	font-weight: 700;
+}
