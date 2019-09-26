@@ -112,6 +112,105 @@ a {
 	box-shadow: inset 0 2px 2px rgb(148, 39, 24);
 	outline: none;
 }
+
+/*General Form styling*/
+.form {
+	background-color: rgb(248, 247, 244);
+	padding-top: 20px;
+	padding-right: 15px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+}
+
+.field-layout {
+	position: relative;
+
+	text-align: left;
+}
+
+.field-label {
+	position: absolute;
+	top: 5px;
+	left: 15px;
+
+	font-size: 11px;
+	line-height: 13px;
+	color: rgb(91, 157, 223);
+
+	display: none;
+}
+
+.field-input,
+.field-textarea {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+	color: rgb(50, 50, 50);
+
+	background-color: rgb(255, 255, 255);
+	border: none;
+	border-radius: 5px;
+	box-shadow: inset 0 0 0 1px rgb(178, 178, 178);
+}
+
+.field-input:hover,
+.field-textarea:hover {
+	border: none;
+	box-shadow: inset 0 0 0 2px rgb(198, 197, 196);
+	outline: none;
+}
+
+.field-input:active,
+.field-textarea:active,
+.field-input:focus,
+.field-textarea:focus {
+	border: none;
+	box-shadow: inset 0 0 0 2px rgb(143, 189, 236);
+	outline: none;
+}
+
+.field-input::placeholder,
+.field-textarea::placeholder {
+	font-weight: 400;
+	color: rgb(153, 153, 153);
+}
+
+.field-input:-ms-input-placeholder {
+	font-weight: 400;
+	color: rgb(153, 153, 153);
+}
+
+.field-textarea:-ms-input-placeholder {
+	font-weight: 400;
+	color: rgb(153, 153, 153);
+}
+
+.field-input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.field-input:focus::-moz-placeholder {
+	color: transparent;
+}
+
+.field-input:focus:-ms-input-placeholder {
+	color: transparent;
+}
+
+.field-textarea {
+	resize: none;
+}
+
+.field-input:focus + .field-label,
+.field-textarea:focus + .field-label {
+	display: block;
+}
+/*END of General Form styling*/
 /*END of Styles for Overall Site*/
 
 /*Main Header*/
@@ -255,10 +354,6 @@ a {
 	background-color: rgb(246, 181, 165);
 }
 
-.dropdown-menu-item:first-child .dropdown-link {
-	font-weight: 700;
-}
-
 .dropdown-link-current {
 	background-color: rgb(208, 112, 88);
 }
@@ -284,13 +379,23 @@ a {
 }
 
 .user-navigation-link {
+	display: flex;
+	align-items: center;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-right: 16px;
+	padding-left: 16px;
+
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 500;
 	color: rgb(255, 255, 255);
 
 	background-color: rgba(255, 255, 255, .2);
+	
 	border-radius: 15px;
+
+	overflow: hidden;
 }
 
 .user-navigation-link:hover,
@@ -302,23 +407,18 @@ a {
 	outline: none;
 }
 
+.user-navigation-link span {
+	margin-left: 7px;
+}
+
 .btn-search {
 	display: block;
 	width: 25px;
 	height: 25px;
 	padding-top: 7px;
+	padding-right: 0;
 	padding-left: 7px;
-}
-
-.login-link,
-.cart-empty-link,
-.cart-full-link {
-	display: flex;
-	align-items: center;
-	padding-top: 6px;
-	padding-bottom: 6px;
-	padding-right: 16px;
-	padding-left: 16px;
+	padding-bottom: 0;
 }
 
 .cart-empty-link {
@@ -333,12 +433,6 @@ a {
 
 	background-color: rgb(247, 246, 243);
 	outline: none;
-}
-
-.cart-empty-link span,
-.cart-full-link span,
-.login-link span {
-	margin-left: 7px;
 }
 
 .user-navigation-item:hover .cart {
@@ -632,7 +726,7 @@ a {
 
 .subscribe-txt {
 	margin-top: 0;
-	margin-bottom: 15px;
+	margin-bottom: 37px;
 	padding: 0;
 
 	color: rgb(90, 90, 90);
@@ -641,6 +735,7 @@ a {
 .subscribe-form {
 	display: flex;
 	justify-content: space-between;
+	padding: 0;
 }
 
 .subscribe-form .field-input {
@@ -648,7 +743,6 @@ a {
 }
 
 .btn-subscribe {
-	margin-top: 18px;
 	padding-right: 18px;
 	padding-left: 18px;
 }
@@ -887,7 +981,7 @@ a {
 	color: rgb(50, 50, 50);
 	width: 250px;
 	padding-top: 30px;
-	padding-bottom: 28px;
+	padding-bottom: 35px;
 	padding-right: 25px;
 	padding-left: 25px;
 
@@ -896,8 +990,8 @@ a {
 }
 
 .contacts-description {
-	margin-top: 0;
-	margin-bottom: 5px;
+	margin: 0;
+
 	font-size: 14px;
 	line-height: 20px;
 }
@@ -909,21 +1003,17 @@ a {
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;
-
-	width: 230px;
 }
 
 .contacts-phone {
-	margin-bottom: 3px;
-
 	font-size: 18px;
-	line-height: 22px;
+	line-height: 32px;
 	font-weight: 700;
 	color: rgb(50, 50, 50);
 }
 
 .btn-contact {
-	margin-top: 25px;
+	margin-top: 20px;
 }
 /*END of Contacts*/
 
@@ -956,8 +1046,14 @@ a {
 .social-link:hover .social-icon,
 .social-link:focus .social-icon,
 .social-link:active .social-icon {
+	border: 2px solid rgba(255, 255, 255, .7);
 	outline: none;
 	opacity: 1;
+}
+
+.social-link:active .social-icon {
+	background-color: rgb(233, 233, 233);
+	/*думаю, тут должен быть fill, так как меняется цвет иконки*/
 }
 
 .social-item:last-child {
@@ -1038,112 +1134,11 @@ a {
 }
 /*END of Footer*/
 
-/*General Form styling*/
-.form {
-	background-color: rgb(248, 247, 244);
-}
-
-.field-layout {
-	position: relative;
-}
-
-.field-label {
-	position: absolute;
-	top: 5px;
-	left: 15px;
-
-	font-size: 11px;
-	line-height: 13px;
-	color: rgb(91, 157, 223);
-
-	display: none;
-}
-
-.field-input,
-.field-textarea {
-	margin-top: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-right: 15px;
-	padding-left: 15px;
-
-	font-size: 14px;
-	line-height: 24px;
-	font-weight: 700;
-	color: rgb(50, 50, 50);
-
-	background-color: rgb(255, 255, 255);
-	border: none;
-	border-radius: 5px;
-	box-shadow: inset 0 0 0 1px rgb(178, 178, 178);
-}
-
-.field-input:hover,
-.field-textarea:hover {
-	border: none;
-	box-shadow: inset 0 0 0 2px rgb(198, 197, 196);
-	outline: none;
-}
-
-.field-input:active,
-.field-textarea:active,
-.field-input:focus,
-.field-textarea:focus {
-	border: none;
-	box-shadow: inset 0 0 0 2px rgb(143, 189, 236);
-	outline: none;
-}
-
-.field-input::placeholder,
-.field-textarea::placeholder {
-	font-weight: 400;
-	color: rgb(153, 153, 153);
-}
-
-.field-input:-ms-input-placeholder {
-	font-weight: 400;
-	color: rgb(153, 153, 153);
-}
-
-.field-textarea:-ms-input-placeholder {
-	font-weight: 400;
-	color: rgb(153, 153, 153);
-}
-
-.field-input:focus::-webkit-input-placeholder {
-	color: transparent;
-}
-
-.field-input:focus::-moz-placeholder {
-	color: transparent;
-}
-
-.field-input:focus:-ms-input-placeholder {
-	color: transparent;
-}
-
-.field-textarea {
-	margin-bottom: 25px;
-
-	resize: none;
-}
-
-.field-input:focus + .field-label,
-.field-textarea:focus + .field-label {
-	display: block;
-}
-/*END of General Form styling*/
-
 /*Search Form in User Navigation*/
 .search-form {
 	position: absolute;
 	top: 35px;
-	right: 225px;
-
-	padding-top: 0;
-	padding-bottom: 20px;
-	padding-right: 15px;
-	padding-left: 15px;
+	right: 230px;
 
 	border-radius: 5px;
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -1182,20 +1177,19 @@ a {
 
 .login-form .field-input {
 	width: 208px;
+	margin-bottom: 20px;
 }
 
 .login-enter {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 20px;
-	margin-bottom: 20px;
 }
 
 .login-reg {
 	display: block;
 
 	font-size: 13px;
-	line-height: 24px;
+	line-height: 22px;
 	font-weight: 400;
 	color: rgb(50, 50, 50);
 }
@@ -1350,9 +1344,16 @@ a {
 	border-radius: 10px;
 }
 
+.feedback .form {
+	padding: 0;
+
+	text-align: right;
+}
+
 .feedback-title {
 	padding: 0;
-	margin: 0;
+	margin-top: 0;
+	margin-bottom: 24px;
 
 	font-size: 24px;
 	line-height: 28px;
@@ -1362,10 +1363,12 @@ a {
 
 .feedback .field-input {
 	width: 235px;
+	margin-bottom: 20px;
 }
 
 .feedback .field-textarea {
-	width: 390px;
+	width: 398px;
+	margin-bottom: 25px;
 }
 
 .close-btn {
