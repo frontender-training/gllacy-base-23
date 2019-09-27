@@ -48,8 +48,8 @@
 				</li>
 				<li class="user-navigation-item">
 					<a class="user-navigation-link login-link" href="login.html">
-						<img src="img/entrance.svg" alt="Вход в личный кабинет" width="21" height="19">
-						<span>Вход</span>
+						<img class="user-navigation-icon" src="img/entrance.svg" alt="Вход в личный кабинет" width="21" height="19">
+						Вход
 					</a>
 					<form class="form login-form" action="https://echo.htmlacademy.ru" method="post">
 						<div class="field-layout">
@@ -61,21 +61,18 @@
 							<label class="field-label" for="password">Пароль</label>
 						</div>
 						<div class="login-enter">
-							<button class="btn" type="submit">Войти</button>
-							<p class="login-help">
-								<a class="login-reg" href="#"><span class="border-bottom">Забыли пароль?</span></a>
-								<a class="login-reg" href="#"><span class="border-bottom">Новая регистрация</span></a>
-							</p>
+							<button class="btn btn-login" type="submit">Войти</button>
+							<div class="login-help">
+								<a class="login-reg" href="#">Забыли пароль?</a>
+								<a class="login-reg" href="#">Новая регистрация</a>
+							</div>
 						</div>
 					</form>
 				</li>
 				<li class="user-navigation-item">
 					<a class="user-navigation-link cart-full-link" href="basket.html">
-						<img src="img/basket-red.svg" alt="" width="21" height="20">
-						<span>2 товара</span>
-					</a>
-					<div class="cart">
-					<table>
+						<img class="user-navigation-icon" src="img/basket-red.svg" alt="" width="21" height="20">2 товара</a>
+					<table class="cart">
 						<tr>
 							<td class="cart-delete-item">
 								<button class="cart-delete">
@@ -130,7 +127,7 @@
 								<a class="btn btn-cart" href="basket.html">Оформить заказ</a>
 							</td>
 						</tr>
-					</table></div>
+					</table>
 				</li>
 			</ul>
 		</header>
@@ -139,14 +136,14 @@
 				<div class="breadcrumbs">
 					<ul class="breadcrumbs-list">
 						<li class="breadcrumbs-item">
-							<a class="breadcrumbs-link border-bottom" href="index.html">Главная</a>
+							<a class="breadcrumbs-link" href="index.html">Главная</a>
 						</li>
 						<li class="breadcrumbs-item">&raquo;</li>
 						<li class="breadcrumbs-item">
-							<a class="breadcrumbs-link border-bottom" href="catalog.html">Каталог</a>
+							<a class="breadcrumbs-link" href="catalog.html">Каталог</a>
 						</li>
 						<li class="breadcrumbs-item">&raquo;</li>
-						<li class="breadcrumbs-item breadcrumbs-current">Сливочное</li>
+						<li class="breadcrumbs-item">Сливочное</li>
 					</ul>
 				</div>
 				<div class="schedule">
@@ -431,8 +428,8 @@
 					</li>
 					<!-- конец третья строка товаров -->
 				</ul>
-				<div class="pagination">
-						<span class="pagination-item pagination-item-prev pagination-item-disabled">
+				<div class="pagination-list">
+						<span class="pagination-item-prev pagination-item-disabled">
 							<span class="visually-hidden">Назад</span>
 						</span>
 						<a class="pagination-item pagination-item-current" href="#">1</a>
@@ -440,7 +437,7 @@
 						<a class="pagination-item" href="#">3</a>
 						<a class="pagination-item" href="#">4</a>
 						<a class="pagination-item" href="#">5</a>
-						<a class="pagination-item pagination-item-next" href="#">
+						<a class="pagination-item-next" href="#">
 							<span class="visually-hidden">Вперед</span>
 						</a>
 					</div>
@@ -475,19 +472,20 @@
 			</ul>
 			<div class="footer-menu">
 				<ul class="footer-menu-list">
-					<li class="footer-menu-item supplier">
-						<a class="footer-menu-link text-bold border-bottom" href="#">Для поставщиков</a>
+					<li class="footer-menu-item">
+						<img class="footer-menu-icon" src="img/heart.svg" alt="" width="15" height="13">
+						<a class="footer-menu-link text-bold" href="#">Для поставщиков</a>
 					</li>
 					<li class="footer-menu-item">
-						<a class="footer-menu-link border-bottom" href="#">О производстве</a>
+						<a class="footer-menu-link" href="#">О производстве</a>
 					</li>
 				</ul>
 				<ul class="footer-menu-list">
 					<li class="footer-menu-item">
-						<a class="footer-menu-link border-bottom" href="#">Наши документы</a>
+						<a class="footer-menu-link" href="#">Наши документы</a>
 					</li>
 					<li class="footer-menu-item">
-						<a class="footer-menu-link border-bottom" href="#">Экологические стандарты</a>
+						<a class="footer-menu-link" href="#">Экологические стандарты</a>
 					</li>
 				</ul>
 			</div>
@@ -496,7 +494,7 @@
 					<img src="img/logo-htmlacademy.svg" alt="HTMLAcademy" width="108" height="39">
 				</a>
 				<p class="copyright-txt">
-					Сделано в <a class="copyright-link border-bottom" href="https://htmlacademy.ru/">HTML Academy</a> &#169; 2019
+					Сделано в <a class="copyright-link" href="https://htmlacademy.ru/">HTML Academy</a> &#169; 2019
 				</p>
 			</div>
 		</footer>

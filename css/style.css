@@ -71,7 +71,7 @@ a {
 
 .border-bottom:hover,
 .border-bottom:focus,
-.border-bottom:active  {
+.border-bottom:active {
 	border-color: rgba(255, 188, 158, .3);
 }
 
@@ -136,7 +136,7 @@ a {
 
 .field-label {
 	position: absolute;
-	top: 5px;
+	top: -15px;
 	left: 15px;
 
 	font-size: 11px;
@@ -419,8 +419,8 @@ a {
 	outline: none;
 }
 
-.user-navigation-link span {
-	margin-left: 7px;
+.user-navigation-icon {
+	margin-right: 7px;
 }
 
 .btn-search {
@@ -435,22 +435,14 @@ a {
 
 .cart-empty-link {
 	min-width: 85px;
-	max-width: 100px;
-	height: 20px;
-
-	text-overflow: clip;
 }
 
 .cart-full-link {
-	max-width: 100px;
-	height: 20px;
-
 	color: rgb(50, 50, 50);
 
 	background-color: rgb(247, 246, 243);
 
 	outline: none;
-	text-overflow: clip;
 }
 
 .user-navigation-item:hover .cart {
@@ -477,11 +469,13 @@ a {
 
 	font-size: 14px;
 	line-height: 16px;
+	color: rgb(255, 255, 255);
 }
 
-.breadcrumbs-link,
-.breadcrumbs-current {
+.breadcrumbs-link {
 	color: rgb(255, 255, 255);
+
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 
 .breadcrumbs-link:hover,
@@ -489,6 +483,7 @@ a {
 .breadcrumbs-link:active {
 	color: rgb(255, 188, 158);
 
+	border-color: rgba(255, 188, 158, .3);
 	outline: none;
 }
 /*END of Breadcrumbs*/
@@ -674,8 +669,8 @@ a {
 	height: 172px;
 	margin: 0;
 	padding-top: 24px;
-	padding-bottom: 24px;
 	padding-right: 20px;
+	padding-bottom: 24px;
 	padding-left: 20px;
 
 	background-color: rgb(255, 255, 255);
@@ -1034,14 +1029,12 @@ a {
 /*Footer*/
 .main-footer {
 	display: flex;
-
+	justify-content: space-between;
 	padding-bottom: 25px;
 }
 
 .social {
 	display: flex;
-
-	margin-right: 205px;
 	padding: 0;
 
 	list-style: none;
@@ -1077,50 +1070,54 @@ a {
 .footer-menu {
 	display: flex;
 	margin-top: 12px;
-	margin-right: 220px;
 	padding-bottom: 5px;
 }
 
 .footer-menu-list {
-	min-width: 172px;
-	margin: 0;
+	margin-top: 0;
+	margin-right: 14px;
+	margin-bottom: 0;
+  margin-left: 17px;
 	padding: 0;
 
 	list-style: none;
 }
 
 .footer-menu-item {
+	position: relative;
 	margin: 0;
+}
+
+.footer-menu-icon {
+	position: absolute;
+	top: 5px;
+	left: -22px;
+
+	width: 15px;
+	height: 13px;
 }
 
 .footer-menu-link {
 	font-size: 13px;
 	line-height: 18px;
 	color: rgb(255, 255, 255);
+
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 
 .footer-menu-link:hover,
 .footer-menu-link:focus,
 .footer-menu-link:active {
 	color: rgb(255, 188, 158);
+
+	border-color: rgba(255, 188, 158, .3);
 	outline: none;
-}
-
-.supplier {
-	padding-left: 30px;
-
-	background-image: url(../img/heart.svg);
-	background-position: 8px 5px;
-	background-repeat: no-repeat;
-}
-
-.supplier + .footer-menu-item {
-	padding-left: 30px;	
 }
 
 .footer-copyright {
 	min-width: 190px;
 }
+
 .copyright-txt {
 	margin: 0;
 	padding: 0;
@@ -1132,12 +1129,17 @@ a {
 
 .copyright-link{
 	color: rgb(255, 255, 255);
+
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 
 .copyright-link:hover,
 .copyright-link:focus,
 .copyright-link:active {
 	color: rgb(255, 188, 158);
+
+	border-color: rgba(255, 188, 158, .3);
+	outline: none;
 }
 /*END of Footer*/
 
@@ -1154,7 +1156,7 @@ a {
 }
 
 .user-navigation-item:hover .search-form,
-.user-navigation-item:focus .search-form {
+.user-navigation-item:focus-within .search-form {
 	display: block;
 }
 
@@ -1170,6 +1172,7 @@ a {
 	right: 125px;
 	padding-right: 20px;
 	padding-left: 20px;
+	padding-bottom: 23px;
 
 	border-radius: 5px;
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -1178,7 +1181,7 @@ a {
 }
 
 .user-navigation-item:hover .login-form,
-.user-navigation-item:focus .login-form {
+.user-navigation-item:focus-within .login-form {
 	display: block;
 }
 
@@ -1193,12 +1196,14 @@ a {
 }
 
 .login-reg {
-	display: block;
+	display: inline-block;
 
 	font-size: 13px;
-	line-height: 22px;
+	line-height: 13px;
 	font-weight: 400;
 	color: rgb(50, 50, 50);
+
+	border-bottom: 1px solid rgba(0, 0, 0, .3);
 }
 
 .login-reg:hover,
@@ -1206,35 +1211,29 @@ a {
 .login-reg:active {
 	color: rgb(232, 77, 55);
 	outline: none;
-}
-
-.login-reg .border-bottom {
-	padding: 0;
-	margin: 0;
-
-	border-bottom: 1px solid rgb(0, 0, 0);
-}
-
-.login-reg:hover .border-bottom,
-.login-reg:focus .border-bottom,
-.login-reg:active .border-bottom {
-	padding: 0;
-	margin: 0;
 
 	border-color: rgba(232, 77, 55, .3);
+}
+
+.btn-login {
+	margin-top: auto;
+	margin-right: 18px;
+	margin-bottom: auto;
+
 }
 /*END of Login Form in User Navigation*/
 
 /*Cart in User Navigation*/
 .cart {
 	position: absolute;
-	top: 35px;
+	top: 36px;
 	right: 0px;
 
-	width: 511px;
-	padding-top: 20px;
-	padding-bottom: 25px;
-	padding-right: 15px;
+	display: block;
+	width: 515px;
+	padding-top: 17px;
+	padding-right: 11px;
+	padding-bottom: 20px;
 	padding-left: 15px;
 
 	background-color: rgb(248, 247, 244);
@@ -1257,24 +1256,9 @@ a {
 	vertical-align: top;
 }
 
-.cart-description,
-.cart-cost,
-.cart-prod-summ {
-	display: block;
-	padding-top: 10px;
-
-	font-size: 13px;
-	line-height: 16px;
-	color: rgb(50, 50, 50);
-}
-
-.cart-description a {
-	color: rgb(50, 50,50);
-}
-
 .cart-delete-item {
 	padding-top: 5px;
-	padding-right: 15px;
+	padding-right: 12px;
 }
 
 .cart-delete {
@@ -1291,10 +1275,26 @@ a {
 	cursor: pointer;
 }
 
+.cart-description,
+.cart-cost,
+.cart-prod-summ {
+	display: block;
+	padding-top: 10px;
+
+	font-size: 13px;
+	line-height: 16px;
+	color: rgb(50, 50, 50);
+}
+
+.cart-description a {
+	color: rgb(50, 50,50);
+}
+
+
 .cart-description {
 	width: 230px;
-	padding-right: 15px;
-	padding-left: 10px;
+	padding-right: 16px;
+	padding-left: 12px;
 }
 
 .cart-cost {
@@ -1410,15 +1410,14 @@ a {
 }
 
 .close-btn::before {
-	transform: rotate(45deg);	
+	transform: rotate(45deg);
 }
 
 .close-btn::after {
-	transform: rotate(-45deg);	
+	transform: rotate(-45deg);
 }
 /*END of Feedback Close Button*/
 /*END of Feedback Form in Contact Section*/
-
 
 .text-bold {
 	font-weight: 700;
