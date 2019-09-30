@@ -1156,7 +1156,7 @@ a {
 }
 
 .user-navigation-item:hover .search-form,
-.user-navigation-item:focus-within .search-form {
+.user-navigation-item:focus .search-form {
 	display: block;
 }
 
@@ -1181,7 +1181,7 @@ a {
 }
 
 .user-navigation-item:hover .login-form,
-.user-navigation-item:focus-within .login-form {
+.user-navigation-item:focus .login-form {
 	display: block;
 }
 
@@ -1229,7 +1229,6 @@ a {
 	top: 36px;
 	right: 0px;
 
-	display: block;
 	width: 515px;
 	padding-top: 17px;
 	padding-right: 11px;
@@ -1240,12 +1239,13 @@ a {
 	border-radius: 5px;
 
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+	box-sizing: border-box;
 
 	display: none;
 }
 
 .cart table {
-	border-collapse: collapse;	
+	border-collapse: collapse;
 }
 
 .cart tr {
