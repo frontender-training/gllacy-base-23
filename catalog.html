@@ -9,33 +9,33 @@
 	</head>
 	<body>
 		<header class="main-header container">
-			<a class="main-logo" href="index.html">
-				<img src="img/logo.svg" alt="Магазин мороженного 'Глэсси'" width="154" height="64">
-			</a>
 			<nav class="main-navigation">
+					<a class="main-logo" href="index.html">
+						<img src="img/logo.svg" alt="Магазин мороженного 'Глэсси'" width="154" height="64">
+					</a>
 				<ul class="main-navigation-list">
 					<li class="main-navigation-item">
 						<a class="main-navigation-link main-navigation-link-current" href="catalog.html">Каталог</a>
 						<ul class="dropdown-menu-list">
-							<li class="dropdown-menu-item"><a class="text-bold" href="#">Новинки</a></li>
-							<li class="dropdown-menu-item"><a class="dropdown-link-current" href="catalog.html">Сливочное</a></li>
-							<li class="dropdown-menu-item"><a href="#">Щербеты</a></li>
-							<li class="dropdown-menu-item"><a href="#">Фруктовый лед</a></li>
-							<li class="dropdown-menu-item"><a href="#">Мелорин</a></li>
+							<li class="dropdown-menu-item text-bold">Новинки</li>
+							<li class="dropdown-menu-item"><a class="dropdown-link dropdown-link-current" href="catalog.html">Сливочное</a></li>
+							<li class="dropdown-menu-item"><a class="dropdown-link" href="#">Щербеты</a></li>
+							<li class="dropdown-menu-item"><a class="dropdown-link" href="#">Фруктовый лед</a></li>
+							<li class="dropdown-menu-item"><a class="dropdown-link" href="#">Мелорин</a></li>
 						</ul>
 					</li>
 					<li class="main-navigation-item">
-						<a class="main-navigation-link" href="#">Доставка и оплата</a>
+						<a class="main-navigation-link" href="#"><span class="border-bottom">Доставка и оплата</span></a>
 					</li>
 					<li class="main-navigation-item">
-						<a class="main-navigation-link" href="#">О компании</a>
+						<a class="main-navigation-link" href="#"><span class="border-bottom">О компании</span></a>
 					</li>
 				</ul>
 			</nav>
 			<ul class="user-navigation">
 				<li class="user-navigation-item">
 					<a class="user-navigation-link btn-search" href="search.html">
-						<img src="img/loupe.svg" alt="Поиск по саиту" width="17" height="17">
+						<img src="img/loupe.svg" alt="" width="17" height="17">
 						<span class="visually-hidden">Поиск</span>
 					</a>
 					<form class="form search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -47,11 +47,11 @@
 					</form>
 				</li>
 				<li class="user-navigation-item">
-					<a class="user-navigation-link" href="login.html">
-						<img src="img/entrance.svg" alt="Вход на сайт" width="21" height="19">
-						<span>Вход</span>
+					<a class="user-navigation-link login-link" href="login.html">
+						<img class="user-navigation-icon" src="img/entrance.svg" alt="Вход в личный кабинет" width="21" height="19">
+						Вход
 					</a>
-					<form class="form" action="https://echo.htmlacademy.ru" method="post">
+					<form class="form login-form" action="https://echo.htmlacademy.ru" method="post">
 						<div class="field-layout">
 							<input class="field-input" id="email" type="email" name="email" placeholder="Электронная почта">
 							<label class="field-label" for="email">Электронная почта</label>
@@ -61,67 +61,70 @@
 							<label class="field-label" for="password">Пароль</label>
 						</div>
 						<div class="login-enter">
-							<button class="btn" type="submit">Войти</button>
-							<p class="login-help">
+							<button class="btn btn-login" type="submit">Войти</button>
+							<div class="login-help">
 								<a class="login-reg" href="#">Забыли пароль?</a>
 								<a class="login-reg" href="#">Новая регистрация</a>
-							</p>
+							</div>
 						</div>
 					</form>
 				</li>
 				<li class="user-navigation-item">
-					<a class="user-navigation-link" href="basket.html">
-						<img src="img/basket-red.svg" alt="Корзина" width="21" height="20">
-						<span>2 товара</span>
-					</a>
+					<a class="user-navigation-link cart-full-link" href="basket.html">
+						<img class="user-navigation-icon" src="img/basket-red.svg" alt="" width="21" height="20">2 товара</a>
 					<table class="cart">
 						<tr>
-							<td class="cart-del">
-								<button class="cart-del">Удалить товар из корзины</button>
+							<td class="cart-delete-item">
+								<button class="cart-delete">
+									<span class="visually-hidden">Удалить товар из корзины</span>
+								</button>
 							</td>
-							<td class="cart-img">
+							<td>
 								<a href="catalog-item.html">
 									<img src="img/product-1-thumbnail.png" alt="Пломбир с апельсиновым джемом" width="33" height="33">
 								</a>
 							</td>
-							<td class="cart-desc">
-								<a class="cart-product" href="catalog-item.html">
-									Пломбир с апельсиновым джемом
-								</a>
+							<td class="cart-description">
+								<a href="catalog-item.html">Пломбир с апельсиновым джемом</a>
 							</td>
 							<td class="cart-cost">
 								<span class="cart-prod-quantity">1,5 кг</span>
 								<span>х</span>
 								<span class="cart-prod-price">200 руб.</span>
 							</td>
-							<td class="cart-cost">300 руб.</td>
+							<td class="cart-prod-summ">300 руб.</td>
 						</tr>
 						<tr>
-							<td class="cart-del">
-								<button class="cart-del">Удалить товар из корзины</button>
+							<td class="cart-empty-block" colspan="5"></td>
+						</tr>
+						<tr>
+							<td class="cart-delete-item">
+									<button class="cart-delete">
+											<span class="visually-hidden">Удалить товар из корзины</span>
+										</button>
 							</td>
-							<td class="cart-img">
+							<td>
 								<a href="catalog-item.html">
 									<img src="img/product-3-thumbnail.png" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
 								</a>
 							</td>
-							<td class="cart-desc">
-								<a class="cart-product" href="catalog-item.html">
-									Клубничный пломбир с присыпкой из белого шоколада
-								</a>
+							<td class="cart-description">
+								<a href="catalog-item.html">Клубничный пломбир с присыпкой из белого шоколада</a>
 							</td>
 							<td class="cart-cost">
 								<span class="cart-prod-quantity">1,5 кг</span>
 								<span>х</span>
 								<span class="cart-prod-price">300 руб.</span>
 							</td>
-							<td class="cart-cost">450 руб.</td>
+							<td class="cart-prod-summ">450 руб.</td>
 						</tr>
 						<tr>
-							<td colspan="5" class="cart-summ">
+							<td class="cart-empty-block" colspan="5"></td>
+						</tr>
+						<tr>
 							<td class="cart-summ" colspan="5">
 								<p>Итого: 750 руб.</p>
-								<a class="btn" href="basket.html">Оформить заказ</a>
+								<a class="btn btn-cart" href="basket.html">Оформить заказ</a>
 							</td>
 						</tr>
 					</table>
@@ -136,19 +139,20 @@
 							<a class="breadcrumbs-link" href="index.html">Главная</a>
 						</li>
 						<li class="breadcrumbs-item">&raquo;</li>
-						<li>
+						<li class="breadcrumbs-item">
 							<a class="breadcrumbs-link" href="catalog.html">Каталог</a>
 						</li>
 						<li class="breadcrumbs-item">&raquo;</li>
-						<li class="breadcrumbs-current">Сливочное</li>
+						<li class="breadcrumbs-item">Сливочное</li>
 					</ul>
 				</div>
 				<div class="schedule">
-					С 10 до 20, ежедневно
-					<span class="phone-numb">8 812 450-25-25</span>
+					<span class="work-time">С 10 до 20, ежедневно</span>
+					<a class="work-phone" href="tel:+78124502525">8 812 450-25-25</a>
 				</div>
 			</div>
 			<h1 class="catalog-title">Сливочное мороженое</h1>
+			<div class="temp-catalog"></div>
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -425,14 +429,15 @@
 					<!-- конец третья строка товаров -->
 				</ul>
 				<div class="pagination-list">
-						<a class="pagination-item pagination-item-prev" href="#">
+						<span class="pagination-item-prev pagination-item-disabled">
 							<span class="visually-hidden">Назад</span>
-						</a>
+						</span>
 						<a class="pagination-item pagination-item-current" href="#">1</a>
 						<a class="pagination-item" href="#">2</a>
 						<a class="pagination-item" href="#">3</a>
 						<a class="pagination-item" href="#">4</a>
-						<a class="pagination-item pagination-item-next" href="#">
+						<a class="pagination-item" href="#">5</a>
+						<a class="pagination-item-next" href="#">
 							<span class="visually-hidden">Вперед</span>
 						</a>
 					</div>
@@ -441,25 +446,25 @@
 		<footer class="main-footer container">
 			<ul class="social">
 				<li class="social-item">
-					<a href="http://twitter.com">
+					<a class="social-link" href="http://twitter.com">
 						<span class="visually-hidden">Твиттер</span>
 						<img class="social-icon" src="img/twitter.svg" alt="Twitter" width="37" height="37">
 					</a>
 				</li>
 				<li class="social-item">
-					<a href="http://instagram.com">
+					<a class="social-link" href="http://instagram.com">
 						<span class="visually-hidden">Инстаграм</span>
-						<img src="img/instagram.svg" alt="Instagram" class="social-icon" width="37" height="37">
+						<img class="social-icon" src="img/instagram.svg" alt="Instagram" width="37" height="37">
 					</a>
 				</li>
 				<li class="social-item">
-					<a href="http://facebook.com">
+					<a class="social-link" href="http://facebook.com">
 						<span class="visually-hidden">Фейсбук</span>
 						<img class="social-icon" src="img/fb.svg" alt="Facebook" width="37" height="37">
 					</a>
 				</li>
 				<li class="social-item">
-					<a href="http://vk.com">
+					<a class="social-link" href="http://vk.com">
 						<span class="visually-hidden">Вконтакте</span>
 						<img class="social-icon" src="img/vk.svg" alt="vk" width="37" height="37">
 					</a>
@@ -468,26 +473,19 @@
 			<div class="footer-menu">
 				<ul class="footer-menu-list">
 					<li class="footer-menu-item">
-						<a class="footer-menu-link text-bold" href="#">
-							Для поставщиков
-						</a>
+						<img class="footer-menu-icon" src="img/heart.svg" alt="" width="15" height="13">
+						<a class="footer-menu-link text-bold" href="#">Для поставщиков</a>
 					</li>
-					<li>
-						<a class="footer-menu-link" href="#">
-							О производстве
-						</a>
+					<li class="footer-menu-item">
+						<a class="footer-menu-link" href="#">О производстве</a>
 					</li>
 				</ul>
 				<ul class="footer-menu-list">
-					<li>
-						<a class="footer-menu-link" href="#">
-							Наши документы
-						</a>
+					<li class="footer-menu-item">
+						<a class="footer-menu-link" href="#">Наши документы</a>
 					</li>
-					<li>
-						<a class="footer-menu-link" href="#">
-							Экологические стандарты
-						</a>
+					<li class="footer-menu-item">
+						<a class="footer-menu-link" href="#">Экологические стандарты</a>
 					</li>
 				</ul>
 			</div>
