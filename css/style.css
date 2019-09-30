@@ -445,6 +445,10 @@ a {
 	outline: none;
 }
 
+.user-navigation-item .cart {
+	display: none;
+}
+
 .user-navigation-item:hover .cart {
 	display: block;
 }
@@ -1226,12 +1230,14 @@ a {
 /*Cart in User Navigation*/
 .cart {
 	position: absolute;
-	top: 36px;
+	top: 35px;
 	right: 0px;
-
-	width: 515px;
-	padding-top: 17px;
-	padding-right: 11px;
+	
+	display: block;
+	width: 540px;
+	min-height: 202px;
+	padding-top: 20px;
+	padding-right: 15px;
 	padding-bottom: 20px;
 	padding-left: 15px;
 
@@ -1240,19 +1246,13 @@ a {
 
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 	box-sizing: border-box;
-
-	display: none;
-}
-
-.cart table {
-	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 .cart tr {
 	display: flex;
 }
 .cart td {
-	padding-bottom: 0;
 	vertical-align: top;
 }
 
@@ -1298,7 +1298,7 @@ a {
 }
 
 .cart-cost {
-	padding-right: 28px;
+	padding-right: 27px;
 }
 
 .cart-prod-price {
@@ -1310,7 +1310,7 @@ a {
 }
 
 .cart-empty-block {
-	height: 13px;
+	height: 11px;
 }
 
 .cart-summ {
@@ -1325,7 +1325,7 @@ a {
 .cart-summ p {
 	margin: 0;
 	padding-top: 0;
-	padding-bottom: 12px;
+	padding-bottom: 13px;
 
 	font-size: 15px;
 	line-height: 18px;
