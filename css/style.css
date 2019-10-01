@@ -1,14 +1,12 @@
-.slider,
-.goods,
-.filters {
+.filters,
+.goods {
 	display: none;
 }
 
-.temp1,
 .temp2,
 .temp-catalog	{
 	width: 100%;
-	height: 503px;
+	height: 167px;
 	margin-bottom: 37px;
 	background-color: rgba(255, 0, 0, .2);
 }
@@ -58,7 +56,13 @@ a {
 	overflow: hidden;
 }
 
+.hidden {
+	display: none;
+}
+
 .container {
+	position: relative;
+
 	width: 1146px;
 	margin: auto;
 	padding-right: 27px;
@@ -126,6 +130,8 @@ a {
 	padding-left: 15px;
 
 	background-color: rgb(248, 247, 244);
+
+	z-index: 2;
 }
 
 .field-layout {
@@ -304,6 +310,7 @@ a {
 	border-radius: 5px;
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 	list-style: none;
+	z-index: 3;
 
 	display: none;
 }
@@ -527,6 +534,68 @@ a {
 /*END of Work Time and Schedule*/
 
 /*Slider in index.html*/
+.slider {
+	position: relative;
+
+	padding-top: 275px;
+	margin-bottom: 43px;
+}
+
+.slider-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.bg-1 {
+	background-color: rgb(132, 157, 143);
+}
+
+.bg-2 {
+	background-color: rgb(137, 150, 166);
+}
+
+.bg-3 {
+	background-color: rgb(157, 139, 132);
+}
+
+.sliders {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.slider-1 {
+	width: 1045px;
+	height: 881px;
+
+
+	background-image: url(../img/slider-1.png);
+	background-position: top left 78px;
+	background-repeat: no-repeat;
+}
+
+.slider-2 {
+	width: 1065px;
+	height: 859px;
+
+
+	background-image: url(../img/slider-2.png);
+	background-position: top left 68px;
+	background-repeat: no-repeat;
+}
+
+.slider-3 {
+	width: 1079px;
+	height: 854px;
+
+	background-image: url(../img/slider-3.png);
+	background-position: top left 61px;
+	background-repeat: no-repeat;
+}
+
 .slider-list {
 	margin: 0;
 	padding: 0;
@@ -534,13 +603,66 @@ a {
 	list-style: none;
 }
 
-.slider-item p {
-	margin: 0;
-	padding: 0;
+.slider-item {
+	padding-right: 230px;
+	padding-left: 230px;
+
 
 	font-size: 60px;
 	line-height: 60px;
 	font-weight: 700;
+	text-align: center;
+}
+
+.slider-item p {
+	margin-top: 0;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.btn-slider {
+	padding-right: 40px;
+	padding-left: 40px;
+
+	font-size: 32px;
+	line-height: 44px;
+	font-weight: 700;
+}
+
+.slider-toggles {
+	content: "";
+
+	position: absolute;
+	bottom: 19px;
+	left: 0;
+
+	display: flex;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.btn-toggle {
+	width: 21px;
+	height: 21px;
+	margin-right: 8px;
+
+	background: transparent;
+	border: 2px solid rgb(255, 255, 255);
+	border-radius: 50%;
+}
+
+.btn-toggle:focus,
+.btn-toggle:hover {
+	background-color: rgba(255, 255, 255, .4);
+	outline: none;
+}
+
+.toogle-checked,
+.btn-toggle:active {
+	background-color: rgb(255, 255, 255);
+	outline: none;
 }
 /*END of Slider in index.html*/
 
@@ -1247,6 +1369,8 @@ a {
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 	box-sizing: border-box;
 	border-collapse: collapse;
+
+	z-index: 2;
 }
 
 .cart tr {
