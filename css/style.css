@@ -1,14 +1,12 @@
-.slider,
-.goods,
-.filters {
+.filters,
+.goods {
 	display: none;
 }
 
-.temp1,
 .temp2,
 .temp-catalog	{
 	width: 100%;
-	height: 503px;
+	height: 167px;
 	margin-bottom: 37px;
 	background-color: rgba(255, 0, 0, .2);
 }
@@ -36,6 +34,9 @@ body {
 	color: rgb(255, 255, 255);
 
 	background-color: rgb(132, 157, 143);
+	background-image: url(../img/slider-1.png);
+	background-repeat: no-repeat;
+	background-position: top center;
 }
 
 a {
@@ -43,6 +44,10 @@ a {
 }
 
 /*Styles for Overall Site*/
+.body-catalog {
+	background-image: none;
+}
+
 .visually-hidden {
 	position: absolute;
 
@@ -58,7 +63,13 @@ a {
 	overflow: hidden;
 }
 
+.hidden {
+	display: none;
+}
+
 .container {
+	position: relative;
+
 	width: 1146px;
 	margin: auto;
 	padding-right: 27px;
@@ -126,6 +137,8 @@ a {
 	padding-left: 15px;
 
 	background-color: rgb(248, 247, 244);
+
+	z-index: 2;
 }
 
 .field-layout {
@@ -293,7 +306,7 @@ a {
 
 .dropdown-menu-list {
 	position: absolute;
-	top: 37px;
+	top: 35px;
 	left: -8px;
 
 	margin: 0;
@@ -304,6 +317,7 @@ a {
 	border-radius: 5px;
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 	list-style: none;
+	z-index: 3;
 
 	display: none;
 }
@@ -445,7 +459,12 @@ a {
 	outline: none;
 }
 
-.user-navigation-item:hover .cart {
+.user-navigation-item .cart {
+	display: none;
+}
+
+.user-navigation-item:hover .cart,
+.user-navigation-item:focus .cart {
 	display: block;
 }
 /*END of General Header*/
@@ -523,6 +542,11 @@ a {
 /*END of Work Time and Schedule*/
 
 /*Slider in index.html*/
+.slider {
+	padding-top: 275px;
+	margin-bottom: 43px;
+}
+
 .slider-list {
 	margin: 0;
 	padding: 0;
@@ -530,13 +554,66 @@ a {
 	list-style: none;
 }
 
-.slider-item p {
-	margin: 0;
-	padding: 0;
+.slider-item {
+	padding-right: 230px;
+	padding-left: 230px;
+
 
 	font-size: 60px;
 	line-height: 60px;
 	font-weight: 700;
+	text-align: center;
+}
+
+.slider-item p {
+	margin-top: 0;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.btn-slider {
+	padding-right: 40px;
+	padding-left: 40px;
+
+	font-size: 32px;
+	line-height: 44px;
+	font-weight: 700;
+}
+
+.slider-toggles {
+	content: "";
+
+	position: absolute;
+	bottom: 19px;
+	left: 0;
+
+	display: flex;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.slide-toggle {
+	width: 21px;
+	height: 21px;
+	margin-right: 8px;
+
+	background: transparent;
+	border: 2px solid rgb(255, 255, 255);
+	border-radius: 50%;
+}
+
+.slide-toggle:focus,
+.slide-toggle:hover {
+	background-color: rgba(255, 255, 255, .4);
+	outline: none;
+}
+
+.slide-toogle-checked,
+.slide-toggle:active {
+	background-color: rgb(255, 255, 255);
+	outline: none;
 }
 /*END of Slider in index.html*/
 
@@ -548,7 +625,7 @@ a {
 .offers-item {
 	width: 520px;
 	padding-top: 15px;
-	padding-bottom: 22px;
+	padding-bottom: 25px;
 	padding-right: 20px;
 	padding-left: 20px;
 
@@ -570,7 +647,8 @@ a {
 }
 
 .offers-title {
-	margin: 0;
+	margin-top: 0;
+	margin-bottom: 15px;
 	padding: 0;
 
 	font-size: 35px;
@@ -1226,12 +1304,14 @@ a {
 /*Cart in User Navigation*/
 .cart {
 	position: absolute;
-	top: 36px;
+	top: 35px;
 	right: 0px;
-
-	width: 515px;
-	padding-top: 17px;
-	padding-right: 11px;
+	
+	display: block;
+	width: 540px;
+	min-height: 202px;
+	padding-top: 20px;
+	padding-right: 15px;
 	padding-bottom: 20px;
 	padding-left: 15px;
 
@@ -1240,19 +1320,15 @@ a {
 
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 	box-sizing: border-box;
-
-	display: none;
-}
-
-.cart table {
 	border-collapse: collapse;
+
+	z-index: 2;
 }
 
 .cart tr {
 	display: flex;
 }
 .cart td {
-	padding-bottom: 0;
 	vertical-align: top;
 }
 
@@ -1298,7 +1374,7 @@ a {
 }
 
 .cart-cost {
-	padding-right: 28px;
+	padding-right: 27px;
 }
 
 .cart-prod-price {
@@ -1310,7 +1386,7 @@ a {
 }
 
 .cart-empty-block {
-	height: 13px;
+	height: 11px;
 }
 
 .cart-summ {
@@ -1325,7 +1401,7 @@ a {
 .cart-summ p {
 	margin: 0;
 	padding-top: 0;
-	padding-bottom: 12px;
+	padding-bottom: 13px;
 
 	font-size: 15px;
 	line-height: 18px;
