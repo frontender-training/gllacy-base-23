@@ -44,7 +44,7 @@ a {
 }
 
 /*Styles for Overall Site*/
-.body-no-slider {
+.body-catalog {
 	background-image: none;
 }
 
@@ -385,7 +385,7 @@ a {
 }
 
 .main-navigation-item:hover .dropdown-menu-list,
-.main-navigation-item:focus .dropdown-menu-list{
+.main-navigation-item:focus .dropdown-menu-list {
 	display: block;
 }
 
@@ -543,24 +543,8 @@ a {
 
 /*Slider in index.html*/
 .slider {
-	position: relative;
-
 	padding-top: 275px;
 	margin-bottom: 43px;
-}
-
-.slider-bg {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.sliders {
-	position: absolute;
-	top: 0;
-	left: 0;
 }
 
 .slider-list {
@@ -610,7 +594,7 @@ a {
 	list-style: none;
 }
 
-.btn-toggle {
+.slide-toggle {
 	width: 21px;
 	height: 21px;
 	margin-right: 8px;
@@ -620,14 +604,14 @@ a {
 	border-radius: 50%;
 }
 
-.btn-toggle:focus,
-.btn-toggle:hover {
+.slide-toggle:focus,
+.slide-toggle:hover {
 	background-color: rgba(255, 255, 255, .4);
 	outline: none;
 }
 
-.checked-toogle,
-.btn-toggle:active {
+.slide-toogle-checked,
+.slide-toggle:active {
 	background-color: rgb(255, 255, 255);
 	outline: none;
 }
