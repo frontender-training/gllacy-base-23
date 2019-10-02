@@ -1,23 +1,11 @@
-.filters,
-.goods {
+.filters{
 	display: none;
 }
 
-.temp2,
 .temp-catalog	{
 	width: 100%;
 	height: 167px;
-	margin-bottom: 37px;
 	background-color: rgba(255, 0, 0, .2);
-}
-
-.temp2 {
-	height: 332px;
-}
-
-.temp-catalog {
-	height: 1360px;
-	margin-bottom: 20px;
 }
 /*********************/
 
@@ -543,6 +531,8 @@ a {
 
 /*Slider in index.html*/
 .slider {
+	position: relative;
+	
 	padding-top: 275px;
 	margin-bottom: 43px;
 }
@@ -581,8 +571,6 @@ a {
 }
 
 .slider-toggles {
-	content: "";
-
 	position: absolute;
 	bottom: 19px;
 	left: 0;
@@ -594,7 +582,7 @@ a {
 	list-style: none;
 }
 
-.slide-toggle {
+.slider-toggle {
 	width: 21px;
 	height: 21px;
 	margin-right: 8px;
@@ -604,14 +592,14 @@ a {
 	border-radius: 50%;
 }
 
-.slide-toggle:focus,
-.slide-toggle:hover {
+.slider-toggle:focus,
+.slider-toggle:hover {
 	background-color: rgba(255, 255, 255, .4);
 	outline: none;
 }
 
-.slide-toogle-checked,
-.slide-toggle:active {
+.slider-toogle-checked,
+.slider-toggle:active {
 	background-color: rgb(255, 255, 255);
 	outline: none;
 }
@@ -619,7 +607,7 @@ a {
 
 /*Promo Section*/
 .offers {
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 }
 
 .offers-item {
@@ -938,23 +926,27 @@ a {
 /*END of Filters in catalog.html*/
 
 /*Products*/
+.products {
+	margin-left: -13px;
+	margin-right: -13px;
+}
 
 .products-list {
 	display: flex;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	margin-top: 0;
-	margin-bottom: 70px;
+	margin-bottom: 6px;
 	padding: 0;
 
 	list-style: none;
 }
 
 .product-item {
-	width: 267px;
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-right: 26px;
-	margin-left: 0;
+	position: relative;
+
+	width: 293px;
+	margin: 0;
 	padding: 0;
 }
 
@@ -963,15 +955,79 @@ a {
 }
 
 .product {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	width: 267px;
 	margin: 0;
-	padding: 0;
+	padding-top: 7px;
+	padding-bottom: 31px;
+	padding-right: 13px;
+	padding-left: 13px;
+
+	text-align: center;
 }
 
-.product-link {
+.product:after {
+	content: '';
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 293px;
+	height: 405px;
+
+	background-color: rgba(255, 255, 255, .2);
+	border-radius: 5px;
+	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .2);
+
+	z-index: 1;
+
+	display: none;
+}
+
+.product:hover:after {
+	display: block;
+}
+
+.product-hit::after {
+	content: '';
+
+	position: absolute;
+	top: 7px;
+	left: 13px;
+
+	width: 61px;
+  height: 61px;
+
+	background-image: url(../img/hit.svg);
+	background-position: top left;
+	background-repeat: no-repeat;
+
+	z-index: 2;
+}
+
+.product-title {
+	margin: 0;
+	padding-top: 0;
+	padding-right: 5px;
+	padding-bottom: 0;
+	padding-left: 5px;
+
+	order: 1;
+	z-index: 2;
+
+}
+
+.product-link {	
 	font-size: 16px;
-	line-height: 22px;
+	line-height: 21px;
 	font-weight: 500;
 	color: rgb(255, 255, 255);
+
+	z-index: 2;
 }
 
 .product-link:hover,
@@ -981,18 +1037,58 @@ a {
 }
 
 .product-price {
+	position: relative;
+
+	margin-top: -57px;
+	margin-bottom: 20px;
+
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 700;
+	text-align: left;
+	text-shadow: 1px 1px 3px rgba(49, 50, 53, .5);
+
+	z-index: 2;
 }
 
 .product-price span {
+	margin-left: 34px;
+
 	font-size: 30px;
 }
+
+.product-price img {
+	position: absolute;
+	top: 5px;
+	left: 81px;
+}
+
+.btn-product {
+	position: absolute;
+	top: 340px;
+	left: 48px;
+
+	padding-right: 15px;
+	padding-left: 15px;
+
+	z-index: 2;
+
+	display: none;
+}
+
+.product:hover .btn-product {
+	display: block;
+}
+
+.product:hover .product-img {
+	z-index: 2;
+}
+
 /*END of Products*/
 
 /*Pagination*/
-.pagination {
+.pagination-list {
+	margin-top: 50px;
 	margin-bottom: 30px;
 	padding: 0;
 
@@ -1002,10 +1098,18 @@ a {
 }
 
 .pagination-item {
+	display: inline-block;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	padding-right: 9px;
+	padding-left: 8px;
+
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 500;
 	color: rgb(255, 255, 255);
+
+	border-radius: 50%;
 }
 
 .pagination-item:hover,
