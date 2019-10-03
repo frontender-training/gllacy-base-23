@@ -4,7 +4,7 @@
 
 .temp-catalog	{
 	width: 100%;
-	height: 167px;
+	height: 174px;
 	background-color: rgba(255, 0, 0, .2);
 }
 /*********************/
@@ -607,7 +607,7 @@ a {
 
 /*Promo Section*/
 .offers {
-	margin-bottom: 35px;
+	margin-bottom: 40px;
 }
 
 .offers-item {
@@ -926,7 +926,11 @@ a {
 /*END of Filters in catalog.html*/
 
 /*Products*/
-.products-list {
+.goods {
+	margin-bottom: -5px;
+}
+
+.goods-list {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -938,7 +942,7 @@ a {
 
 }
 
-.product-item {
+.goods-item {
 	position: relative;
 
 	width: 267px;
@@ -952,13 +956,11 @@ a {
 	display: flex;
 	flex-direction: column;
 	width: 267px;
-	margin: 0 auto;
-	margin-bottom: 32px;
-
-	padding-top: 7px;
-	padding-right: 0;	
-	padding-bottom: 0;
-	padding-left: 0;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 39px;
+	margin-left: auto;
+	padding: 0;
 
 	text-align: center;
 }
@@ -987,8 +989,8 @@ a {
 	content: '';
 
 	position: absolute;
-	top: 7px;
-	left: 13px;
+	top: 0;
+	left: 0;
 
 	width: 61px;
 	height: 61px;
@@ -1081,7 +1083,7 @@ a {
 
 /*Pagination*/
 .pagination-list {
-	margin-top: 50px;
+	margin-top: 43px;
 	margin-bottom: 18px;
 	padding: 0;
 	padding-bottom: 30px;
@@ -1135,7 +1137,6 @@ a {
 
 .pagination-item-prev {
 	margin-right: 10px;
-	opacity: .2;
 }
 
 .pagination-item-prev svg {
