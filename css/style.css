@@ -1094,6 +1094,7 @@ a {
 
 .pagination-item {
 	display: inline-block;
+	vertical-align: middle;
 	margin: 0;
 	padding-top: 2px;
 	padding-bottom: 1px;
