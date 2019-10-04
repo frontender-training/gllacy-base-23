@@ -174,27 +174,27 @@
 							<div class="filter-price">
 								<label class="filter-title" for="price-range">Цена: 100 руб. - 500 руб.</label>
 								<input class="filter-cost" type="range" min="100" max="500" step="5" value="150" id="price-range" name="price-range">
-							</div>
-							<div class="range-controls">
-								<div class="scale">
-									<div class="bar"></div>
+								<div class="range-controls">
+									<div class="range-controls-scale">
+										<div class="range-controls-bar"></div>
+									</div>
+									<div class="filter-toggle filter-toggle-min"></div>
+									<div class="filter-toggle filter-toggle-max"></div>
 								</div>
-								<div class="filter-toggle filter-toggle-min"></div>
-								<div class="filter-toggle filter-toggle-max"></div>
-							</div>
+							</div>							
 						</fieldset>
 						<fieldset class="fieldset-filter">
 							<legend class="filter-title">Жирность</legend>
 							<div class="filter-row">
 								<div class="filter-layout">
 									<input class="filter-fat" type="radio" name="fat-control" id="zero">
-									<label class="filter-value" for="zero" tabindex="0">0%</label>
+									<label class="filter-radio" for="zero" tabindex="0">0%</label>
 									<input class="filter-fat" type="radio" name="fat-control" id="to-ten" checked>
-									<label class="filter-value" for="to-ten" tabindex="0">до 10%</label>
+									<label class="filter-radio" for="to-ten" tabindex="0">до 10%</label>
 									<input class="filter-fat" type="radio" name="fat-control" id="to-thirty" disabled>
-									<label class="filter-value" for="to-thirty" tabindex="0">до 30%</label>
+									<label class="filter-radio" for="to-thirty" tabindex="0">до 30%</label>
 									<input class="filter-fat" type="radio" name="fat-control" id="over-thirty">
-									<label class="filter-value" for="over-thirty" tabindex="0">выше 30%</label>
+									<label class="filter-radio" for="over-thirty" tabindex="0">выше 30%</label>
 								</div>
 							</div>
 						</fieldset>
@@ -204,15 +204,15 @@
 							<legend class="filter-title">Наполнители:</legend>
 								<div class="filter-layout">
 									<input class="filler" type="checkbox" name="choco" id="choco" checked>
-									<label class="filter-value" for="choco" tabindex="0">шоколадные</label>
+									<label class="filter-checkbox" for="choco" tabindex="0">шоколадные</label>
 									<input class="filler" type="checkbox" name="sugar" id="sugar" checked>
-									<label class="filter-value" for="sugar" tabindex="0">сахарные присыпки</label>
+									<label class="filter-checkbox" for="sugar" tabindex="0">сахарные присыпки</label>
 									<input class="filler" type="checkbox" name="fruit" id="fruit" disabled>
-									<label class="filter-value" for="fruit" tabindex="0">фрукты</label>
+									<label class="filter-checkbox" for="fruit" tabindex="0">фрукты</label>
 									<input class="filler" type="checkbox" name="sirup" id="sirup">
-									<label class="filter-value" for="sirup" tabindex="0">сиропы</label>
+									<label class="filter-checkbox" for="sirup" tabindex="0">сиропы</label>
 									<input class="filler" type="checkbox" name="jam" id="jam">
-									<label class="filter-value" for="jam" tabindex="0">джемы</label>
+									<label class="filter-checkbox" for="jam" tabindex="0">джемы</label>
 								</div>
 						</fieldset>
 						<button class="btn-filter" type="submit" tabindex="0">Применить</button>
