@@ -863,11 +863,11 @@ a {
 
 .filter-assortment {
 	position: relative;
-
+	
+	width: 193px;
 	margin: 0;
 	padding-top: 8px;
 	padding-bottom: 8px;
-	padding-right: 7px;
 	padding-left: 11px;
 
 	font-size: 16px;
@@ -877,6 +877,14 @@ a {
 
 	background-color: transparent;
 	border: none;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.filter-assortment::-ms-expand{
+	display: none;
 }
 
 .filter-assortment:hover,
