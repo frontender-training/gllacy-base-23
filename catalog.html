@@ -156,7 +156,7 @@
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 					<div class="filter-row">
-						<fieldset class="fieldset-filter">
+						<fieldset class="filter-fieldset">
 							<legend class="filter-title">Сортировка:</legend>
 							<label class="visually-hidden" for="sort">Сортировка:</label>
 							<div class="select-wrap">
@@ -168,7 +168,7 @@
 								</select>
 							</div>
 						</fieldset>
-						<fieldset class="fieldset-filter">
+						<fieldset class="filter-fieldset">
 							<legend class="visually-hidden">Цена</legend>
 							<div class="filter-price">
 								<label class="filter-title" for="price-range">Цена: 100 руб. - 500 руб.</label>
@@ -182,39 +182,39 @@
 								</div>
 							</div>
 						</fieldset>
-						<fieldset class="fieldset-filter">
+						<fieldset class="filter-fieldset">
 							<legend class="filter-title">Жирность</legend>
 							<div class="filter-row">
 								<div class="filter-layout">
 									<input class="filter-fat" type="radio" name="fat-control" id="zero">
-									<label class="filter-value-fat" for="zero" tabindex="0">0%</label>
+									<label class="filter-value-fat" for="zero" onmousedown="return false" tabindex="0">0%</label>
 									<input class="filter-fat" type="radio" name="fat-control" id="to-ten" checked>
-									<label class="filter-value-fat" for="to-ten" tabindex="0">до 10%</label>
+									<label class="filter-value-fat" for="to-ten" onmousedown="return false" tabindex="0">до 10%</label>
 									<input class="filter-fat" type="radio" name="fat-control" id="to-thirty" disabled>
-									<label class="filter-value-fat" for="to-thirty" tabindex="0">до 30%</label>
+									<label class="filter-value-fat" for="to-thirty" onmousedown="return false" tabindex="0">до 30%</label>
 									<input class="filter-fat" type="radio" name="fat-control" id="over-thirty">
-									<label class="filter-value-fat" for="over-thirty" tabindex="0">выше 30%</label>
+									<label class="filter-value-fat" for="over-thirty" onmousedown="return false" tabindex="0">выше 30%</label>
 								</div>
 							</div>
 						</fieldset>
 					</div>
 					<div class="filter-row">
-						<fieldset class="fieldset-filter">
+						<fieldset class="filter-fieldset">
 							<legend class="filter-title">Наполнители:</legend>
 								<div class="filter-layout">
-									<input class="filler" type="checkbox" name="choco" id="choco" checked>
-									<label class="filter-value-fill" for="choco" tabindex="0">шоколадные</label>
-									<input class="filler" type="checkbox" name="sugar" id="sugar" checked>
-									<label class="filter-value-fill" for="sugar" tabindex="0">сахарные присыпки</label>
-									<input class="filler" type="checkbox" name="fruit" id="fruit" disabled>
-									<label class="filter-value-fill" for="fruit" tabindex="0">фрукты</label>
-									<input class="filler" type="checkbox" name="sirup" id="sirup">
-									<label class="filter-value-fill" for="sirup" tabindex="0">сиропы</label>
-									<input class="filler" type="checkbox" name="jam" id="jam">
-									<label class="filter-value-fill" for="jam" tabindex="0">джемы</label>
+									<input class="filter-filler" type="checkbox" name="choco" id="choco" checked>
+									<label class="filter-value-filler" for="choco" onmousedown="return false" tabindex="0">шоколадные</label>
+									<input class="filter-filler" type="checkbox" name="sugar" id="sugar" checked>
+									<label class="filter-value-filler" for="sugar" onmousedown="return false" tabindex="0">сахарные присыпки</label>
+									<input class="filter-filler" type="checkbox" name="fruit" id="fruit" disabled>
+									<label class="filter-value-filler" for="fruit" onmousedown="return false" tabindex="0">фрукты</label>
+									<input class="filter-filler" type="checkbox" name="sirup" id="sirup">
+									<label class="filter-value-filler" for="sirup" onmousedown="return false" tabindex="0">сиропы</label>
+									<input class="filter-filler" type="checkbox" name="jam" id="jam">
+									<label class="filter-value-filler" for="jam" onmousedown="return false" tabindex="0">джемы</label>
 								</div>
 						</fieldset>
-						<button class="btn-filter" type="submit" tabindex="0">Применить</button>
+						<button class="filter-btn" type="submit" tabindex="0">Применить</button>
 					</div>
 				</form>
 			</section>

@@ -831,7 +831,7 @@ a {
 	margin-bottom: 8px;
 }
 
-.fieldset-filter {
+.filter-fieldset {
 	position: relative;
 
 	margin: 0;
@@ -855,7 +855,6 @@ a {
 	position: relative;
 
 	width: 193px;
-	height: 36px;
 
 	background-color: rgba(255, 255, 255, .2);
 	border-radius: 18px;
@@ -866,8 +865,8 @@ a {
 	position: relative;
 	
 	width: 193px;
+	height: 36px;
 	margin: 0;
-	padding-top: 10px;
 	padding-left: 15px;
 
 	font-size: 16px;
@@ -972,8 +971,8 @@ a {
 	width: 4px;
 	height: 4px;
 
-	border: 8px solid rgb(255, 255, 255);
 	background-color: rgb(171, 171, 171);
+	border: 8px solid rgb(255, 255, 255);
 	border-radius: 50%;
 	cursor: pointer;
 }
@@ -996,7 +995,7 @@ a {
 }
 
 .filter-value-fat,
-.filter-value-fill {
+.filter-value-filler {
 	position: relative;
 
 	display: inline-block;
@@ -1011,18 +1010,18 @@ a {
 	padding-left: 30px;
 }
 
-.filter-value-fill {
+.filter-value-filler {
 	padding-right: 20px;
 	padding-left: 30px;
 }
 
 .filter-fat,
-.filler {
+.filter-filler {
 	display: none;
 }
 
 .filter-value-fat::before,
-.filter-value-fill::before {
+.filter-value-filler::before {
 	content: '';
 
 	position: absolute;
@@ -1042,17 +1041,17 @@ a {
 	background-image: url(../img/radio-off.svg);	
 }
 
-.filter-value-fill::before {
+.filter-value-filler::before {
 	background-image: url(../img/checkbox-off.svg);
 }
 
 .filter-fat:hover + .filter-value-fat::before,
-.filler:hover + .filter-value-fill::before	{
+.filter-filler:hover + .filter-value-filler::before	{
 	opacity: 1;
 }
 
 .filter-fat:disabled + .filter-value-fat::before,
-.filler:disabled + .filter-value-fill::before	{
+.filter-filler:disabled + .filter-value-filler::before	{
 	opacity: 0.4;
 }
 
@@ -1060,11 +1059,11 @@ a {
 	background-image: url(../img/radio-on.svg);
 }
 
-.filler:checked + .filter-value-fill::before {
+.filter-filler:checked + .filter-value-filler::before {
 	background-image: url(../img/checkbox-on.svg);
 }
 
-.btn-filter {
+.filter-btn {
 	display: inline-block;
 	margin-top: 22px;
 	padding-top: 7px;
@@ -1083,20 +1082,21 @@ a {
 	border-radius: 18px;
 }
 
-.btn-filter:hover,
-.btn-filter:focus {
+.filter-btn:hover,
+.filter-btn:focus {
 	color: rgb(50, 50, 50);
 
 	background-color: rgb(255, 255, 255);
 	outline: none;
+	cursor: pointer;
 }
 
-.btn-filter:active {
+.filter-btn:active {
 	color: rgb(50, 50, 50);
 
 	padding-top: 10px;
 	padding-right: 27px;
-	padding-bottom: 9px;
+	padding-bottom: 8px;
 	padding-left: 27px;
 
 	background-color: rgb(234, 234, 234);
