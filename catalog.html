@@ -48,7 +48,7 @@
 				</li>
 				<li class="user-navigation-item">
 					<a class="user-navigation-link login-link" href="login.html">
-						<img class="user-navigation-icon" src="img/entrance.svg" alt="Вход в личный кабинет" width="21" height="19">
+						<img class="user-navigation-icon" src="img/entrance.svg" alt="" width="21" height="19">						
 						Вход
 					</a>
 					<form class="form login-form" action="https://echo.htmlacademy.ru" method="post">
@@ -152,77 +152,69 @@
 				</div>
 			</div>
 			<h1 class="catalog-title">Сливочное мороженое</h1>
-			<div class="temp-catalog"></div>
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 					<div class="filter-row">
-						<fieldset class="fieldset-filter">
+						<fieldset class="filter-fieldset">
 							<legend class="filter-title">Сортировка:</legend>
-								<label class="visually-hidden" for="sort">Сортировка:</label>
+							<label class="visually-hidden" for="sort">Сортировка:</label>
+							<div class="select-wrap">
 								<select class="filter-assortment" name="sort" id="sort">
 									<option class="filter-sort" value="popular">по популярности</option>
 									<option class="filter-sort" value="low-cost">сначала недорогие</option>
 									<option class="filter-sort" value="high-cost">сначала дорогие</option>
 									<option class="filter-sort" value="fat">по жирности</option>
 								</select>
+							</div>
 						</fieldset>
-						<fieldset class="fieldset-filter">
+						<fieldset class="filter-fieldset">
 							<legend class="visually-hidden">Цена</legend>
 							<div class="filter-price">
 								<label class="filter-title" for="price-range">Цена: 100 руб. - 500 руб.</label>
 								<input class="filter-cost" type="range" min="100" max="500" step="5" value="150" id="price-range" name="price-range">
+								<div class="range-controls">
+									<div class="range-controls-scale">
+										<div class="range-controls-bar"></div>
+									</div>
+									<div class="range-controls-toggle range-controls-toggle-min"></div>
+									<div class="range-controls-toggle range-controls-toggle-max"></div>
+								</div>
 							</div>
 						</fieldset>
-						<fieldset class="fieldset-filter">
+						<fieldset class="filter-fieldset">
 							<legend class="filter-title">Жирность</legend>
 							<div class="filter-row">
 								<div class="filter-layout">
 									<input class="filter-fat" type="radio" name="fat-control" id="zero">
-									<label class="filter-value" for="zero" tabindex="0">0%</label>
-								</div>
-								<div class="filter-layout">
+									<label class="filter-fat-value" for="zero" onmousedown="return false" tabindex="0">0%</label>
 									<input class="filter-fat" type="radio" name="fat-control" id="to-ten" checked>
-									<label class="filter-value" for="to-ten" tabindex="0">до 10%</label>
-								</div>
-								<div class="filter-layout">
-									<input class="filter-fat" type="radio" name="fat-control" id="to-thirty">
-									<label class="filter-value" for="to-thirty" tabindex="0">до 30%</label>
-								</div>
-								<div class="filter-layout">
+									<label class="filter-fat-value" for="to-ten" onmousedown="return false" tabindex="0">до 10%</label>
+									<input class="filter-fat" type="radio" name="fat-control" id="to-thirty" disabled>
+									<label class="filter-fat-value" for="to-thirty" onmousedown="return false" tabindex="0">до 30%</label>
 									<input class="filter-fat" type="radio" name="fat-control" id="over-thirty">
-									<label class="filter-value" for="over-thirty" tabindex="0">выше 30%</label>
+									<label class="filter-fat-value" for="over-thirty" onmousedown="return false" tabindex="0">выше 30%</label>
 								</div>
 							</div>
 						</fieldset>
 					</div>
 					<div class="filter-row">
-						<fieldset class="fieldset-filter">
+						<fieldset class="filter-fieldset">
 							<legend class="filter-title">Наполнители:</legend>
-							<div class="row">
 								<div class="filter-layout">
-									<input class="filler" type="checkbox" name="choco" id="choco" checked>
-									<label class="filter-value" for="choco" tabindex="0">шоколадные</label>
+									<input class="filter-filler" type="checkbox" name="choco" id="choco" checked>
+									<label class="filter-filler-value" for="choco" onmousedown="return false" tabindex="0">шоколадные</label>
+									<input class="filter-filler" type="checkbox" name="sugar" id="sugar" checked>
+									<label class="filter-filler-value" for="sugar" onmousedown="return false" tabindex="0">сахарные присыпки</label>
+									<input class="filter-filler" type="checkbox" name="fruit" id="fruit" disabled>
+									<label class="filter-filler-value" for="fruit" onmousedown="return false" tabindex="0">фрукты</label>
+									<input class="filter-filler" type="checkbox" name="sirup" id="sirup">
+									<label class="filter-filler-value" for="sirup" onmousedown="return false" tabindex="0">сиропы</label>
+									<input class="filter-filler" type="checkbox" name="jam" id="jam">
+									<label class="filter-filler-value" for="jam" onmousedown="return false" tabindex="0">джемы</label>
 								</div>
-								<div class="filter-layout">
-									<input class="filler" type="checkbox" name="sugar" id="sugar" checked>
-									<label class="filter-value" for="sugar" tabindex="0">сахарные присыпки</label>
-								</div>
-								<div class="filter-layout">
-									<input class="filler" type="checkbox" name="fruit" id="fruit">
-									<label class="filter-value" for="fruit" tabindex="0">фрукты</label>
-								</div>
-								<div class="filter-layout">
-									<input class="filler" type="checkbox" name="sirup" id="sirup">
-									<label class="filter-value" for="sirup" tabindex="0">сиропы</label>
-								</div>
-								<div class="filter-layout">
-									<input class="filler" type="checkbox" name="jam" id="jam">
-									<label class="filter-value" for="jam" tabindex="0">джемы</label>
-								</div>
-							</div>
 						</fieldset>
-						<button class="btn-filter" type="submit" tabindex="0">Применить</button>
+						<button class="filter-btn" type="submit" tabindex="0">Применить</button>
 					</div>
 				</form>
 			</section>
@@ -359,7 +351,7 @@
 				<div class="pagination-list">
 						<span class="pagination-item-prev pagination-item-disabled">
 							<svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
-								<path fill="#9bafa4"  d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/>
+								<path fill="#9bafa4" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/>
 							</svg>
 							<span class="visually-hidden">Назад</span>
 						</span>
