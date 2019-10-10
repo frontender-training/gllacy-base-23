@@ -1716,10 +1716,12 @@ a {
 /*Feedback Form in Contact Section*/
 .feedback {
 	position: fixed;
-	top: 34%;
-	left: 36%;
+	bottom: 50%;
+	left: 50%;
 
 	width: 428px;
+	margin-left: -240px;
+	margin-bottom: -215px;
 	padding-top: 20px;
 	padding-right: 25px;
 	padding-bottom: 20px;
@@ -1728,7 +1730,7 @@ a {
 	background-color: rgb(248, 247, 244);
 	border-radius: 10px;
 
-	z-index: 11;	
+	z-index: 9999;	
 }
 
 .feedback .form {
@@ -1803,7 +1805,7 @@ a {
 	height: 100%;
 
 	background-color: rgba(0, 0, 0, .3);
-	z-index: 10;
+	z-index: 9999;
 }
 /*END of Feedback Close Button*/
 /*END of Feedback Form in Contact Section*/
