@@ -889,7 +889,7 @@ a {
 }
 
 .filter-assortment:hover,
-.filter-assortment:active {
+.filter-assortment:focus {
 	color: rgb(50, 50, 50);
 	outline: none;
 }
@@ -1069,6 +1069,8 @@ a {
 
 .filter-btn {
 	display: inline-block;
+	vertical-align: middle;
+	
 	margin-top: 22px;
 	padding-top: 7px;
 	padding-right: 26px;
