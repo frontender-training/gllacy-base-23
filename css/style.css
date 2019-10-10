@@ -1,6 +1,4 @@
 body {
-	position: relative;
-
 	width: 1200px;
 
 	margin: 0 auto;
@@ -1717,9 +1715,9 @@ a {
 
 /*Feedback Form in Contact Section*/
 .feedback {
-	position: absolute;
-	top: 340px;
-	left: 363px;
+	position: fixed;
+	top: 34%;
+	left: 36%;
 
 	width: 428px;
 	padding-top: 20px;
@@ -1730,7 +1728,7 @@ a {
 	background-color: rgb(248, 247, 244);
 	border-radius: 10px;
 
-	z-index: 3;
+	z-index: 11;	
 }
 
 .feedback .form {
@@ -1780,7 +1778,7 @@ a {
 	content: "";
 
 	position: absolute;
-	top: 10px;
+	top: 11px;
 	left: 5px;
 
 	width: 25px;
@@ -1805,7 +1803,7 @@ a {
 	height: 100%;
 
 	background-color: rgba(0, 0, 0, .3);
-	z-index: 1;
+	z-index: 10;
 }
 /*END of Feedback Close Button*/
 /*END of Feedback Form in Contact Section*/
