@@ -1716,12 +1716,11 @@ a {
 /*Feedback Form in Contact Section*/
 .feedback {
 	position: fixed;
-	bottom: 50%;
+	bottom: 220px;
 	left: 50%;
 
 	width: 428px;
 	margin-left: -240px;
-	margin-bottom: -215px;
 	padding-top: 20px;
 	padding-right: 25px;
 	padding-bottom: 20px;
