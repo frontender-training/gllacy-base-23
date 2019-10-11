@@ -414,6 +414,18 @@ a {
 	margin-right: 7px;
 }
 
+.user-navigation-item:hover .user-navigation-link {
+	color: rgb(50, 50, 50);
+
+	background-color: rgb(247, 246, 243);
+}
+
+.user-navigation-item:hover .user-navigation-icon,
+.user-navigation-link:focus .user-navigation-icon,
+.user-navigation-link:active .user-navigation-icon {
+	fill: rgb(0, 0, 0);
+}
+
 .btn-search {
 	display: block;
 	width: 25px;
@@ -1425,7 +1437,7 @@ a {
 }
 
 .social-icon {
-	border: 2px solid rgba(255, 255, 255, .5);
+	border: 2px solid rgba(255, 255, 255, .7);
 	border-radius: 50%;
 	opacity: .8;
 }
@@ -1433,9 +1445,12 @@ a {
 .social-link:hover .social-icon,
 .social-link:focus .social-icon,
 .social-link:active .social-icon {
-	border: 2px solid rgba(255, 255, 255, .7);
 	outline: none;
 	opacity: 1;
+}
+
+.social-link:active .social-icon {
+	fill: rgb(233, 233, 233);
 }
 
 .social-item:last-child {
@@ -1470,6 +1485,12 @@ a {
 
 	width: 15px;
 	height: 13px;
+}
+
+.footer-menu-link:hover .footer-menu-icon,
+.footer-menu-link:focus .footer-menu-icon,
+.footer-menu-link:active .footer-menu-icon {
+	fill: rgb(255, 188, 158);
 }
 
 .footer-menu-link {
@@ -1780,7 +1801,7 @@ a {
 
 	position: absolute;
 	top: 11px;
-	left: 5px;
+	left: 0;
 
 	width: 25px;
 	height: 3px;
