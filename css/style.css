@@ -410,17 +410,10 @@ a {
 	outline: none;
 }
 
-.user-navigation-icon,
-.user-navigation-link:visited .user-navigation-icon {
+.user-navigation-icon {
 	margin-right: 7px;
 
 	fill: rgb(255, 255, 255);
-}
-
-.user-navigation-item:hover .user-navigation-link {
-	color: rgb(50, 50, 50);
-
-	background-color: rgb(247, 246, 243);
 }
 
 .user-navigation-link:hover .user-navigation-icon,
