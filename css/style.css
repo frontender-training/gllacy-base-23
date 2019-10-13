@@ -412,6 +412,14 @@ a {
 
 .user-navigation-icon {
 	margin-right: 7px;
+
+	fill: rgb(255, 255, 255);
+}
+
+.user-navigation-link:hover .user-navigation-icon,
+.user-navigation-link:focus .user-navigation-icon,
+.user-navigation-link:active .user-navigation-icon {
+	fill: rgb(0, 0, 0);
 }
 
 .btn-search {
@@ -1425,17 +1433,25 @@ a {
 }
 
 .social-icon {
-	border: 2px solid rgba(255, 255, 255, .5);
+	fill: rgb(230, 235, 233);
+
+	border: 2px solid rgb(194, 206, 199);
 	border-radius: 50%;
-	opacity: .8;
 }
 
 .social-link:hover .social-icon,
-.social-link:focus .social-icon,
-.social-link:active .social-icon {
-	border: 2px solid rgba(255, 255, 255, .7);
+.social-link:focus .social-icon {
+	fill: rgb(255, 255, 255);
+
+	border-color: rgb(218, 226, 222);
 	outline: none;
-	opacity: 1;
+}
+
+.social-link:active .social-icon {
+	fill: rgb(233, 233, 233);
+
+	border-color: rgb(218, 226, 222);
+	outline: none;
 }
 
 .social-item:last-child {
@@ -1470,6 +1486,14 @@ a {
 
 	width: 15px;
 	height: 13px;
+
+	fill: rgb(255, 255, 255);
+}
+
+.footer-menu-link:hover .footer-menu-icon,
+.footer-menu-link:focus .footer-menu-icon,
+.footer-menu-link:active .footer-menu-icon {
+	fill: rgb(255, 188, 158);
 }
 
 .footer-menu-link {
@@ -1780,7 +1804,7 @@ a {
 
 	position: absolute;
 	top: 11px;
-	left: 5px;
+	left: 0;
 
 	width: 25px;
 	height: 3px;
