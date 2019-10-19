@@ -1057,6 +1057,8 @@ a {
 }
 
 .filter-layout {
+	display: flex;
+	flex-wrap: nowrap;
 	padding-top: 7px;
 	padding-left: 12px;
 	padding-bottom: 7px;
@@ -1845,14 +1847,14 @@ a {
 /*Feedback Form in Contact Section*/
 .feedback {
 	position: fixed;
-	bottom: 220px;
+	top: 50%;
 	left: 50%;
+	transform: translate3d(-50%, -60%, 0);
 
 	width: 428px;
-	margin-left: -240px;
 	padding-top: 20px;
 	padding-right: 25px;
-	padding-bottom: 20px;
+	padding-bottom: 25px;
 	padding-left: 25px;
 
 	background-color: rgb(248, 247, 244);
@@ -1870,7 +1872,7 @@ a {
 .feedback-title {
 	padding: 0;
 	margin-top: 0;
-	margin-bottom: 24px;
+	margin-bottom: 20px;
 
 	font-size: 24px;
 	line-height: 28px;
@@ -1885,7 +1887,9 @@ a {
 
 .feedback .field-textarea {
 	width: 398px;
-	margin-bottom: 25px;
+	height: 150px;
+	margin-bottom: 20px;
+	padding-top: 10px;
 }
 
 /*Feedback Close Button*/
