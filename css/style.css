@@ -1,6 +1,5 @@
 body {
 	width: 1200px;
-
 	margin: 0 auto;
 	padding: 0;
 
@@ -83,7 +82,6 @@ a {
 	text-shadow: 2px 2px 5px rgba(160, 32, 11, .76);
 
 	background: linear-gradient(to bottom, rgb(242, 104, 67), rgb(231, 74, 53));
-
 	border-radius: 45px;
 	border: none;
 	box-shadow: 0 2px 2px rgba(172, 16, 0, .64)
@@ -93,7 +91,6 @@ a {
 .btn:focus {
 	background-color: rgb(255, 255, 255);
 	background: linear-gradient(to top, rgb(236, 111, 94), rgb(245, 134, 105));
-
 	cursor: pointer;
 	outline: none;
 }
@@ -101,7 +98,6 @@ a {
 .btn:active {
 	background-color: #fff;
 	background: linear-gradient(to top, rgb(242, 104, 67), rgb(231, 74, 53));
-
 	box-shadow: inset 0 2px 2px rgb(148, 39, 24);
 	outline: none;
 }
@@ -149,9 +145,8 @@ a {
 	color: rgb(50, 50, 50);
 
 	background-color: rgb(255, 255, 255);
-
-	border: none;
 	border-radius: 5px;
+	border: none;
 	box-shadow: inset 0 0 0 1px rgb(178, 178, 178);
 }
 
@@ -266,7 +261,6 @@ a {
 	color: rgb(50, 50, 50);
 
 	background-color: rgb(247, 246, 243);
-
 	outline: none;
 }
 
@@ -277,7 +271,6 @@ a {
 
 .main-navigation-link:active {
 	background-color: rgb(237, 237, 237);
-
 	box-shadow: inset 0 2px 1px 0 rgb(105, 105, 105);
 }
 
@@ -290,10 +283,10 @@ a {
 	padding: 0;
 
 	background-color: rgb(247, 246, 243);
-
 	border-radius: 5px;
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 	list-style: none;
+
 	z-index: 3;
 
 	display: none;
@@ -385,8 +378,8 @@ a {
 	display: flex;
 	align-items: center;
 	padding-top: 6px;
-	padding-bottom: 6px;
 	padding-right: 16px;
+	padding-bottom: 6px;
 	padding-left: 16px;
 
 	font-size: 14px;
@@ -395,7 +388,6 @@ a {
 	color: rgb(255, 255, 255);
 
 	background-color: rgba(255, 255, 255, .2);
-
 	border-radius: 15px;
 
 	overflow: hidden;
@@ -440,7 +432,6 @@ a {
 	color: rgb(50, 50, 50);
 
 	background-color: rgb(247, 246, 243);
-
 	outline: none;
 }
 
@@ -545,7 +536,6 @@ a {
 	padding-right: 230px;
 	padding-left: 230px;
 
-
 	font-size: 60px;
 	line-height: 60px;
 	font-weight: 700;
@@ -610,13 +600,13 @@ a {
 .offers-item {
 	width: 520px;
 	padding-top: 15px;
-	padding-bottom: 25px;
 	padding-right: 20px;
+	padding-bottom: 25px;
 	padding-left: 20px;
 
 	text-align: right;
 
-	background-position: 0 0;
+	background-position: top left;
 	background-repeat: no-repeat;
 	border-radius: 15px;
 }
@@ -652,22 +642,21 @@ a {
 	font-weight: 700;
 	text-align: left;
 }
-
 /*END of Promo Section*/
 
 /*Features in index.html*/
 .features {
 	margin-bottom: 40px;
 	padding-top: 25px;
-	padding-bottom: 0;
 	padding-right: 20px;
+	padding-bottom: 0;
 	padding-left: 20px;
 
 	color: rgb(50, 50, 50);
 
 	background-color: rgb(236, 222, 195);
 	background-image: url(../img/bg-wafer.jpg);
-	background-position: 0 0;
+	background-position: top left;
 	background-repeat: repeat;
 	border-radius: 15px;
 }
@@ -702,7 +691,7 @@ a {
 	line-height: 22px;
 
 	background-repeat: no-repeat;
-	background-position: 0 9px;
+	background-position: top 9px left;
 }
 
 .feature-ice-cream {
@@ -738,8 +727,8 @@ a {
 
 	background-color: rgb(255, 255, 255);
 	background-image: url(../img/bg-strawberry.png);
-	background-position: 208px 0;
 	background-repeat: no-repeat;
+	background-position: top left 208px;
 	border-radius: 15px;
 }
 
@@ -783,15 +772,18 @@ a {
 	padding: 5px;
 
 	background-color: rgb(248, 247, 244);
-	background: url(../img/bg-post.svg);
-	background-position: 0 0;
+	background-image: url(../img/bg-post.svg);
+	background-position: top left;
 	background-repeat: no-repeat;
 	border-radius: 15px;
 }
 
 .subscribe {
-	padding: 30px 20px 33px;
-
+	padding-top: 30px;
+	padding-right: 20px;
+	padding-bottom: 33px;
+	padding-left: 20px;
+	
 	background-color: rgb(248, 247, 243);
 	border-radius: 15px;
 }
@@ -842,7 +834,7 @@ a {
 .filter-fieldset {
 	position: relative;
 
-	margin: 0;
+	margin-left: 0;
 	margin-right: 16px;
 	padding: 0;
 
@@ -851,8 +843,8 @@ a {
 
 .filter-title {
 	display: block;
-	margin-left: 16px;
 	margin-bottom: 6px;
+	margin-left: 16px;
 
 	font-size: 14px;
 	line-height: 16px;
@@ -866,6 +858,7 @@ a {
 
 	background-color: rgba(255, 255, 255, .2);
 	border-radius: 18px;
+
 	overflow: hidden;
 }
 
@@ -884,7 +877,6 @@ a {
 
 	background-color: transparent;
 	border: none;
-
 	cursor: pointer;
 
 	-webkit-appearance: none;
@@ -899,6 +891,7 @@ a {
 .filter-assortment:hover,
 .filter-assortment:focus {
 	color: rgb(50, 50, 50);
+
 	outline: none;
 }
 
@@ -953,7 +946,6 @@ a {
 	padding-left: 20px;
 
 	background-color: rgba(255, 255, 255, .2);
-
 	border-radius: 18px;
 }
 
@@ -999,8 +991,8 @@ a {
 	padding-left: 12px;
 	padding-bottom: 7px;
 
-	border-radius: 15px;
 	background-color: rgba(255, 255, 255, .2);
+	border-radius: 15px;
 }
 
 .filter-fat-value,
@@ -1010,8 +1002,6 @@ a {
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 500;
-/*	outline: 1px solid red;
-	color: blue;*/
 }
 
 .filter-fat-value {
@@ -1020,8 +1010,8 @@ a {
 }
 
 .filter-filler-value {
-	margin-left: 36px;
 	margin-right: 15px;
+	margin-left: 36px;
 }
 
 .filter-fat,
@@ -1048,6 +1038,7 @@ a {
 
 .filter-fat-value::before {
 	top: -2px;
+
 	background-image: url(../img/radio-off.svg);
 }
 
@@ -1092,7 +1083,6 @@ a {
 
 	background-color: rgba(255, 255, 255, .2);
 	border: 2px solid rgb(255, 255, 255);
-
 	border-radius: 18px;
 }
 
@@ -1101,8 +1091,8 @@ a {
 	color: rgb(50, 50, 50);
 
 	background-color: rgb(255, 255, 255);
-	outline: none;
 	cursor: pointer;
+	outline: none;
 }
 
 .filter-btn:active {
@@ -1134,7 +1124,6 @@ a {
 	padding: 0;
 
 	list-style: none;
-
 }
 
 .goods-item {
@@ -1164,7 +1153,7 @@ a {
 	content: '';
 
 	position: absolute;
-	top: 0;
+	top: -5px;
 	left: -13px;
 
 	width: 293px;
@@ -1204,16 +1193,17 @@ a {
 	padding-bottom: 0;
 	padding-left: 5px;
 
-
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: 500;
+
 	order: 1;
 	z-index: 2;
 }
 
 .product-title a {
 	color: rgb(255, 255, 255);
+
 	border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 
@@ -1221,6 +1211,7 @@ a {
 .product-title a:focus,
 .product-title a:active {
 	color: rgb(255, 188, 158);
+
 	border-color: rgba(255, 188, 158, .3);
 }
 
@@ -1273,7 +1264,6 @@ a {
 .product:focus .product-img {
 	z-index: 2;
 }
-
 /*END of Products*/
 
 /*Pagination*/
@@ -1294,8 +1284,8 @@ a {
 	vertical-align: middle;
 	margin: 0;
 	padding-top: 2px;
-	padding-bottom: 1px;
 	padding-right: 9px;
+	padding-bottom: 1px;
 	padding-left: 8px;
 
 	font-size: 16px;
@@ -1363,10 +1353,12 @@ a {
 	position: absolute;
 	top: 135px;
 	left: 265px;
+
 	width: 218px;
 	height: 142px;
+
 	background-image: url(../img/pin_with_shadow.png);
-	background-position: 0 0;
+	background-position: top left;
 	background-repeat: no-repeat;
 }
 
@@ -1378,8 +1370,8 @@ a {
 	color: rgb(50, 50, 50);
 	width: 250px;
 	padding-top: 30px;
-	padding-bottom: 35px;
 	padding-right: 25px;
+	padding-bottom: 35px;
 	padding-left: 25px;
 
 	background-color: rgb(255, 255, 255);
@@ -1434,7 +1426,6 @@ a {
 
 .social-icon {
 	fill: rgb(230, 235, 233);
-
 	border: 2px solid rgb(194, 206, 199);
 	border-radius: 50%;
 }
@@ -1442,14 +1433,12 @@ a {
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
 	fill: rgb(255, 255, 255);
-
 	border-color: rgb(218, 226, 222);
 	outline: none;
 }
 
 .social-link:active .social-icon {
 	fill: rgb(233, 233, 233);
-
 	border-color: rgb(218, 226, 222);
 	outline: none;
 }
@@ -1476,6 +1465,7 @@ a {
 
 .footer-menu-item {
 	position: relative;
+
 	margin: 0;
 }
 
@@ -1569,9 +1559,10 @@ a {
 	position: absolute;
 	top: 35px;
 	right: 125px;
+
 	padding-right: 20px;
-	padding-left: 20px;
 	padding-bottom: 23px;
+	padding-left: 20px;
 
 	border-radius: 5px;
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -1609,9 +1600,9 @@ a {
 .login-reg:focus,
 .login-reg:active {
 	color: rgb(232, 77, 55);
-	outline: none;
 
 	border-color: rgba(232, 77, 55, .3);
+	outline: none;
 }
 
 .btn-login {
@@ -1638,7 +1629,6 @@ a {
 
 	background-color: rgb(248, 247, 244);
 	border-radius: 5px;
-
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 	box-sizing: border-box;
 	border-collapse: collapse;
@@ -1659,15 +1649,14 @@ a {
 }
 
 .cart-delete {
-	padding: 0;
 	width: 11px;
 	height: 11px;
+	padding: 0;
 
 	background-color: transparent;
 	background-image: url(../img/cross-small.svg);
 	background-repeat: no-repeat;
-	background-position: 0 0;
-
+	background-position: top left;
 	border: none;
 	cursor: pointer;
 }
@@ -1731,10 +1720,9 @@ a {
 }
 
 .btn-cart {
-	padding-left: 15px;
 	padding-right: 15px;
+	padding-left: 15px;
 }
-
 /*END of Cart in User Navigation*/
 
 /*Feedback Form in Contact Section*/
@@ -1753,7 +1741,7 @@ a {
 	background-color: rgb(248, 247, 244);
 	border-radius: 10px;
 
-	z-index: 9999;	
+	z-index: 9999;
 }
 
 .feedback .form {
@@ -1808,6 +1796,7 @@ a {
 
 	width: 25px;
 	height: 3px;
+
 	background-color: rgb(35, 31, 32);
 }
 
@@ -1828,6 +1817,7 @@ a {
 	height: 100%;
 
 	background-color: rgba(0, 0, 0, .3);
+	
 	z-index: 9999;
 }
 /*END of Feedback Close Button*/
