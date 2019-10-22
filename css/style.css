@@ -115,134 +115,6 @@ a {
 	        box-shadow: inset 0 2px 2px rgb(148, 39, 24);
 	outline: none;
 }
-
-/*General Form styling*/
-.form {
-	padding-top: 20px;
-	padding-right: 15px;
-	padding-bottom: 20px;
-	padding-left: 15px;
-
-	background-color: rgb(248, 247, 244);
-
-	z-index: 2;
-}
-
-.field-layout {
-	position: relative;
-
-	text-align: left;
-}
-
-.field-label {
-	position: absolute;
-	top: -15px;
-	left: 15px;
-
-	font-size: 11px;
-	line-height: 13px;
-	color: rgb(91, 157, 223);
-
-	display: none;
-}
-
-.field-input,
-.field-textarea {
-	height: 42px;
-	padding-right: 15px;
-	padding-left: 15px;
-
-	font-size: 14px;
-	line-height: 24px;
-	font-weight: 700;
-	color: rgb(50, 50, 50);
-
-	background-color: rgb(255, 255, 255);
-	border-radius: 5px;
-	border: none;
-	-webkit-box-shadow: inset 0 0 0 1px rgb(178, 178, 178);
-	        box-shadow: inset 0 0 0 1px rgb(178, 178, 178);
-}
-
-.field-input:hover,
-.field-textarea:hover {
-	border: none;
-	-webkit-box-shadow: inset 0 0 0 2px rgb(198, 197, 196);
-	        box-shadow: inset 0 0 0 2px rgb(198, 197, 196);
-	outline: none;
-}
-
-.field-input:active,
-.field-textarea:active,
-.field-input:focus,
-.field-textarea:focus {
-	border: none;
-	-webkit-box-shadow: inset 0 0 0 2px rgb(143, 189, 236);
-	        box-shadow: inset 0 0 0 2px rgb(143, 189, 236);
-	outline: none;
-}
-
-.field-input::-webkit-input-placeholder,
-.field-textarea::-webkit-input-placeholder {
-	font-weight: 400;
-	color: rgb(153, 153, 153);
-}
-
-.field-input::-moz-placeholder,
-.field-textarea::-moz-placeholder {
-	font-weight: 400;
-	color: rgb(153, 153, 153);
-}
-
-.field-input:-ms-input-placeholder,
-.field-textarea:-ms-input-placeholder {
-	font-weight: 400;
-	color: rgb(153, 153, 153);
-}
-
-.field-input::-ms-input-placeholder,
-.field-textarea::-ms-input-placeholder {
-	font-weight: 400;
-	color: rgb(153, 153, 153);
-}
-
-.field-input::placeholder,
-.field-textarea::placeholder {
-	font-weight: 400;
-	color: rgb(153, 153, 153);
-}
-
-.field-input:-ms-input-placeholder {
-	font-weight: 400;
-	color: rgb(153, 153, 153);
-}
-
-.field-textarea:-ms-input-placeholder {
-	font-weight: 400;
-	color: rgb(153, 153, 153);
-}
-
-.field-input:focus::-webkit-input-placeholder {
-	color: transparent;
-}
-
-.field-input:focus::-moz-placeholder {
-	color: transparent;
-}
-
-.field-input:focus:-ms-input-placeholder {
-	color: transparent;
-}
-
-.field-textarea {
-	resize: none;
-}
-
-.field-input:focus + .field-label,
-.field-textarea:focus + .field-label {
-	display: block;
-}
-/*END of General Form styling*/
 /*END of Styles for Overall Site*/
 
 /*Main Header*/
@@ -982,7 +854,7 @@ a {
 
 .select-wrap:hover::before,
 .select-wrap:active::before {
-	background-image: url(../img/icon-down-dir.svg);
+	background-image: url(../img/select-arrow-black.svg);
 }
 
 .filter-sort {
@@ -1632,11 +1504,139 @@ a {
 }
 /*END of Footer*/
 
+/*General Form styling*/
+.form {
+	background-color: rgb(248, 247, 244);
+
+	z-index: 2;
+}
+
+.field-layout {
+	position: relative;
+
+	text-align: left;
+}
+
+.field-label {
+	position: absolute;
+	top: -15px;
+	left: 15px;
+
+	font-size: 11px;
+	line-height: 13px;
+	color: rgb(91, 157, 223);
+
+	display: none;
+}
+
+.field-input,
+.field-textarea {
+	height: 42px;
+	padding-right: 15px;
+	padding-left: 15px;
+
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+	color: rgb(50, 50, 50);
+
+	background-color: rgb(255, 255, 255);
+	border-radius: 5px;
+	border: none;
+	-webkit-box-shadow: inset 0 0 0 1px rgb(178, 178, 178);
+	        box-shadow: inset 0 0 0 1px rgb(178, 178, 178);
+}
+
+.field-input:hover,
+.field-textarea:hover {
+	border: none;
+	-webkit-box-shadow: inset 0 0 0 2px rgb(198, 197, 196);
+	        box-shadow: inset 0 0 0 2px rgb(198, 197, 196);
+	outline: none;
+}
+
+.field-input:active,
+.field-textarea:active,
+.field-input:focus,
+.field-textarea:focus {
+	border: none;
+	-webkit-box-shadow: inset 0 0 0 2px rgb(143, 189, 236);
+	        box-shadow: inset 0 0 0 2px rgb(143, 189, 236);
+	outline: none;
+}
+
+.field-input::-webkit-input-placeholder,
+.field-textarea::-webkit-input-placeholder {
+	font-weight: 400;
+	color: rgb(153, 153, 153);
+}
+
+.field-input::-moz-placeholder,
+.field-textarea::-moz-placeholder {
+	font-weight: 400;
+	color: rgb(153, 153, 153);
+}
+
+.field-input:-ms-input-placeholder,
+.field-textarea:-ms-input-placeholder {
+	font-weight: 400;
+	color: rgb(153, 153, 153);
+}
+
+.field-input::-ms-input-placeholder,
+.field-textarea::-ms-input-placeholder {
+	font-weight: 400;
+	color: rgb(153, 153, 153);
+}
+
+.field-input::placeholder,
+.field-textarea::placeholder {
+	font-weight: 400;
+	color: rgb(153, 153, 153);
+}
+
+.field-input:-ms-input-placeholder {
+	font-weight: 400;
+	color: rgb(153, 153, 153);
+}
+
+.field-textarea:-ms-input-placeholder {
+	font-weight: 400;
+	color: rgb(153, 153, 153);
+}
+
+.field-input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.field-input:focus::-moz-placeholder {
+	color: transparent;
+}
+
+.field-input:focus:-ms-input-placeholder {
+	color: transparent;
+}
+
+.field-textarea {
+	resize: none;
+}
+
+.field-input:focus + .field-label,
+.field-textarea:focus + .field-label {
+	display: block;
+}
+/*END of General Form styling*/
+
 /*Search Form in User Navigation*/
 .search-form {
 	position: absolute;
 	top: 35px;
 	right: 230px;
+
+	padding-top: 20px;
+	padding-right: 15px;
+	padding-bottom: 20px;
+	padding-left: 15px;
 
 	border-radius: 5px;
 	-webkit-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -1653,15 +1653,16 @@ a {
 .search-form .field-input {
 	width: 278px;
 }
-/*END of Search Form in User Navigation*/
+/*END of Search Form in User Navigation
 
 /*Login Form in User Navigation*/
 .login-form {
 	position: absolute;
 	top: 35px;
 	right: 125px;
-
-	padding-right: 20px;
+	
+	padding-top: 20px;
+	padding-right: 15px;
 	padding-bottom: 23px;
 	padding-left: 20px;
 
@@ -1847,11 +1848,11 @@ a {
 /*Feedback Form in Contact Section*/
 .feedback {
 	position: fixed;
-	top: 50%;
+	top: calc(50% - 270px);
 	left: 50%;
-	transform: translate3d(-50%, -60%, 0);
 
 	width: 428px;
+	margin-left: -240px;
 	padding-top: 20px;
 	padding-right: 25px;
 	padding-bottom: 25px;
@@ -1861,6 +1862,8 @@ a {
 	border-radius: 10px;
 
 	z-index: 9999;
+
+	display: none;
 }
 
 .feedback .form {
@@ -1948,6 +1951,31 @@ a {
 /*END of Feedback Close Button*/
 /*END of Feedback Form in Contact Section*/
 
+/*Animation for feedback from*/
+@keyframes bounce {
+	0% {transform: translateY(-2000px);}
+	70% {transform: translateY(30px);}
+	90% {transform: translateY(-10px);}
+	100% {transform: translateY(0px);}
+}
+
+@keyframes shake {
+	0%, 100% {transform: translateX(0px);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+.modal-show {
+	display: block;
+	animation-name: bounce;
+	animation-duration: .5s;
+}
+
+.modal-error {
+	animation-name: shake;
+	animation-duration: .6s;
+}
+/*END of Animation for feedback from*/
 .text-bold {
 	font-weight: 700;
 }
