@@ -762,6 +762,7 @@ a {
 
 	background-position: top left;
 	background-repeat: no-repeat;
+	background-size: cover;
 	border-radius: 15px;
 }
 
@@ -872,7 +873,6 @@ a {
 
 .blog {
 	width: 520px;
-	height: 172px;
 	margin: 0;
 	padding-top: 24px;
 	padding-right: 20px;
@@ -920,15 +920,14 @@ a {
 }
 
 .subscribe-wrap {
+	display: flex;
 	width: 550px;
-	height: 210px;
 	margin: 0;
 	padding: 5px;
 
 	background-color: rgb(248, 247, 244);
 	background-image: url(../img/bg-post.svg);
 	background-position: top left;
-	background-repeat: no-repeat;
 	border-radius: 15px;
 }
 
@@ -1102,30 +1101,36 @@ a {
 }
 
 .product-price {
-	position: relative;
-
+	display: flex;
+	align-items: flex-end;
 	margin-top: -57px;
 	margin-bottom: 21px;
-
-	font-size: 45px;
-	line-height: 45px;
-	font-weight: 700;
-	text-align: left;
-	text-shadow: 1px 1px 3px rgba(49, 50, 53, .5);
 
 	z-index: 2;
 }
 
-.product-price span {
-	margin-left: 34px;
+.product-price-num {
+	display: block;
+	margin-right: 10px;
+
+	font-size: 45px;
+	line-height: 40px;
+	font-weight: 700;
+	text-align: left;
+	text-shadow: 1px 1px 3px rgba(49, 50, 53, .5);
+	word-break: break-word;
+}
+
+.product-price-kg {
+	display: block;
 
 	font-size: 30px;
+	line-height: 30px;
+	text-shadow: 1px 1px 3px rgba(49, 50, 53, .5);
 }
 
 .product-price img {
-	position: absolute;
-	top: 5px;
-	left: 81px;
+	display: block;
 }
 
 .btn-product {
@@ -1720,7 +1725,7 @@ a {
 
 .filter-layout {
 	display: flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	padding-top: 7px;
 	padding-left: 12px;
 	padding-bottom: 7px;
