@@ -10,10 +10,23 @@ body {
 	color: rgb(255, 255, 255);
 	word-break: break-word;
 
-	background-color: rgb(132, 157, 143);
-	background-image: url(../img/slider-1.png);
 	background-repeat: no-repeat;
 	background-position: top center;
+}
+
+.slider-0 {
+	background-color: rgb(132, 157, 143);
+	background-image: url(../img/slider-0.png);
+}
+
+.slider-1 {
+	background-color: rgb(137, 150, 166);
+	background-image: url(../img/slider-1.png);
+}
+
+.slider-2 {
+	background-color: rgb(157, 139, 132);
+	background-image: url(../img/slider-2.png);
 }
 
 a {
@@ -380,7 +393,8 @@ a {
 }
 
 .user-navigation-item:hover .search-form,
-.user-navigation-item:focus .search-form {
+.user-navigation-item:focus .search-form,
+.user-navigation-item:focus-within .search-form {
 	display: block;
 }
 
@@ -408,7 +422,8 @@ a {
 }
 
 .user-navigation-item:hover .login-form,
-.user-navigation-item:focus .login-form {
+.user-navigation-item:focus .login-form,
+.user-navigation-item:focus-within .login-form {
 	display: block;
 }
 
@@ -699,6 +714,12 @@ a {
 	line-height: 60px;
 	font-weight: 700;
 	text-align: center;
+	
+	display: none;
+}
+
+.slider-item-active {
+	display: block;
 }
 
 .slider-item p {
@@ -740,9 +761,10 @@ a {
 	background: transparent;
 	border: 2px solid rgb(255, 255, 255);
 	border-radius: 50%;
+
+	cursor: pointer;
 }
 
-.slider-toggle:focus,
 .slider-toggle:hover {
 	background-color: rgba(255, 255, 255, .4);
 	outline: none;
@@ -750,6 +772,11 @@ a {
 
 .slider-toogle-checked,
 .slider-toggle:active {
+	background-color: rgb(255, 255, 255);
+}
+
+.slider-toogle-checked:focus,
+.slider-toogle-checked:hover {
 	background-color: rgb(255, 255, 255);
 	outline: none;
 }
@@ -771,7 +798,7 @@ a {
 	text-align: right;
 
 	background-position: top left;
-	background-repeat: repeat;
+	background-size: cover;
 	border-radius: 15px;
 }
 
@@ -1304,6 +1331,7 @@ a {
 
 .btn-contact {
 	margin-top: 20px;
+	padding: 10px 20px;
 }
 /*END of Contacts*/
 
@@ -1877,8 +1905,6 @@ a {
 	border-radius: 10px;
 
 	z-index: 9999;
-
-	display: none;
 }
 
 .feedback .form {
@@ -1908,6 +1934,10 @@ a {
 	height: 150px;
 	margin-bottom: 20px;
 	padding-top: 10px;
+}
+
+.modal-show {
+	display: block;
 }
 
 /*Feedback Close Button*/
@@ -1959,7 +1989,7 @@ a {
 	width: 100%;
 	height: 100%;
 
-	background-color: rgba(0, 0, 0, .3);
+	background-color: rgba(0, 0, 0, .7);
 
 	z-index: 9999;
 }
