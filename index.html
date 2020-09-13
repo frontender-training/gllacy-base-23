@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
 	</head>
-	<body>
+	<body class="slider-0">
 		<header class="main-header container">
 			<nav class="main-navigation">
 				<div class="main-logo">
@@ -62,7 +62,7 @@
 							<label class="field-label" for="email">Электронная почта</label>
 						</div>
 						<div class="field-layout">
-							<input class="field-input" id="password" type="password" name="password" placeholder="Пароль">
+							<input class="field-input" id="password" type="password" name="password" placeholder="Пароль" autocomplete="on">
 							<label class="field-label" for="password">Пароль</label>
 						</div>
 						<div class="login-enter">
@@ -97,23 +97,23 @@
 			<section class="slider">
 				<h2 class="visually-hidden">3 лучших предложения</h2>
 				<ul class="slider-list">
-					<li class="slider-item">
+					<li class="slider-item slider-item-active">
 						<p>Крем-брюле и пломбир с малиновым джемом</p>
-						<a class="btn btn-slider" href="catalog-item.html">Давайте оба!</a>
+						<a class="btn btn-slider" href="catalog-item.html" data-counter='0'>Давайте оба!</a>
 					</li>
-					<li class="slider-item hidden">
+					<li class="slider-item">
 						<p>Шоколадный пломбир и лимонный сорбет</p>
-						<a class="btn btn-slider" href="catalog-item.html">Давайте оба!</a>
+						<a class="btn btn-slider" href="catalog-item.html" data-counter='1'>Давайте оба!</a>
 					</li>
-					<li class="slider-item hidden">
+					<li class="slider-item">
 						<p>Пломбир с помадкой и клубничный щербет</p>
-						<a class="btn btn-slider" href="catalog-item.html">Давайте оба!</a>
+						<a class="btn btn-slider" href="catalog-item.html" data-counter='2'>Давайте оба!</a>
 					</li>
 				</ul>
 				<ul class="slider-toggles">
-					<li><button class="slider-toggle slider-toogle-checked" type="button"><span class="visually-hidden">Первый слайд</span></button></li>
-					<li><button class="slider-toggle" type="button"><span class="visually-hidden">Второй слайд</span></button></li>
-					<li><button class="slider-toggle" type="button"><span class="visually-hidden">Третий слайд</span></button></li>
+					<li><button class="slider-toggle slider-toogle-checked" type="button" data-counter='0'><span class="visually-hidden">Первый слайд</span></button></li>
+					<li><button class="slider-toggle" type="button" data-counter='1'><span class="visually-hidden">Второй слайд</span></button></li>
+					<li><button class="slider-toggle" type="button" data-counter='2'><span class="visually-hidden">Третий слайд</span></button></li>
 				</ul>
 			</section>
 			<section class="offers row">
@@ -138,7 +138,11 @@
 								<a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 							</h3>
 							<img class="product-img" src="img/product-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-							<p class="product-price">310<img src="img/ruble.svg" width="31" height="36" alt="рубль"><span>/кг</span></p>
+							<p class="product-price">
+								<span class="product-price-num">310</span>
+								<img src="img/ruble.svg" width="31" height="36" alt="рубль">
+								<span class="product-price-kg">/кг</span>
+							</p>
 							<a class="btn btn-product" href="catalog-item.html">Быстрый просмотр</a>
 						</article>
 					</li>
@@ -148,7 +152,11 @@
 								<a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада</a>
 							</h3>
 							<img class="product-img" src="img/product-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-							<p class="product-price">380<img src="img/ruble.svg" width="31" height="36" alt="рубль"><span>/кг</span></p>
+							<p class="product-price">
+								<span class="product-price-num">380</span>
+								<img src="img/ruble.svg" width="31" height="36" alt="рубль">
+								<span class="product-price-kg">/кг</span>
+							</p>
 							<a class="btn btn-product" href="catalog-item.html">Быстрый просмотр</a>
 						</article>
 					</li>
@@ -158,7 +166,11 @@
 								<a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
 							</h3>
 							<img class="product-img" src="img/product-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-							<p class="product-price">355<img src="img/ruble.svg" width="31" height="36" alt="рубль"><span>/кг</span></p>
+							<p class="product-price">
+								<span class="product-price-num">355</span>
+								<img src="img/ruble.svg" width="31" height="36" alt="рубль">
+								<span class="product-price-kg">/кг</span>
+							</p>
 							<a class="btn btn-product" href="catalog-item.html">Быстрый просмотр</a>
 						</article>
 					</li>
@@ -168,7 +180,11 @@
 								<a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a>
 							</h3>
 							<img class="product-img" src="img/product-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-							<p class="product-price">415<img src="img/ruble.svg" width="31" height="36" alt="рубль"><span>/кг</span></p>
+							<p class="product-price">
+								<span class="product-price-num">415</span>
+								<img src="img/ruble.svg" width="31" height="36" alt="рубль">
+								<span class="product-price-kg">/кг</span>
+							</p>
 							<a class="btn btn-product" href="catalog-item.html">Быстрый просмотр</a>
 						</article>
 					</li>
@@ -229,7 +245,7 @@
 					<p class="contacts-description">Для заказов по телефону:</p>
 					<a class="contacts-phone" href="tel:+78124502525">8 812 450-25-25</a>
 					<p class="contacts-description">(с 10 до 20 ежедневно)</p>
-					<a class="btn btn-contact" href="#">Форма обратной связи</a>
+					<button class="btn btn-contact" href="#">Форма обратной связи</button>
 				</div>
 			</section>
 		</main>
@@ -304,20 +320,20 @@
 			</div>
 		</footer>
 		<div class="overlay hidden"></div>
-		<section class="feedback">
+		<section class="feedback hidden">
 			<h2 class="visually-hidden">Форма обратной связи</h2>
 			<p class="feedback-title">Мы обязательно вам ответим!</p>
 			<form class="form" action="https://echo.htmlacademy.ru" method="post">
 				<div class="field-layout">
-					<input class="field-input" type="text" id="feedback-name" name="feedback-name" placeholder="Как вас зовут?" required>
+					<input class="field-input" type="text" id="feedback-name" name="feedback-name" placeholder="Как вас зовут?" autocomplete="on" required>
 					<label class="field-label" for="feedback-name">Как вас зовут?</label>
 				</div>
 				<div class="field-layout">
-					<input class="field-input" type="email" id="feedback-email" name="feedback-email" placeholder="Ваша почта для ответа?">
+					<input class="field-input" type="email" id="feedback-email" name="feedback-email" placeholder="Ваша почта для ответа?" autocomplete="on">
 					<label class="field-label" for="feedback-email">Ваша почта для ответа?</label>
 				</div>
 				<div class="field-layout">
-					<textarea class="field-textarea" id="feedback-msg" name="feedback-txt" placeholder="Напишите что-нибудь" rows="5" cols="33"></textarea>
+					<textarea class="field-textarea" id="feedback-msg" name="feedback-txt" placeholder="Напишите что-нибудь" rows="5" cols="33" required></textarea>
 					<label class="field-label" for="feedback-msg">Напишите что-нибудь</label>
 				</div>
 				<button class="btn" type="submit">Отправить</button>
@@ -325,7 +341,9 @@
 			<button class="close-btn" type="button">
 				<span class="visually-hidden">Закрыть</span>
 			</button>
-		</section>
+			<script src="js/index.js"></script>
+    </section>
+    <!-- автор Айнур Шауэрман Куанышбек кызы. Комментарий для компаний Аджайло -->
 	</body>
 </html>
 

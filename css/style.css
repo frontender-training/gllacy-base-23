@@ -8,11 +8,26 @@ body {
 	line-height: 22px;
 	font-weight: 400;
 	color: rgb(255, 255, 255);
+	word-break: break-word;
 
 	background-color: rgb(132, 157, 143);
-	background-image: url(../img/slider-1.png);
 	background-repeat: no-repeat;
 	background-position: top center;
+}
+
+.slider-0 {
+	background-color: rgb(132, 157, 143);
+	background-image: url(../img/slider-0.png);
+}
+
+.slider-1 {
+	background-color: rgb(137, 150, 166);
+	background-image: url(../img/slider-1.png);
+}
+
+.slider-2 {
+	background-color: rgb(157, 139, 132);
+	background-image: url(../img/slider-2.png);
 }
 
 a {
@@ -68,12 +83,16 @@ a {
 	display: flex;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+          justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .btn {
 	display: inline-block;
-	margin: 0;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
 	padding-top: 10px;
 	padding-right: 25px;
 	padding-bottom: 10px;
@@ -144,6 +163,8 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-wrap: wrap;
+	max-width: 700px;
 	margin-top: 13px;
 	padding: 0;
 
@@ -296,6 +317,7 @@ a {
 }
 
 .user-navigation-item {
+	max-width: 150px;
 	margin-left: 10px;
 	padding: 0;
 }
@@ -320,7 +342,6 @@ a {
 	background-color: rgba(255, 255, 255, .2);
 	border-radius: 15px;
 
-	overflow: hidden;
 }
 
 .user-navigation-link:hover,
@@ -373,7 +394,8 @@ a {
 }
 
 .user-navigation-item:hover .search-form,
-.user-navigation-item:focus .search-form {
+.user-navigation-item:focus .search-form,
+.user-navigation-item:focus-within .search-form {
 	display: block;
 }
 
@@ -387,9 +409,9 @@ a {
 	position: absolute;
 	top: 35px;
 	right: 125px;
-	
+
 	padding-top: 20px;
-	padding-right: 15px;
+	padding-right: 18px;
 	padding-bottom: 23px;
 	padding-left: 20px;
 
@@ -401,7 +423,8 @@ a {
 }
 
 .user-navigation-item:hover .login-form,
-.user-navigation-item:focus .login-form {
+.user-navigation-item:focus .login-form,
+.user-navigation-item:focus-within .login-form {
 	display: block;
 }
 
@@ -420,7 +443,7 @@ a {
 }
 
 .login-help {
-	width: 130px;
+	max-width: 120px;
 }
 
 .login-reg {
@@ -446,9 +469,9 @@ a {
 
 .btn-login {
 	margin-top: auto;
-	margin-right: 18px;
+	margin-right: 15px;
 	margin-bottom: auto;
-
+	margin-left: 0;
 }
 /*END of Login Form in User Navigation*/
 
@@ -595,6 +618,7 @@ a {
 
 /*Breadcrumbs*/
 .breadcrumbs {
+	max-width: 800px;
 	padding-top: 22px;
 }
 
@@ -602,6 +626,7 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 
@@ -690,6 +715,12 @@ a {
 	line-height: 60px;
 	font-weight: 700;
 	text-align: center;
+	
+	display: none;
+}
+
+.slider-item-active {
+	display: block;
 }
 
 .slider-item p {
@@ -731,9 +762,10 @@ a {
 	background: transparent;
 	border: 2px solid rgb(255, 255, 255);
 	border-radius: 50%;
+
+	cursor: pointer;
 }
 
-.slider-toggle:focus,
 .slider-toggle:hover {
 	background-color: rgba(255, 255, 255, .4);
 	outline: none;
@@ -742,17 +774,23 @@ a {
 .slider-toogle-checked,
 .slider-toggle:active {
 	background-color: rgb(255, 255, 255);
+}
+
+.slider-toogle-checked:focus,
+.slider-toogle-checked:hover {
+	background-color: rgb(255, 255, 255);
 	outline: none;
 }
 /*END of Slider in index.html*/
 
 /*Promo Section*/
 .offers {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 .offers-item {
 	width: 520px;
+	margin-bottom: 20px;
 	padding-top: 15px;
 	padding-right: 20px;
 	padding-bottom: 25px;
@@ -761,7 +799,7 @@ a {
 	text-align: right;
 
 	background-position: top left;
-	background-repeat: no-repeat;
+	background-size: cover;
 	border-radius: 15px;
 }
 
@@ -872,7 +910,6 @@ a {
 
 .blog {
 	width: 520px;
-	height: 172px;
 	margin: 0;
 	padding-top: 24px;
 	padding-right: 20px;
@@ -880,9 +917,9 @@ a {
 	padding-left: 20px;
 
 	background-color: rgb(255, 255, 255);
-	background-image: url(../img/bg-strawberry.png);
+	background-image: url(../img/bg-strawberry.jpg);
 	background-repeat: no-repeat;
-	background-position: top left 208px;
+	background-position: top -40px left 200px;
 	border-radius: 15px;
 }
 
@@ -920,15 +957,14 @@ a {
 }
 
 .subscribe-wrap {
+	display: flex;
 	width: 550px;
-	height: 210px;
 	margin: 0;
 	padding: 5px;
 
 	background-color: rgb(248, 247, 244);
 	background-image: url(../img/bg-post.svg);
 	background-position: top left;
-	background-repeat: no-repeat;
 	border-radius: 15px;
 }
 
@@ -937,7 +973,7 @@ a {
 	padding-right: 20px;
 	padding-bottom: 33px;
 	padding-left: 20px;
-	
+
 	background-color: rgb(248, 247, 243);
 	border-radius: 15px;
 }
@@ -1045,7 +1081,7 @@ a {
 	z-index: 1;
 }
 
-.product:hover:after {
+.product:hover::after {
 	background-color: rgba(255, 255, 255, .2);
 	-webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .2);
 	        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .2);
@@ -1080,9 +1116,7 @@ a {
 	font-weight: 500;
 
 	-webkit-box-ordinal-group: 2;
-
 	    -ms-flex-order: 1;
-
 	        order: 1;
 	z-index: 2;
 }
@@ -1102,41 +1136,48 @@ a {
 }
 
 .product-price {
-	position: relative;
-
+	display: flex;
+	align-items: flex-end;
 	margin-top: -57px;
 	margin-bottom: 21px;
-
-	font-size: 45px;
-	line-height: 45px;
-	font-weight: 700;
-	text-align: left;
-	text-shadow: 1px 1px 3px rgba(49, 50, 53, .5);
 
 	z-index: 2;
 }
 
-.product-price span {
-	margin-left: 34px;
+.product-price-num {
+	display: block;
+	margin-right: 10px;
+
+	font-size: 45px;
+	line-height: 40px;
+	font-weight: 700;
+	text-align: left;
+	text-shadow: 1px 1px 3px rgba(49, 50, 53, .5);
+}
+
+.product-price-kg {
+	display: block;
 
 	font-size: 30px;
+	line-height: 30px;
+	text-shadow: 1px 1px 3px rgba(49, 50, 53, .5);
 }
 
 .product-price img {
-	position: absolute;
-	top: 5px;
-	left: 81px;
+	display: block;
 }
 
 .btn-product {
 	position: absolute;
-	bottom: -52px;
-	left: 35px;
-
+	top: 325px;
+	right: 25px;
+	left: 25px;
 	padding-right: 15px;
 	padding-left: 15px;
 
 	z-index: 2;
+	    -ms-flex-order: 1;
+	order: 2;
 
 	display: none;
 }
@@ -1212,8 +1253,8 @@ a {
 
 .pagination-item-prev svg {
 	-webkit-transform: rotate(180deg);
-	    -ms-transform: rotate(180deg);
-	        transform: rotate(180deg);
+		  -ms-transform: rotate(180deg);
+		      transform: rotate(180deg);
 }
 /*END of Pagination*/
 
@@ -1291,6 +1332,7 @@ a {
 
 .btn-contact {
 	margin-top: 20px;
+	padding: 10px 20px;
 }
 /*END of Contacts*/
 
@@ -1309,6 +1351,8 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-wrap: wrap;
+	max-width: 300px;
 	padding: 0;
 
 	list-style: none;
@@ -1345,6 +1389,7 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-wrap: wrap;
 	margin-top: 12px;
 	padding-bottom: 5px;
 }
@@ -1596,7 +1641,7 @@ a {
 
 .filter-assortment {
 	position: relative;
-	
+
 	width: 193px;
 	height: 36px;
 	margin: 0;
@@ -1671,7 +1716,7 @@ a {
 
 .range-controls {
 	position: relative;
-	
+
 	width: 200px;
 	height: 20px;
 	padding-top: 16px;
@@ -1720,7 +1765,7 @@ a {
 
 .filter-layout {
 	display: flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	padding-top: 7px;
 	padding-left: 12px;
 	padding-bottom: 7px;
@@ -1801,9 +1846,8 @@ a {
 }
 
 .filter-btn {
-	display: inline-block;
-	vertical-align: middle;
-	
+	min-width: 145px;
+	height: 100%;
 	margin-top: 22px;
 	padding-top: 7px;
 	padding-right: 26px;
@@ -1862,8 +1906,6 @@ a {
 	border-radius: 10px;
 
 	z-index: 9999;
-
-	display: none;
 }
 
 .feedback .form {
@@ -1893,6 +1935,10 @@ a {
 	height: 150px;
 	margin-bottom: 20px;
 	padding-top: 10px;
+}
+
+.modal-show {
+	display: block;
 }
 
 /*Feedback Close Button*/
@@ -1944,8 +1990,8 @@ a {
 	width: 100%;
 	height: 100%;
 
-	background-color: rgba(0, 0, 0, .3);
-	
+	background-color: rgba(0, 0, 0, .7);
+
 	z-index: 9999;
 }
 /*END of Feedback Close Button*/
